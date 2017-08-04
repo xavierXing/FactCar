@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uWK-Wb-w9B">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Mian-->
         <scene sceneID="9gz-2p-Ank">
             <objects>
-                <tabBarController id="uWK-Wb-w9B" sceneMemberID="viewController">
+                <tabBarController id="uWK-Wb-w9B" customClass="Mian" customModule="FactCar" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="LsI-mB-689">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <outlet property="MainTabbar" destination="LsI-mB-689" id="wcR-RZ-NvB"/>
                         <segue destination="Mru-UO-RDQ" kind="relationship" relationship="viewControllers" id="P0S-bz-H6M"/>
                         <segue destination="KTh-or-cFO" kind="relationship" relationship="viewControllers" id="pRd-dE-Y7t"/>
                         <segue destination="iZK-58-lAr" kind="relationship" relationship="viewControllers" id="m0k-1I-21c"/>
@@ -28,57 +28,57 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zil-zO-qKF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-342" y="-132"/>
+            <point key="canvasLocation" x="-513" y="-174"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--News-->
         <scene sceneID="3Pd-9i-Cwr">
             <objects>
-                <viewControllerPlaceholder id="Mru-UO-RDQ" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="News" id="Mru-UO-RDQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="mCl-hz-xzu"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lyt-gP-tHU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="242" y="-403"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--My-->
         <scene sceneID="mK2-ik-IEW">
             <objects>
-                <viewControllerPlaceholder id="xzQ-GM-Mdt" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="My" id="xzQ-GM-Mdt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="lew-YX-fl2"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ldw-vd-dxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="242" y="71"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Activity-->
         <scene sceneID="H0u-dr-jdN">
             <objects>
-                <viewControllerPlaceholder id="97b-eg-0OH" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Activity" id="97b-eg-0OH" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="RFX-uC-P6T"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tTk-cI-H9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="242" y="-43"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--ChooseCar-->
         <scene sceneID="uhw-bA-yFb">
             <objects>
-                <viewControllerPlaceholder id="iZK-58-lAr" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="ChooseCar" id="iZK-58-lAr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Vel-do-Oqi"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Snw-Tm-pwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="242" y="-174"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Choiceness-->
         <scene sceneID="jm4-5r-tFM">
             <objects>
-                <viewControllerPlaceholder id="KTh-or-cFO" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Choiceness" id="KTh-or-cFO" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="41a-DV-6x3"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j71-G2-0Vj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="242" y="-297"/>
+            <point key="canvasLocation" x="241" y="-293"/>
         </scene>
     </scenes>
 </document>

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D253323F1F341A8200AB12CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D253323E1F341A8200AB12CB /* ViewController.swift */; };
+		2A4303511F34553000C0CFDA /* Mian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4303501F34553000C0CFDA /* Mian.swift */; };
+		2A4303531F345DDF00C0CFDA /* FactCarNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4303521F345DDF00C0CFDA /* FactCarNavigation.swift */; };
 		D25332421F341A8200AB12CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25332401F341A8200AB12CB /* Main.storyboard */; };
 		D25332441F341A8200AB12CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25332431F341A8200AB12CB /* Assets.xcassets */; };
 		D25332471F341A8200AB12CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25332451F341A8200AB12CB /* LaunchScreen.storyboard */; };
@@ -39,8 +40,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A4303501F34553000C0CFDA /* Mian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mian.swift; sourceTree = "<group>"; };
+		2A4303521F345DDF00C0CFDA /* FactCarNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactCarNavigation.swift; sourceTree = "<group>"; };
 		D25332391F341A8200AB12CB /* FactCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FactCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D253323E1F341A8200AB12CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D25332411F341A8200AB12CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D25332431F341A8200AB12CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D25332461F341A8200AB12CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				D2F0954A1F3452C80049BB39 /* FactCarPublicView.swift */,
+				2A4303521F345DDF00C0CFDA /* FactCarNavigation.swift */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -153,8 +156,8 @@
 		D25332651F341DD400AB12CB /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				D253323E1F341A8200AB12CB /* ViewController.swift */,
 				D25332401F341A8200AB12CB /* Main.storyboard */,
+				2A4303501F34553000C0CFDA /* Mian.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -462,7 +465,9 @@
 				D2F095231F344FCA0049BB39 /* NewsNetServer.swift in Sources */,
 				D2F095291F3450070049BB39 /* MyModel.swift in Sources */,
 				D25332631F341D8F00AB12CB /* AppDelegate.swift in Sources */,
+				2A4303511F34553000C0CFDA /* Mian.swift in Sources */,
 				D2F095431F34526A0049BB39 /* ChooseCarNetServer.swift in Sources */,
+				2A4303531F345DDF00C0CFDA /* FactCarNavigation.swift in Sources */,
 				D2F095471F3452920049BB39 /* FactCarCategory.swift in Sources */,
 				D2F0952B1F34501C0049BB39 /* MyNetServer.swift in Sources */,
 				D2F095331F3450A20049BB39 /* ActivityNetServer.swift in Sources */,
@@ -471,7 +476,6 @@
 				D2F0954B1F3452C80049BB39 /* FactCarPublicView.swift in Sources */,
 				D2F095311F34506C0049BB39 /* ActivityModel.swift in Sources */,
 				D2F095491F3452A80049BB39 /* FactCarDefine.swift in Sources */,
-				D253323F1F341A8200AB12CB /* ViewController.swift in Sources */,
 				D2F095391F34514B0049BB39 /* ChoicenessModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,7 +600,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4XQRJRP48E;
-				INFOPLIST_FILE = FactCar/Info.plist;
+				INFOPLIST_FILE = FactCar/System/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XH.FactCar;
@@ -610,7 +614,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4XQRJRP48E;
-				INFOPLIST_FILE = FactCar/Info.plist;
+				INFOPLIST_FILE = FactCar/System/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XH.FactCar;
