@@ -14,6 +14,28 @@
 		D25332631F341D8F00AB12CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25332601F341D8F00AB12CB /* AppDelegate.swift */; };
 		D25332641F341D8F00AB12CB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D25332611F341D8F00AB12CB /* Info.plist */; };
 		D2F0951F1F3440380049BB39 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F0951E1F3440380049BB39 /* News.storyboard */; };
+		D2F095211F344FAD0049BB39 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F095201F344FAD0049BB39 /* NewsModel.swift */; };
+		D2F095231F344FCA0049BB39 /* NewsNetServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F095221F344FCA0049BB39 /* NewsNetServer.swift */; };
+		D2F095251F344FDD0049BB39 /* NewsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2F095241F344FDD0049BB39 /* NewsView.xib */; };
+		D2F095271F344FF90049BB39 /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F095261F344FF90049BB39 /* My.storyboard */; };
+		D2F095291F3450070049BB39 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F095281F3450070049BB39 /* MyModel.swift */; };
+		D2F0952B1F34501C0049BB39 /* MyNetServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0952A1F34501C0049BB39 /* MyNetServer.swift */; };
+		D2F0952D1F34502A0049BB39 /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2F0952C1F34502A0049BB39 /* MyView.xib */; };
+		D2F0952F1F34504F0049BB39 /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F0952E1F34504F0049BB39 /* Activity.storyboard */; };
+		D2F095311F34506C0049BB39 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F095301F34506C0049BB39 /* ActivityModel.swift */; };
+		D2F095331F3450A20049BB39 /* ActivityNetServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F095321F3450A20049BB39 /* ActivityNetServer.swift */; };
+		D2F095351F3450F70049BB39 /* Activity.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2F095341F3450F70049BB39 /* Activity.xib */; };
+		D2F095371F3451350049BB39 /* Choiceness.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F095361F3451350049BB39 /* Choiceness.storyboard */; };
+		D2F095391F34514B0049BB39 /* ChoicenessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F095381F34514B0049BB39 /* ChoicenessModel.swift */; };
+		D2F0953B1F3451680049BB39 /* ChoicenessNetServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0953A1F3451680049BB39 /* ChoicenessNetServer.swift */; };
+		D2F0953D1F3451940049BB39 /* Choiceness.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2F0953C1F3451940049BB39 /* Choiceness.xib */; };
+		D2F0953F1F3451B30049BB39 /* ChooseCar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F0953E1F3451B30049BB39 /* ChooseCar.storyboard */; };
+		D2F095411F3452520049BB39 /* ChooseCarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F095401F3452520049BB39 /* ChooseCarModel.swift */; };
+		D2F095431F34526A0049BB39 /* ChooseCarNetServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F095421F34526A0049BB39 /* ChooseCarNetServer.swift */; };
+		D2F095451F3452750049BB39 /* ChooseCar.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2F095441F3452750049BB39 /* ChooseCar.xib */; };
+		D2F095471F3452920049BB39 /* FactCarCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F095461F3452920049BB39 /* FactCarCategory.swift */; };
+		D2F095491F3452A80049BB39 /* FactCarDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F095481F3452A80049BB39 /* FactCarDefine.swift */; };
+		D2F0954B1F3452C80049BB39 /* FactCarPublicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0954A1F3452C80049BB39 /* FactCarPublicView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +47,28 @@
 		D25332601F341D8F00AB12CB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D25332611F341D8F00AB12CB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F0951E1F3440380049BB39 /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		D2F095201F344FAD0049BB39 /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		D2F095221F344FCA0049BB39 /* NewsNetServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsNetServer.swift; sourceTree = "<group>"; };
+		D2F095241F344FDD0049BB39 /* NewsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsView.xib; sourceTree = "<group>"; };
+		D2F095261F344FF90049BB39 /* My.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = My.storyboard; sourceTree = "<group>"; };
+		D2F095281F3450070049BB39 /* MyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
+		D2F0952A1F34501C0049BB39 /* MyNetServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNetServer.swift; sourceTree = "<group>"; };
+		D2F0952C1F34502A0049BB39 /* MyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
+		D2F0952E1F34504F0049BB39 /* Activity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Activity.storyboard; sourceTree = "<group>"; };
+		D2F095301F34506C0049BB39 /* ActivityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		D2F095321F3450A20049BB39 /* ActivityNetServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityNetServer.swift; sourceTree = "<group>"; };
+		D2F095341F3450F70049BB39 /* Activity.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Activity.xib; sourceTree = "<group>"; };
+		D2F095361F3451350049BB39 /* Choiceness.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Choiceness.storyboard; sourceTree = "<group>"; };
+		D2F095381F34514B0049BB39 /* ChoicenessModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoicenessModel.swift; sourceTree = "<group>"; };
+		D2F0953A1F3451680049BB39 /* ChoicenessNetServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoicenessNetServer.swift; sourceTree = "<group>"; };
+		D2F0953C1F3451940049BB39 /* Choiceness.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Choiceness.xib; sourceTree = "<group>"; };
+		D2F0953E1F3451B30049BB39 /* ChooseCar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChooseCar.storyboard; sourceTree = "<group>"; };
+		D2F095401F3452520049BB39 /* ChooseCarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseCarModel.swift; sourceTree = "<group>"; };
+		D2F095421F34526A0049BB39 /* ChooseCarNetServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseCarNetServer.swift; sourceTree = "<group>"; };
+		D2F095441F3452750049BB39 /* ChooseCar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseCar.xib; sourceTree = "<group>"; };
+		D2F095461F3452920049BB39 /* FactCarCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactCarCategory.swift; sourceTree = "<group>"; };
+		D2F095481F3452A80049BB39 /* FactCarDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactCarDefine.swift; sourceTree = "<group>"; };
+		D2F0954A1F3452C80049BB39 /* FactCarPublicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactCarPublicView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +120,7 @@
 		D25332541F341D8F00AB12CB /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				D2F095461F3452920049BB39 /* FactCarCategory.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -83,6 +128,7 @@
 		D25332551F341D8F00AB12CB /* Define */ = {
 			isa = PBXGroup;
 			children = (
+				D2F095481F3452A80049BB39 /* FactCarDefine.swift */,
 			);
 			path = Define;
 			sourceTree = "<group>";
@@ -90,6 +136,7 @@
 		D253325D1F341D8F00AB12CB /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				D2F0954A1F3452C80049BB39 /* FactCarPublicView.swift */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -134,6 +181,7 @@
 		D2F095071F343B0D0049BB39 /* M */ = {
 			isa = PBXGroup;
 			children = (
+				D2F095201F344FAD0049BB39 /* NewsModel.swift */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -141,6 +189,7 @@
 		D2F095081F343B0D0049BB39 /* NetWorkServer */ = {
 			isa = PBXGroup;
 			children = (
+				D2F095221F344FCA0049BB39 /* NewsNetServer.swift */,
 			);
 			path = NetWorkServer;
 			sourceTree = "<group>";
@@ -148,6 +197,7 @@
 		D2F095091F343B0D0049BB39 /* V */ = {
 			isa = PBXGroup;
 			children = (
+				D2F095241F344FDD0049BB39 /* NewsView.xib */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -166,6 +216,7 @@
 		D2F0950B1F343B0D0049BB39 /* C */ = {
 			isa = PBXGroup;
 			children = (
+				D2F095261F344FF90049BB39 /* My.storyboard */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -173,6 +224,7 @@
 		D2F0950C1F343B0D0049BB39 /* M */ = {
 			isa = PBXGroup;
 			children = (
+				D2F095281F3450070049BB39 /* MyModel.swift */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -180,6 +232,7 @@
 		D2F0950D1F343B0D0049BB39 /* NetWorkServer */ = {
 			isa = PBXGroup;
 			children = (
+				D2F0952A1F34501C0049BB39 /* MyNetServer.swift */,
 			);
 			path = NetWorkServer;
 			sourceTree = "<group>";
@@ -187,6 +240,7 @@
 		D2F0950E1F343B0D0049BB39 /* V */ = {
 			isa = PBXGroup;
 			children = (
+				D2F0952C1F34502A0049BB39 /* MyView.xib */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -205,6 +259,7 @@
 		D2F095101F343B0D0049BB39 /* C */ = {
 			isa = PBXGroup;
 			children = (
+				D2F0952E1F34504F0049BB39 /* Activity.storyboard */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -212,6 +267,7 @@
 		D2F095111F343B0D0049BB39 /* M */ = {
 			isa = PBXGroup;
 			children = (
+				D2F095301F34506C0049BB39 /* ActivityModel.swift */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -219,6 +275,7 @@
 		D2F095121F343B0D0049BB39 /* NetWorkServer */ = {
 			isa = PBXGroup;
 			children = (
+				D2F095321F3450A20049BB39 /* ActivityNetServer.swift */,
 			);
 			path = NetWorkServer;
 			sourceTree = "<group>";
@@ -226,6 +283,7 @@
 		D2F095131F343B0D0049BB39 /* V */ = {
 			isa = PBXGroup;
 			children = (
+				D2F095341F3450F70049BB39 /* Activity.xib */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -244,6 +302,7 @@
 		D2F095151F343B0D0049BB39 /* C */ = {
 			isa = PBXGroup;
 			children = (
+				D2F095361F3451350049BB39 /* Choiceness.storyboard */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -251,6 +310,7 @@
 		D2F095161F343B0D0049BB39 /* M */ = {
 			isa = PBXGroup;
 			children = (
+				D2F095381F34514B0049BB39 /* ChoicenessModel.swift */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -258,6 +318,7 @@
 		D2F095171F343B0D0049BB39 /* NetWorkServer */ = {
 			isa = PBXGroup;
 			children = (
+				D2F0953A1F3451680049BB39 /* ChoicenessNetServer.swift */,
 			);
 			path = NetWorkServer;
 			sourceTree = "<group>";
@@ -265,6 +326,7 @@
 		D2F095181F343B0D0049BB39 /* V */ = {
 			isa = PBXGroup;
 			children = (
+				D2F0953C1F3451940049BB39 /* Choiceness.xib */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -283,6 +345,7 @@
 		D2F0951A1F343B0D0049BB39 /* C */ = {
 			isa = PBXGroup;
 			children = (
+				D2F0953E1F3451B30049BB39 /* ChooseCar.storyboard */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -290,6 +353,7 @@
 		D2F0951B1F343B0D0049BB39 /* M */ = {
 			isa = PBXGroup;
 			children = (
+				D2F095401F3452520049BB39 /* ChooseCarModel.swift */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -297,6 +361,7 @@
 		D2F0951C1F343B0D0049BB39 /* NetWorkServer */ = {
 			isa = PBXGroup;
 			children = (
+				D2F095421F34526A0049BB39 /* ChooseCarNetServer.swift */,
 			);
 			path = NetWorkServer;
 			sourceTree = "<group>";
@@ -304,6 +369,7 @@
 		D2F0951D1F343B0D0049BB39 /* V */ = {
 			isa = PBXGroup;
 			children = (
+				D2F095441F3452750049BB39 /* ChooseCar.xib */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -369,10 +435,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				D25332641F341D8F00AB12CB /* Info.plist in Resources */,
+				D2F0952F1F34504F0049BB39 /* Activity.storyboard in Resources */,
+				D2F095251F344FDD0049BB39 /* NewsView.xib in Resources */,
 				D25332471F341A8200AB12CB /* LaunchScreen.storyboard in Resources */,
+				D2F095351F3450F70049BB39 /* Activity.xib in Resources */,
+				D2F095451F3452750049BB39 /* ChooseCar.xib in Resources */,
+				D2F095371F3451350049BB39 /* Choiceness.storyboard in Resources */,
 				D2F0951F1F3440380049BB39 /* News.storyboard in Resources */,
+				D2F0953D1F3451940049BB39 /* Choiceness.xib in Resources */,
+				D2F0953F1F3451B30049BB39 /* ChooseCar.storyboard in Resources */,
+				D2F0952D1F34502A0049BB39 /* MyView.xib in Resources */,
 				D25332441F341A8200AB12CB /* Assets.xcassets in Resources */,
 				D25332421F341A8200AB12CB /* Main.storyboard in Resources */,
+				D2F095271F344FF90049BB39 /* My.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,8 +458,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2F095211F344FAD0049BB39 /* NewsModel.swift in Sources */,
+				D2F095231F344FCA0049BB39 /* NewsNetServer.swift in Sources */,
+				D2F095291F3450070049BB39 /* MyModel.swift in Sources */,
 				D25332631F341D8F00AB12CB /* AppDelegate.swift in Sources */,
+				D2F095431F34526A0049BB39 /* ChooseCarNetServer.swift in Sources */,
+				D2F095471F3452920049BB39 /* FactCarCategory.swift in Sources */,
+				D2F0952B1F34501C0049BB39 /* MyNetServer.swift in Sources */,
+				D2F095331F3450A20049BB39 /* ActivityNetServer.swift in Sources */,
+				D2F0953B1F3451680049BB39 /* ChoicenessNetServer.swift in Sources */,
+				D2F095411F3452520049BB39 /* ChooseCarModel.swift in Sources */,
+				D2F0954B1F3452C80049BB39 /* FactCarPublicView.swift in Sources */,
+				D2F095311F34506C0049BB39 /* ActivityModel.swift in Sources */,
+				D2F095491F3452A80049BB39 /* FactCarDefine.swift in Sources */,
 				D253323F1F341A8200AB12CB /* ViewController.swift in Sources */,
+				D2F095391F34514B0049BB39 /* ChoicenessModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
