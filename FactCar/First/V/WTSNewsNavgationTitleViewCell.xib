@@ -19,7 +19,7 @@
                 <subviews>
                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPS-Tj-FBo">
                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <state key="normal">
                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
@@ -33,7 +33,7 @@
                 <constraint firstAttribute="bottom" secondItem="XPS-Tj-FBo" secondAttribute="bottom" id="lJF-bP-0nO"/>
             </constraints>
             <connections>
-                <outlet property="titleButton" destination="XPS-Tj-FBo" id="wo5-Ge-N2J"/>
+                <outlet property="headLineBtn" destination="XPS-Tj-FBo" id="PPz-6J-Oga"/>
             </connections>
         </collectionViewCell>
     </objects>

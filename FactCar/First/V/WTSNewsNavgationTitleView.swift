@@ -11,7 +11,7 @@ import UIKit
 class WTSNewsNavgationTitleView: UIView ,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
   
   let cellTag: String = "titleCellview"
-  let collectionCellWidth: CGFloat = swiftScaleWidth_iPhone6(num: 84)
+  let collectionCellWidth: CGFloat = swiftScaleWidth_iPhone6(num: 40)
     //#MARK: - Override -
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -41,6 +41,7 @@ class WTSNewsNavgationTitleView: UIView ,UICollectionViewDelegate,UICollectionVi
     collectionTitleView.dataSource = self
     collectionTitleView.backgroundColor = UIColor.red
     collectionTitleView.contentSize = CGSize(width: self.collectionCellWidth * 12, height: 30)
+    collectionTitleView.showsHorizontalScrollIndicator = false
     return collectionTitleView
   }()
   
@@ -78,8 +79,8 @@ extension WTSNewsNavgationTitleView {
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellTag, for: indexPath)
-    let titleButton: UIButton = cell.viewWithTag(1) as! UIButton
-    titleButton.titleLabel?.text = self.titleArray[indexPath.row] as? String
+    let cellButton: UIButton = cell.viewWithTag(1) as! UIButton
+    cellButton.setTitle(self.titleArray[indexPath.section] as? String, for: .normal)
     return cell
   }
   

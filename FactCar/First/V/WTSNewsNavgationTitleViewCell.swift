@@ -10,8 +10,7 @@ import UIKit
 
 class WTSNewsNavgationTitleViewCell: UICollectionViewCell {
 
-  
-  @IBOutlet weak var titleButton: UIButton!
+  @IBOutlet weak var headLineBtn: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
 

@@ -9,12 +9,14 @@
 import UIKit
 
 class WTSNewsViewController: UINavigationController {
-  
+  let hotSpot: WTSHotSpotTableViewController = WTSHotSpotTableViewController()
   // #MARK: - life circle -
   
   /* 1.视图控制器中的视图加载完成，viewController自带的view加载完成 */
   override func viewDidLoad() {
     super.viewDidLoad()
+//    self.settingContentView()
+//    self.settingChildren()
   }
   /* 2.视图将要出现 */
   override func viewWillAppear(_ animated: Bool) {
@@ -48,6 +50,12 @@ class WTSNewsViewController: UINavigationController {
   // #MARK: - Lazy Loading Model -
   
   // #MARK: - Lazy Loading View -
+  lazy var contentScrollView: UIScrollView = {
+    let scrollView:UIScrollView = UIScrollView(frame: UIScreen.main.bounds)
+    scrollView.backgroundColor = UIColor.green
+    scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width * 12, height: UIScreen.main.bounds.height)
+    return scrollView
+  }()
   
 }
 
@@ -58,7 +66,14 @@ extension WTSNewsViewController {
 
 // #MARK: - Private Method -
 extension WTSNewsViewController {
+  fileprivate func settingContentView() -> Void {
+    self.view.addSubview(self.contentScrollView)
+  }
   
+  fileprivate func settingChildren() -> Void {
+    self.addChildViewController(self.hotSpot)
+    
+  }
 }
 
 // #MARK: - Delegate -
