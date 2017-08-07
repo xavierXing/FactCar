@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A24BE021F37F83C003F0344 /* WTSNewsNavgationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BE011F37F83C003F0344 /* WTSNewsNavgationTitleView.swift */; };
+		2A24BE061F38046C003F0344 /* WTSHotSpotTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BE051F38046C003F0344 /* WTSHotSpotTableViewController.swift */; };
+		2A24BE0B1F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BE091F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.swift */; };
+		2A24BE0C1F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A24BE0A1F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.xib */; };
 		2A4303511F34553000C0CFDA /* Mian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4303501F34553000C0CFDA /* Mian.swift */; };
 		2A4303531F345DDF00C0CFDA /* FactCarNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4303521F345DDF00C0CFDA /* FactCarNavigation.swift */; };
+		2A5BF9941F37F2D600D8A50E /* WTSNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5BF9931F37F2D600D8A50E /* WTSNewsViewController.swift */; };
 		D25332421F341A8200AB12CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25332401F341A8200AB12CB /* Main.storyboard */; };
 		D25332441F341A8200AB12CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25332431F341A8200AB12CB /* Assets.xcassets */; };
 		D25332471F341A8200AB12CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25332451F341A8200AB12CB /* LaunchScreen.storyboard */; };
@@ -40,8 +45,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A24BE011F37F83C003F0344 /* WTSNewsNavgationTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSNewsNavgationTitleView.swift; sourceTree = "<group>"; };
+		2A24BE051F38046C003F0344 /* WTSHotSpotTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSHotSpotTableViewController.swift; sourceTree = "<group>"; };
+		2A24BE091F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSNewsNavgationTitleViewCell.swift; sourceTree = "<group>"; };
+		2A24BE0A1F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTSNewsNavgationTitleViewCell.xib; sourceTree = "<group>"; };
 		2A4303501F34553000C0CFDA /* Mian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mian.swift; sourceTree = "<group>"; };
 		2A4303521F345DDF00C0CFDA /* FactCarNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactCarNavigation.swift; sourceTree = "<group>"; };
+		2A5BF9931F37F2D600D8A50E /* WTSNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSNewsViewController.swift; sourceTree = "<group>"; };
 		D25332391F341A8200AB12CB /* FactCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FactCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25332411F341A8200AB12CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D25332431F341A8200AB12CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -177,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				D2F0951E1F3440380049BB39 /* News.storyboard */,
+				2A5BF9931F37F2D600D8A50E /* WTSNewsViewController.swift */,
+				2A24BE051F38046C003F0344 /* WTSHotSpotTableViewController.swift */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -201,6 +213,9 @@
 			isa = PBXGroup;
 			children = (
 				D2F095241F344FDD0049BB39 /* NewsView.xib */,
+				2A24BE011F37F83C003F0344 /* WTSNewsNavgationTitleView.swift */,
+				2A24BE091F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.swift */,
+				2A24BE0A1F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.xib */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -403,6 +418,7 @@
 		D25332311F341A8200AB12CB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WTS;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "邢浩";
@@ -450,6 +466,7 @@
 				D2F0952D1F34502A0049BB39 /* MyView.xib in Resources */,
 				D25332441F341A8200AB12CB /* Assets.xcassets in Resources */,
 				D25332421F341A8200AB12CB /* Main.storyboard in Resources */,
+				2A24BE0C1F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.xib in Resources */,
 				D2F095271F344FF90049BB39 /* My.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,9 +478,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A5BF9941F37F2D600D8A50E /* WTSNewsViewController.swift in Sources */,
+				2A24BE021F37F83C003F0344 /* WTSNewsNavgationTitleView.swift in Sources */,
 				D2F095211F344FAD0049BB39 /* NewsModel.swift in Sources */,
 				D2F095231F344FCA0049BB39 /* NewsNetServer.swift in Sources */,
 				D2F095291F3450070049BB39 /* MyModel.swift in Sources */,
+				2A24BE0B1F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.swift in Sources */,
 				D25332631F341D8F00AB12CB /* AppDelegate.swift in Sources */,
 				2A4303511F34553000C0CFDA /* Mian.swift in Sources */,
 				D2F095431F34526A0049BB39 /* ChooseCarNetServer.swift in Sources */,
@@ -472,6 +492,7 @@
 				D2F0952B1F34501C0049BB39 /* MyNetServer.swift in Sources */,
 				D2F095331F3450A20049BB39 /* ActivityNetServer.swift in Sources */,
 				D2F0953B1F3451680049BB39 /* ChoicenessNetServer.swift in Sources */,
+				2A24BE061F38046C003F0344 /* WTSHotSpotTableViewController.swift in Sources */,
 				D2F095411F3452520049BB39 /* ChooseCarModel.swift in Sources */,
 				D2F0954B1F3452C80049BB39 /* FactCarPublicView.swift in Sources */,
 				D2F095311F34506C0049BB39 /* ActivityModel.swift in Sources */,

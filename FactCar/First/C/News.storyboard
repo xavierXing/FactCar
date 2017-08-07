@@ -8,32 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
-        <scene sceneID="RVJ-iw-I34">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HAK-Xb-lWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="CK2-IA-WXx" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="fhe-jp-ZHc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <connections>
-                            <outlet property="dataSource" destination="CK2-IA-WXx" id="1IM-GC-kuW"/>
-                            <outlet property="delegate" destination="CK2-IA-WXx" id="2OZ-Y7-hmm"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="Iv6-6N-bSZ">
-                        <barButtonItem key="leftBarButtonItem" title="广告位" id="C3i-ia-5WJ"/>
-                        <barButtonItem key="rightBarButtonItem" title="搜索" id="H6y-h2-VjN"/>
-                    </navigationItem>
-                </tableViewController>
-            </objects>
-            <point key="canvasLocation" x="282" y="109"/>
-        </scene>
         <!--要闻-->
         <scene sceneID="9Fl-ce-i87">
             <objects>
-                <navigationController id="LSo-fU-QD9" customClass="FactCarNavigation" customModule="FactCar" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="LSo-fU-QD9" customClass="WTSNewsViewController" customModule="FactCar" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="要闻" image="news_normal_icon" selectedImage="news_selected_icon" id="Hoa-cg-eXu"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ki9-Fi-vwD">
@@ -41,12 +19,34 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="CK2-IA-WXx" kind="relationship" relationship="rootViewController" id="v3D-cW-JWO"/>
+                        <segue destination="i6A-d7-EN1" kind="relationship" relationship="rootViewController" id="kHw-tW-1r1"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfo-ep-zfx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-782" y="110"/>
+        </scene>
+        <!--Hot Spot Table View Controller-->
+        <scene sceneID="iaY-Xh-hmh">
+            <objects>
+                <tableViewController id="i6A-d7-EN1" customClass="WTSHotSpotTableViewController" customModule="FactCar" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="wmc-P0-Vb3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="i6A-d7-EN1" id="iK0-pO-HJu"/>
+                            <outlet property="delegate" destination="i6A-d7-EN1" id="S1E-RD-a9t"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="99G-wF-qNo"/>
+                    <connections>
+                        <outlet property="titleView" destination="99G-wF-qNo" id="bR6-iq-DMC"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7xa-uc-Cng" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="109"/>
         </scene>
     </scenes>
     <resources>
