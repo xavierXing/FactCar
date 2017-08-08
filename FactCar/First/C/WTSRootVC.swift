@@ -8,7 +8,10 @@
 
 import UIKit
 
-class WTSRootVC: UIViewController,UIScrollViewDelegate {
+class WTSRootVC: UIViewController, UIScrollViewDelegate {
+  
+  ///是否滚动title
+  var isScrollEnable: Bool = false
   
   ///约束
   @IBOutlet weak var hotSpotWidth: NSLayoutConstraint!
@@ -36,16 +39,19 @@ class WTSRootVC: UIViewController,UIScrollViewDelegate {
   
   @IBOutlet weak var technologyRight: NSLayoutConstraint!
   
-  
   @IBOutlet weak var navgationItem: UINavigationItem!
   
   ///content
   @IBOutlet weak var contentScrollView: UIScrollView!
   
-
   override func viewDidLoad() {
     super.viewDidLoad()
     self.settingNavgationBar()
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    self.customNavgation.settingCollectionViewBtn(index: 0)
   }
   
   override func updateViewConstraints() {
@@ -78,11 +84,10 @@ class WTSRootVC: UIViewController,UIScrollViewDelegate {
     
   }
   
-  
   //#MARK: - Lazy Loading View -
   
   lazy var customNavgation: WTSNewsNavgationTitleView = {
-    let customNavgation: WTSNewsNavgationTitleView = WTSNewsNavgationTitleView.init(frame: CGRect(x: 0, y: 0, width: swiftScaleWidth_iPhone6(num: XHScreenW - XHScreenW * 0.145), height: 30))
+    let customNavgation: WTSNewsNavgationTitleView = WTSNewsNavgationTitleView(frame: CGRect(x: 0, y: 0, width: swiftScaleWidth_iPhone6(num: XHScreenW - XHScreenW * 0.145), height: 30))
     weak var weakself = self
     customNavgation.cellBtnBlock = { (tag: CGFloat) in
       weakself?.settingScrollViewOffset(offset: (tag - 1000))
@@ -103,7 +108,7 @@ class WTSRootVC: UIViewController,UIScrollViewDelegate {
 }
 //#MARK: - Private Method -
 extension WTSRootVC {
-  fileprivate func settingNavgationBar() -> Void {
+  fileprivate func settingNavgationBar() {
     self.navigationController?.navigationBar.barTintColor = UIColor.red
     self.navgationItem.titleView = self.customNavgation
     self.automaticallyAdjustsScrollViewInsets = false
@@ -112,21 +117,32 @@ extension WTSRootVC {
     
   }
   
-  fileprivate func settingScrollViewOffset(offset: CGFloat) -> Void {
+  fileprivate func settingScrollViewOffset(offset: CGFloat) {
     self.contentScrollView.setContentOffset(CGPoint(x: XHScreenW * offset, y: self.contentScrollView.contentOffset.y), animated: true)
+  }
+  
+  fileprivate func settingCustomNavgationOffset(scrollView: UIScrollView) {
+    if self.customNavgation.swiftWidth() / (swiftScaleWidth_iPhone6(num: 40) * (scrollView.contentOffset.x / XHScreenW)) < 1.4 {
+      print("该往左滚动了...")
+      self.customNavgation.collectionTitleView.setContentOffset(CGPoint(x: self.customNavgation.collectionTitleView.contentSize.width - self.customNavgation.swiftWidth(), y: self.customNavgation.collectionTitleView.swiftY()), animated: true)
+      isScrollEnable = true
+    } else if self.customNavgation.swiftWidth() / (swiftScaleWidth_iPhone6(num: 40) * (scrollView.contentOffset.x / XHScreenW)) > 1.1 {
+      if isScrollEnable {
+        print("该往右滑动了...")
+        self.customNavgation.collectionTitleView.setContentOffset(CGPoint(x: 0, y: self.customNavgation.collectionTitleView.swiftY()), animated: true)
+        isScrollEnable = false
+      }
+    }
   }
   
 }
 //#MARK: - Delegate -
 extension WTSRootVC {
-  func scrollViewDidScroll(_ scrollView: UIScrollView) {
-    print("111111")
-  }
-
   
   func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
     self.customNavgation.settingCollectionViewBtn(index: scrollView.contentOffset.x / XHScreenW)
+    print("开始偏移:\(self.customNavgation.swiftWidth() / (swiftScaleWidth_iPhone6(num: 40) * (scrollView.contentOffset.x / XHScreenW)))")
+    self.settingCustomNavgationOffset(scrollView: scrollView)
   }
 }
-
 
