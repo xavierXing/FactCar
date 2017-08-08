@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WTSRootVC: UIViewController {
+class WTSRootVC: UIViewController,UIScrollViewDelegate {
   
   ///约束
   @IBOutlet weak var hotSpotWidth: NSLayoutConstraint!
@@ -39,15 +39,13 @@ class WTSRootVC: UIViewController {
   
   @IBOutlet weak var navgationItem: UINavigationItem!
   
+  ///content
+  @IBOutlet weak var contentScrollView: UIScrollView!
+  
 
   override func viewDidLoad() {
     super.viewDidLoad()
     self.settingNavgationBar()
-  }
-  
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
   
   override func updateViewConstraints() {
@@ -85,6 +83,10 @@ class WTSRootVC: UIViewController {
   
   lazy var customNavgation: WTSNewsNavgationTitleView = {
     let customNavgation: WTSNewsNavgationTitleView = WTSNewsNavgationTitleView.init(frame: CGRect(x: 0, y: 0, width: swiftScaleWidth_iPhone6(num: XHScreenW - XHScreenW * 0.145), height: 30))
+    weak var weakself = self
+    customNavgation.cellBtnBlock = { (tag: CGFloat) in
+      weakself?.settingScrollViewOffset(offset: (tag - 1000))
+    }
     return customNavgation
   }()
   
@@ -99,13 +101,32 @@ class WTSRootVC: UIViewController {
     */
   
 }
-
+//#MARK: - Private Method -
 extension WTSRootVC {
   fileprivate func settingNavgationBar() -> Void {
     self.navigationController?.navigationBar.barTintColor = UIColor.red
     self.navgationItem.titleView = self.customNavgation
     self.automaticallyAdjustsScrollViewInsets = false
     self.navigationController?.navigationBar.isTranslucent = false
+    self.contentScrollView.delegate = self
+    
+  }
+  
+  fileprivate func settingScrollViewOffset(offset: CGFloat) -> Void {
+    self.contentScrollView.setContentOffset(CGPoint(x: XHScreenW * offset, y: self.contentScrollView.contentOffset.y), animated: true)
+  }
+  
+}
+//#MARK: - Delegate -
+extension WTSRootVC {
+  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    print("111111")
+  }
+
+  
+  func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    self.customNavgation.settingCollectionViewBtn(index: scrollView.contentOffset.x / XHScreenW)
   }
 }
+
 

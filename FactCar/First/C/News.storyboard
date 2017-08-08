@@ -169,6 +169,7 @@
                     <navigationItem key="navigationItem" id="0VW-Lc-KoS"/>
                     <connections>
                         <outlet property="businessRight" destination="AfX-hE-x92" id="01G-tn-Qtx"/>
+                        <outlet property="contentScrollView" destination="pHs-hN-KHO" id="ETa-i8-ewd"/>
                         <outlet property="cultureRight" destination="1G7-vi-TI5" id="dtY-2m-K76"/>
                         <outlet property="evaluatingLeft" destination="lBh-Zb-GKS" id="q4D-OR-bXP"/>
                         <outlet property="evaluatingRight" destination="D4B-6b-26I" id="rhr-99-kno"/>

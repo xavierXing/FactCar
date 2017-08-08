@@ -23,6 +23,9 @@
                         <state key="normal">
                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
+                        <connections>
+                            <action selector="headLineBtnClickEvent:" destination="gTV-IL-0wX" eventType="touchUpInside" id="5ZO-qj-UOn"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>
