@@ -12,6 +12,7 @@ class WTSRootVC: UIViewController, UIScrollViewDelegate {
   
   ///是否滚动title
   var isScrollEnable: Bool = false
+  var isCollectionTitleViewEnable: Bool = false
   
   ///约束
   @IBOutlet weak var hotSpotWidth: NSLayoutConstraint!
@@ -119,16 +120,28 @@ extension WTSRootVC {
   
   fileprivate func settingScrollViewOffset(offset: CGFloat) {
     self.contentScrollView.setContentOffset(CGPoint(x: XHScreenW * offset, y: self.contentScrollView.contentOffset.y), animated: true)
+
+    print("偏移距离:\(self.customNavgation.swiftWidth() / (swiftScaleWidth_iPhone6(num: 40) * offset))")
+    if (self.customNavgation.swiftWidth() / (swiftScaleWidth_iPhone6(num: 40) * offset)) < 1.3 {
+      self.customNavgation.collectionTitleView.setContentOffset(CGPoint(x: (self.customNavgation.collectionTitleView.contentSize.width - self.customNavgation.swiftWidth()), y: self.customNavgation.collectionTitleView.contentOffset.y), animated: true)
+      isCollectionTitleViewEnable = true
+    } else if (self.customNavgation.swiftWidth() / (swiftScaleWidth_iPhone6(num: 40) * offset)) > 1.1 {
+      if isCollectionTitleViewEnable {
+        self.customNavgation.collectionTitleView.setContentOffset(CGPoint(x: 0, y: self.customNavgation.collectionTitleView.contentOffset.y), animated: true)
+        isCollectionTitleViewEnable = false
+      }
+    }
+    
   }
   
   fileprivate func settingCustomNavgationOffset(scrollView: UIScrollView) {
     if self.customNavgation.swiftWidth() / (swiftScaleWidth_iPhone6(num: 40) * (scrollView.contentOffset.x / XHScreenW)) < 1.4 {
-      print("该往左滚动了...")
+      //      print("该往左滚动了...")
       self.customNavgation.collectionTitleView.setContentOffset(CGPoint(x: self.customNavgation.collectionTitleView.contentSize.width - self.customNavgation.swiftWidth(), y: self.customNavgation.collectionTitleView.swiftY()), animated: true)
       isScrollEnable = true
     } else if self.customNavgation.swiftWidth() / (swiftScaleWidth_iPhone6(num: 40) * (scrollView.contentOffset.x / XHScreenW)) > 1.1 {
       if isScrollEnable {
-        print("该往右滑动了...")
+        //        print("该往右滑动了...")
         self.customNavgation.collectionTitleView.setContentOffset(CGPoint(x: 0, y: self.customNavgation.collectionTitleView.swiftY()), animated: true)
         isScrollEnable = false
       }
@@ -141,7 +154,7 @@ extension WTSRootVC {
   
   func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
     self.customNavgation.settingCollectionViewBtn(index: scrollView.contentOffset.x / XHScreenW)
-    print("开始偏移:\(self.customNavgation.swiftWidth() / (swiftScaleWidth_iPhone6(num: 40) * (scrollView.contentOffset.x / XHScreenW)))")
+//    print("开始偏移:\(self.customNavgation.swiftWidth() / (swiftScaleWidth_iPhone6(num: 40) * (scrollView.contentOffset.x / XHScreenW)))")
     self.settingCustomNavgationOffset(scrollView: scrollView)
   }
 }
