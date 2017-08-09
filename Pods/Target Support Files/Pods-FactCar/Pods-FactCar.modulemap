@@ -1,0 +1,6 @@
+framework module Pods_FactCar {
+  umbrella header "Pods-FactCar-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -31,6 +31,7 @@
 		2A8CFBD31F3AAABC00F20D4A /* WTSBusinessTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBD21F3AAABC00F20D4A /* WTSBusinessTableView.swift */; };
 		2A8CFBD51F3AAF1E00F20D4A /* WTSRootTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBD41F3AAF1E00F20D4A /* WTSRootTableView.swift */; };
 		2A8CFBD71F3AAF8400F20D4A /* WTSRootTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8CFBD61F3AAF8400F20D4A /* WTSRootTableView.xib */; };
+		B2B4278C20FB590E6A5F9173 /* Pods_FactCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA756925C813D31B5CDD66E8 /* Pods_FactCar.framework */; };
 		D25332421F341A8200AB12CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25332401F341A8200AB12CB /* Main.storyboard */; };
 		D25332441F341A8200AB12CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25332431F341A8200AB12CB /* Assets.xcassets */; };
 		D25332471F341A8200AB12CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25332451F341A8200AB12CB /* LaunchScreen.storyboard */; };
@@ -86,6 +87,8 @@
 		2A8CFBD21F3AAABC00F20D4A /* WTSBusinessTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSBusinessTableView.swift; sourceTree = "<group>"; };
 		2A8CFBD41F3AAF1E00F20D4A /* WTSRootTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSRootTableView.swift; sourceTree = "<group>"; };
 		2A8CFBD61F3AAF8400F20D4A /* WTSRootTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTSRootTableView.xib; sourceTree = "<group>"; };
+		83FEC9D84CA26BADCD59AAA6 /* Pods-FactCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-FactCar/Pods-FactCar.release.xcconfig"; sourceTree = "<group>"; };
+		98AAB7E9665C59A97DC5DB16 /* Pods-FactCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FactCar/Pods-FactCar.debug.xcconfig"; sourceTree = "<group>"; };
 		D25332391F341A8200AB12CB /* FactCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FactCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25332411F341A8200AB12CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D25332431F341A8200AB12CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,6 +118,7 @@
 		D2F095461F3452920049BB39 /* FactCarCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactCarCategory.swift; sourceTree = "<group>"; };
 		D2F095481F3452A80049BB39 /* FactCarDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactCarDefine.swift; sourceTree = "<group>"; };
 		D2F0954A1F3452C80049BB39 /* FactCarPublicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactCarPublicView.swift; sourceTree = "<group>"; };
+		DA756925C813D31B5CDD66E8 /* Pods_FactCar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FactCar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,17 +126,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B4278C20FB590E6A5F9173 /* Pods_FactCar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19781D644CE89DF41B7E65A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA756925C813D31B5CDD66E8 /* Pods_FactCar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D920CD6D7FB10B605EBAD53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98AAB7E9665C59A97DC5DB16 /* Pods-FactCar.debug.xcconfig */,
+				83FEC9D84CA26BADCD59AAA6 /* Pods-FactCar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D25332301F341A8200AB12CB = {
 			isa = PBXGroup;
 			children = (
 				D253323B1F341A8200AB12CB /* FactCar */,
 				D253323A1F341A8200AB12CB /* Products */,
+				9D920CD6D7FB10B605EBAD53 /* Pods */,
+				19781D644CE89DF41B7E65A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -450,9 +474,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D253324B1F341A8200AB12CB /* Build configuration list for PBXNativeTarget "FactCar" */;
 			buildPhases = (
+				BBF53874A968EA3AD97E4212 /* [CP] Check Pods Manifest.lock */,
 				D25332351F341A8200AB12CB /* Sources */,
 				D25332361F341A8200AB12CB /* Frameworks */,
 				D25332371F341A8200AB12CB /* Resources */,
+				D29F53BC3F245264C774C8ED /* [CP] Embed Pods Frameworks */,
+				FF4D1E134F44EBDFE2A7C24E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -525,6 +552,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BBF53874A968EA3AD97E4212 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D29F53BC3F245264C774C8ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FactCar/Pods-FactCar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF4D1E134F44EBDFE2A7C24E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FactCar/Pods-FactCar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D25332351F341A8200AB12CB /* Sources */ = {
@@ -686,6 +761,7 @@
 		};
 		D253324C1F341A8200AB12CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98AAB7E9665C59A97DC5DB16 /* Pods-FactCar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4XQRJRP48E;
@@ -700,6 +776,7 @@
 		};
 		D253324D1F341A8200AB12CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83FEC9D84CA26BADCD59AAA6 /* Pods-FactCar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4XQRJRP48E;

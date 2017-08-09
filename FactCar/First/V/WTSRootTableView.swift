@@ -19,5 +19,10 @@ class WTSRootTableView: UITableView {
     super.touchesBegan(touches, with: event)
     print("触摸了")
   }
+  ///xib初始化
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    print("一杯敬故乡")
+  }
   
 }
