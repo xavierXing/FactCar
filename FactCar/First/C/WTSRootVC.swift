@@ -48,11 +48,12 @@ class WTSRootVC: UIViewController, UIScrollViewDelegate {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.settingNavgationBar()
+    
   }
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-    self.customNavgation.settingCollectionViewBtn(index: 0)
+    self.customNavgation.settingCollectionViewBtn(index: self.contentScrollView.contentOffset.x / XHScreenW)
   }
   
   override func updateViewConstraints() {
@@ -121,7 +122,7 @@ extension WTSRootVC {
   fileprivate func settingScrollViewOffset(offset: CGFloat) {
     self.contentScrollView.setContentOffset(CGPoint(x: XHScreenW * offset, y: self.contentScrollView.contentOffset.y), animated: true)
 
-    print("偏移距离:\(self.customNavgation.swiftWidth() / (swiftScaleWidth_iPhone6(num: 40) * offset))")
+//    print("偏移距离:\(self.customNavgation.swiftWidth() / (swiftScaleWidth_iPhone6(num: 40) * offset))")
     if (self.customNavgation.swiftWidth() / (swiftScaleWidth_iPhone6(num: 40) * offset)) < 1.3 {
       self.customNavgation.collectionTitleView.setContentOffset(CGPoint(x: (self.customNavgation.collectionTitleView.contentSize.width - self.customNavgation.swiftWidth()), y: self.customNavgation.collectionTitleView.contentOffset.y), animated: true)
       isCollectionTitleViewEnable = true
