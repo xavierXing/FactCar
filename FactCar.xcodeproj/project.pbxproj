@@ -17,6 +17,20 @@
 		2A4303511F34553000C0CFDA /* Mian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4303501F34553000C0CFDA /* Mian.swift */; };
 		2A4303531F345DDF00C0CFDA /* FactCarNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4303521F345DDF00C0CFDA /* FactCarNavigation.swift */; };
 		2A5BF9941F37F2D600D8A50E /* WTSNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5BF9931F37F2D600D8A50E /* WTSNewsViewController.swift */; };
+		2A8CFBBD1F3AA7FD00F20D4A /* WTSHotSpotTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBBC1F3AA7FD00F20D4A /* WTSHotSpotTableView.swift */; };
+		2A8CFBBF1F3AA90C00F20D4A /* WTSVideoTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBBE1F3AA90C00F20D4A /* WTSVideoTableView.swift */; };
+		2A8CFBC11F3AA93400F20D4A /* WTSLiveTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBC01F3AA93400F20D4A /* WTSLiveTableView.swift */; };
+		2A8CFBC31F3AA95B00F20D4A /* WTSEvaluatingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBC21F3AA95B00F20D4A /* WTSEvaluatingTableView.swift */; };
+		2A8CFBC51F3AA97100F20D4A /* WTSShoppingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBC41F3AA97100F20D4A /* WTSShoppingTableView.swift */; };
+		2A8CFBC71F3AA98200F20D4A /* WTSNewCarTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBC61F3AA98200F20D4A /* WTSNewCarTableView.swift */; };
+		2A8CFBC91F3AA99800F20D4A /* WTSUseCarTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBC81F3AA99800F20D4A /* WTSUseCarTableView.swift */; };
+		2A8CFBCB1F3AA9B400F20D4A /* WTSCaltureTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBCA1F3AA9B400F20D4A /* WTSCaltureTableView.swift */; };
+		2A8CFBCD1F3AA9C900F20D4A /* WTSTravelTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBCC1F3AA9C900F20D4A /* WTSTravelTableView.swift */; };
+		2A8CFBCF1F3AA9E500F20D4A /* WTSTechnologyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBCE1F3AA9E500F20D4A /* WTSTechnologyTableView.swift */; };
+		2A8CFBD11F3AA9F900F20D4A /* WTSMarketTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBD01F3AA9F900F20D4A /* WTSMarketTableView.swift */; };
+		2A8CFBD31F3AAABC00F20D4A /* WTSBusinessTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBD21F3AAABC00F20D4A /* WTSBusinessTableView.swift */; };
+		2A8CFBD51F3AAF1E00F20D4A /* WTSRootTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBD41F3AAF1E00F20D4A /* WTSRootTableView.swift */; };
+		2A8CFBD71F3AAF8400F20D4A /* WTSRootTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8CFBD61F3AAF8400F20D4A /* WTSRootTableView.xib */; };
 		D25332421F341A8200AB12CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25332401F341A8200AB12CB /* Main.storyboard */; };
 		D25332441F341A8200AB12CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25332431F341A8200AB12CB /* Assets.xcassets */; };
 		D25332471F341A8200AB12CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25332451F341A8200AB12CB /* LaunchScreen.storyboard */; };
@@ -58,6 +72,20 @@
 		2A4303501F34553000C0CFDA /* Mian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mian.swift; sourceTree = "<group>"; };
 		2A4303521F345DDF00C0CFDA /* FactCarNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactCarNavigation.swift; sourceTree = "<group>"; };
 		2A5BF9931F37F2D600D8A50E /* WTSNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSNewsViewController.swift; sourceTree = "<group>"; };
+		2A8CFBBC1F3AA7FD00F20D4A /* WTSHotSpotTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSHotSpotTableView.swift; sourceTree = "<group>"; };
+		2A8CFBBE1F3AA90C00F20D4A /* WTSVideoTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSVideoTableView.swift; sourceTree = "<group>"; };
+		2A8CFBC01F3AA93400F20D4A /* WTSLiveTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSLiveTableView.swift; sourceTree = "<group>"; };
+		2A8CFBC21F3AA95B00F20D4A /* WTSEvaluatingTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSEvaluatingTableView.swift; sourceTree = "<group>"; };
+		2A8CFBC41F3AA97100F20D4A /* WTSShoppingTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSShoppingTableView.swift; sourceTree = "<group>"; };
+		2A8CFBC61F3AA98200F20D4A /* WTSNewCarTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSNewCarTableView.swift; sourceTree = "<group>"; };
+		2A8CFBC81F3AA99800F20D4A /* WTSUseCarTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSUseCarTableView.swift; sourceTree = "<group>"; };
+		2A8CFBCA1F3AA9B400F20D4A /* WTSCaltureTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSCaltureTableView.swift; sourceTree = "<group>"; };
+		2A8CFBCC1F3AA9C900F20D4A /* WTSTravelTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSTravelTableView.swift; sourceTree = "<group>"; };
+		2A8CFBCE1F3AA9E500F20D4A /* WTSTechnologyTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSTechnologyTableView.swift; sourceTree = "<group>"; };
+		2A8CFBD01F3AA9F900F20D4A /* WTSMarketTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSMarketTableView.swift; sourceTree = "<group>"; };
+		2A8CFBD21F3AAABC00F20D4A /* WTSBusinessTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSBusinessTableView.swift; sourceTree = "<group>"; };
+		2A8CFBD41F3AAF1E00F20D4A /* WTSRootTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSRootTableView.swift; sourceTree = "<group>"; };
+		2A8CFBD61F3AAF8400F20D4A /* WTSRootTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTSRootTableView.xib; sourceTree = "<group>"; };
 		D25332391F341A8200AB12CB /* FactCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FactCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25332411F341A8200AB12CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D25332431F341A8200AB12CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -225,6 +253,20 @@
 				2A24BE011F37F83C003F0344 /* WTSNewsNavgationTitleView.swift */,
 				2A24BE091F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.swift */,
 				2A24BE0A1F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.xib */,
+				2A8CFBBC1F3AA7FD00F20D4A /* WTSHotSpotTableView.swift */,
+				2A8CFBBE1F3AA90C00F20D4A /* WTSVideoTableView.swift */,
+				2A8CFBC01F3AA93400F20D4A /* WTSLiveTableView.swift */,
+				2A8CFBC21F3AA95B00F20D4A /* WTSEvaluatingTableView.swift */,
+				2A8CFBC41F3AA97100F20D4A /* WTSShoppingTableView.swift */,
+				2A8CFBC61F3AA98200F20D4A /* WTSNewCarTableView.swift */,
+				2A8CFBC81F3AA99800F20D4A /* WTSUseCarTableView.swift */,
+				2A8CFBCA1F3AA9B400F20D4A /* WTSCaltureTableView.swift */,
+				2A8CFBCC1F3AA9C900F20D4A /* WTSTravelTableView.swift */,
+				2A8CFBCE1F3AA9E500F20D4A /* WTSTechnologyTableView.swift */,
+				2A8CFBD01F3AA9F900F20D4A /* WTSMarketTableView.swift */,
+				2A8CFBD21F3AAABC00F20D4A /* WTSBusinessTableView.swift */,
+				2A8CFBD41F3AAF1E00F20D4A /* WTSRootTableView.swift */,
+				2A8CFBD61F3AAF8400F20D4A /* WTSRootTableView.xib */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -474,6 +516,7 @@
 				D2F0953F1F3451B30049BB39 /* ChooseCar.storyboard in Resources */,
 				D2F0952D1F34502A0049BB39 /* MyView.xib in Resources */,
 				D25332441F341A8200AB12CB /* Assets.xcassets in Resources */,
+				2A8CFBD71F3AAF8400F20D4A /* WTSRootTableView.xib in Resources */,
 				2A24BE101F385C7C003F0344 /* WTSVideoTableViewController.xib in Resources */,
 				D25332421F341A8200AB12CB /* Main.storyboard in Resources */,
 				2A24BE0C1F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.xib in Resources */,
@@ -490,26 +533,39 @@
 			files = (
 				2A24BE0F1F385C7C003F0344 /* WTSVideoTableViewController.swift in Sources */,
 				2A5BF9941F37F2D600D8A50E /* WTSNewsViewController.swift in Sources */,
+				2A8CFBCD1F3AA9C900F20D4A /* WTSTravelTableView.swift in Sources */,
 				2A24BE021F37F83C003F0344 /* WTSNewsNavgationTitleView.swift in Sources */,
+				2A8CFBCB1F3AA9B400F20D4A /* WTSCaltureTableView.swift in Sources */,
 				D2F095211F344FAD0049BB39 /* NewsModel.swift in Sources */,
 				D2F095231F344FCA0049BB39 /* NewsNetServer.swift in Sources */,
 				D2F095291F3450070049BB39 /* MyModel.swift in Sources */,
 				2A24BE0B1F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.swift in Sources */,
 				D25332631F341D8F00AB12CB /* AppDelegate.swift in Sources */,
+				2A8CFBD51F3AAF1E00F20D4A /* WTSRootTableView.swift in Sources */,
 				2A4303511F34553000C0CFDA /* Mian.swift in Sources */,
 				D2F095431F34526A0049BB39 /* ChooseCarNetServer.swift in Sources */,
+				2A8CFBC11F3AA93400F20D4A /* WTSLiveTableView.swift in Sources */,
 				2A4303531F345DDF00C0CFDA /* FactCarNavigation.swift in Sources */,
 				D2F095471F3452920049BB39 /* FactCarCategory.swift in Sources */,
+				2A8CFBBF1F3AA90C00F20D4A /* WTSVideoTableView.swift in Sources */,
 				D2F0952B1F34501C0049BB39 /* MyNetServer.swift in Sources */,
+				2A8CFBBD1F3AA7FD00F20D4A /* WTSHotSpotTableView.swift in Sources */,
+				2A8CFBC71F3AA98200F20D4A /* WTSNewCarTableView.swift in Sources */,
 				D2F095331F3450A20049BB39 /* ActivityNetServer.swift in Sources */,
+				2A8CFBD31F3AAABC00F20D4A /* WTSBusinessTableView.swift in Sources */,
 				D2F0953B1F3451680049BB39 /* ChoicenessNetServer.swift in Sources */,
 				2A24BE061F38046C003F0344 /* WTSHotSpotTableViewController.swift in Sources */,
+				2A8CFBCF1F3AA9E500F20D4A /* WTSTechnologyTableView.swift in Sources */,
 				D2F095411F3452520049BB39 /* ChooseCarModel.swift in Sources */,
+				2A8CFBC31F3AA95B00F20D4A /* WTSEvaluatingTableView.swift in Sources */,
+				2A8CFBD11F3AA9F900F20D4A /* WTSMarketTableView.swift in Sources */,
 				D2F0954B1F3452C80049BB39 /* FactCarPublicView.swift in Sources */,
 				D2F095311F34506C0049BB39 /* ActivityModel.swift in Sources */,
 				2A24BE121F38612F003F0344 /* WTSRootVC.swift in Sources */,
 				D2F095491F3452A80049BB39 /* FactCarDefine.swift in Sources */,
+				2A8CFBC51F3AA97100F20D4A /* WTSShoppingTableView.swift in Sources */,
 				D2F095391F34514B0049BB39 /* ChoicenessModel.swift in Sources */,
+				2A8CFBC91F3AA99800F20D4A /* WTSUseCarTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
