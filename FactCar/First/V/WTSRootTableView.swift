@@ -12,7 +12,7 @@ class WTSRootTableView: UITableView {
 
   override func layoutSubviews() {
     super.layoutSubviews()
-    print("......")
+//    print("......")
   }
   
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -22,7 +22,29 @@ class WTSRootTableView: UITableView {
   ///xib初始化
   override func awakeFromNib() {
     super.awakeFromNib()
+    self.settingRefersh()
+    self.settingBasic()
     print("一杯敬故乡")
+    
   }
   
+}
+
+extension WTSRootTableView {
+  fileprivate func settingRefersh() -> Void {
+    let refreshHeader:WTSFactCarRefreshGifHeader = WTSFactCarRefreshGifHeader { 
+      print("开始刷新")
+    }
+    let refreshFooter:MJRefreshAutoNormalFooter = MJRefreshAutoNormalFooter { 
+      print("结束刷新")
+    }
+    self.mj_header = refreshHeader
+    self.mj_footer = refreshFooter
+    refreshHeader.beginRefreshing()
+    refreshFooter.endRefreshing()
+  }
+  
+  fileprivate func settingBasic() -> Void {
+    self.separatorStyle = .none
+  }
 }

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SDWebImage
+import MJRefresh
 
 class FactCarPublicView: NSObject {
 
