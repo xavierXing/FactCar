@@ -22,5 +22,5 @@ class WTSNewsNavgationTitleViewCell: UICollectionViewCell {
 
   typealias btnClick = () -> Void
   var btnClickBlock: btnClick!
-
+  
 }
