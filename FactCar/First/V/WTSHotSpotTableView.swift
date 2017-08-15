@@ -11,6 +11,7 @@ import UIKit
 class WTSHotSpotTableView: WTSRootTableView {
   
   override func awakeFromNib() {
+    self.vcType = MoyaNewsCar.hotSpot
     self.settingRefersh(refreshSuccess: { (result) in
       print("\(result)")
     }) { (error) in

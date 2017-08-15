@@ -285,6 +285,7 @@
 				2A8CFBBC1F3AA7FD00F20D4A /* WTSHotSpotTableView.swift */,
 				2A8CFBBE1F3AA90C00F20D4A /* WTSVideoTableView.swift */,
 				2A8CFBC01F3AA93400F20D4A /* WTSLiveTableView.swift */,
+				2A8CFBD21F3AAABC00F20D4A /* WTSBusinessTableView.swift */,
 				2A8CFBC21F3AA95B00F20D4A /* WTSEvaluatingTableView.swift */,
 				2A8CFBC41F3AA97100F20D4A /* WTSShoppingTableView.swift */,
 				2A8CFBC61F3AA98200F20D4A /* WTSNewCarTableView.swift */,
@@ -293,7 +294,6 @@
 				2A8CFBCC1F3AA9C900F20D4A /* WTSTravelTableView.swift */,
 				2A8CFBCE1F3AA9E500F20D4A /* WTSTechnologyTableView.swift */,
 				2A8CFBD01F3AA9F900F20D4A /* WTSMarketTableView.swift */,
-				2A8CFBD21F3AAABC00F20D4A /* WTSBusinessTableView.swift */,
 				2A8CFBD41F3AAF1E00F20D4A /* WTSRootTableView.swift */,
 				2A8CFBD61F3AAF8400F20D4A /* WTSRootTableView.xib */,
 			);

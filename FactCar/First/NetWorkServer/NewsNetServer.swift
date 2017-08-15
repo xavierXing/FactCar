@@ -13,7 +13,7 @@ import Alamofire
 var baseLink: String = "http://api.news18a.com/"
 
 enum MoyaNewsCar {
-  case hotSpot
+  case hotSpot,video,live,business,evaluating,shopping,newCar,useCar,calture,travel,technology,market
 }
 
 extension MoyaNewsCar: TargetType {
@@ -25,18 +25,12 @@ extension MoyaNewsCar: TargetType {
   
   /// 设置拼接上的 URL
   var path: String {
-    switch self {
-    case .hotSpot:
       return "init.php"
-    }
   }
   
   /// 设置请求方式: .get .post
   var method: Moya.Method {
-    switch self {
-    case .hotSpot:
       return .get
-    }
   }
   
   /// 设置链接中是否携带参数
@@ -47,6 +41,81 @@ extension MoyaNewsCar: TargetType {
         "m": "ina_app",
         "c": "index",
         "a": "index_new"
+      ]
+    case .video:
+      return [
+        "m": "ina_app",
+        "c": "vedio",
+        "a": "focus"
+      ]
+    case .live:
+      return [
+        "m": "ina_app",
+        "c": "vedio",
+        "a": "new_live"
+      ]
+    case .business: 
+      return [
+        "m": "ina_app",
+        "c": "index",
+        "a": "storylist",
+        "storyType": "industry"
+      ]
+    case .evaluating:
+      return [
+        "m": "ina_app",
+        "c": "index",
+        "a": "storylist",
+        "storyType": "evaluation"
+      ]
+    case .shopping:
+      return [
+        "m": "ina_app",
+        "c": "index",
+        "a": "storylist",
+        "storyType": "guide"
+      ]
+    case .newCar:
+      return [
+        "m": "ina_app",
+        "c": "index",
+        "a": "storylist",
+        "storyType": "newCar"
+      ]
+    case .useCar:
+      return [
+        "m": "ina_app",
+        "c": "index",
+        "a": "storylist",
+        "storyType": "useCar"
+      ]
+    case .calture:
+      return [
+        "m": "ina_app",
+        "c": "index",
+        "a": "storylist",
+        "storyType": "culture"
+      ]
+    case .travel:
+      return [
+        "m": "ina_app",
+        "c": "index",
+        "a": "storylist",
+        "storyType": "travel"
+      ]
+    case .technology:
+      return [
+        "m": "ina_app",
+        "c": "index",
+        "a": "storylist",
+        "storyType": "technology"
+      ]
+    case .market:
+      return [
+        "m": "ina_app",
+        "c": "index",
+        "a": "storylist",
+        "storyType": "market"
       ]
     }
     
@@ -74,9 +143,12 @@ extension MoyaNewsCar: TargetType {
 
 class NewsNetServer: NSObject {
   
-  public func getHotSpotData(success: @escaping (_ result : NSDictionary) -> (), failed: @escaping (_ error : String) -> ()) -> Void {
-    MoyaNewsCarProvider.request(.hotSpot) { result in
-        print("当前线程:\(Thread.current)")
+  /// 请求类型枚举
+  var netWorkDataType: MoyaNewsCar! = .hotSpot
+  
+  /// 获取网络数据
+  public func moyaGetData(type: MoyaNewsCar, success: @escaping (_ result : NSDictionary) -> (),failed: @escaping (_ error : String) -> ()) -> Void {
+    MoyaNewsCarProvider.request(type) { (result) in
       do {
         let response = try result.dematerialize()
         let value = try response.mapNSDictionary()
@@ -87,9 +159,15 @@ class NewsNetServer: NSObject {
         failed(errorMessage)
       }
     }
-    
   }
+
 }
+
+// MARK: - Private Method -
+extension NewsNetServer {
+  
+}
+
 
 //#MARK: - 自定义转换 -
 extension Moya.Response {

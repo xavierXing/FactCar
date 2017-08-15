@@ -10,12 +10,13 @@ import UIKit
 
 class WTSCaltureTableView: WTSRootTableView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+  override func awakeFromNib() {
+    self.vcType = MoyaNewsCar.calture
+    self.settingRefersh(refreshSuccess: { (result) in
+      print("\(result)")
+    }) { (error) in
+      print("\(error)")
     }
-    */
+  }
 
 }

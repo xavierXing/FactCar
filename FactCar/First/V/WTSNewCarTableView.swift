@@ -10,12 +10,13 @@ import UIKit
 
 class WTSNewCarTableView: WTSRootTableView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+  override func awakeFromNib() {
+    self.vcType = MoyaNewsCar.newCar
+    self.settingRefersh(refreshSuccess: { (result) in
+      print("\(result)")
+    }) { (error) in
+      print("\(error)")
     }
-    */
+  }
 
 }
