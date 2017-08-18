@@ -16,7 +16,7 @@ enum VCType {
   case hotSpot,video,live,business,evaluating,shopping,newCar,useCar,calture,travel,technology,market
 }
 
-class WTSRootTableView: UITableView {
+class WTSRootTableView: UITableView,UITableViewDataSource,UITableViewDelegate {
   
   var rootDelegate: WTSRootVCTableViewDelegate?
   
@@ -81,3 +81,17 @@ extension WTSRootTableView {
     
   }
 }
+
+// MARK: - UITableViewDataSource && UITableViewDelegate -
+extension WTSRootTableView {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 1
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "RootVC")!
+    cell.backgroundColor = UIColor.green
+    return cell
+  }
+}
+

@@ -8,11 +8,12 @@
 
 import UIKit
 
-class WTSHotSpotTableView: WTSRootTableView,UITableViewDelegate,UITableViewDataSource {
+class WTSHotSpotTableView: WTSRootTableView {
   
   override func awakeFromNib() {
     self.getNetWork()
-    
+    super.delegate = self
+    super.dataSource = self
   }
   
 }
@@ -31,11 +32,11 @@ extension WTSHotSpotTableView {
 //// MARK: - UITableViewDelegate -
 extension WTSHotSpotTableView {
   
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 10
+  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 1
   }
   
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "111")!
     cell.backgroundColor = UIColor.green
     return cell

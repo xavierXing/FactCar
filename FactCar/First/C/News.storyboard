@@ -50,6 +50,17 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="376" id="hjQ-AI-lxQ"/>
                                                 </constraints>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="111" id="odg-09-Ckb">
+                                                        <rect key="frame" x="0.0" y="28" width="376" height="44"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="odg-09-Ckb" id="kvJ-ZA-bA4">
+                                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </tableViewCellContentView>
+                                                        <color key="backgroundColor" red="0.00036413921043276787" green="0.57023400068283081" blue="0.99794226884841919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </tableViewCell>
+                                                </prototypes>
                                             </tableView>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TBC-mn-8xR" customClass="WTSVideoTableView" customModule="FactCar" customModuleProvider="target">
                                                 <rect key="frame" x="375" y="0.0" width="375" height="554"/>
