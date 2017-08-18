@@ -13,6 +13,7 @@ class WTSEvaluatingTableView: WTSRootTableView {
   override func awakeFromNib() {
     self.vcType = MoyaNewsCar.evaluating
     self.settingRefersh(refreshSuccess: { (result) in
+      let evaluatingMoudle:WTSNewsMoudleS = WTSNewsMoudleS(JSON: result as! [String : Any])!
       print("\(result)")
     }) { (error) in
       print("\(error)")

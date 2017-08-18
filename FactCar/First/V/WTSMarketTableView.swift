@@ -13,7 +13,9 @@ class WTSMarketTableView: WTSRootTableView {
   override func awakeFromNib() {
     self.vcType = MoyaNewsCar.market
     self.settingRefersh(refreshSuccess: { (result) in
-      print("\(result)")
+      let marketMoudle:WTSNewsMoudleS = WTSNewsMoudleS(JSON: result as! [String : Any])!
+      print("\(marketMoudle)")
+
     }) { (error) in
       print("\(error)")
     }

@@ -13,6 +13,7 @@ class WTSVideoTableView: WTSRootTableView {
   override func awakeFromNib() {
     self.vcType = MoyaNewsCar.video
     self.settingRefersh(refreshSuccess: { (result) in
+      let videoMoudle:WTSVideoMoudle = WTSVideoMoudle(JSON: result as! [String : Any])!
       print("\(result)")
     }) { (error) in
       print("\(error)")

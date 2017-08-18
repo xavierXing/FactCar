@@ -13,6 +13,7 @@ class WTSLiveTableView: WTSRootTableView {
   override func awakeFromNib() {
     self.vcType = MoyaNewsCar.live
     self.settingRefersh(refreshSuccess: { (result) in
+      let liveMoudle:WTSLiveMoudle = WTSLiveMoudle(JSON: result as! [String : Any])!
       print("\(result)")
     }) { (error) in
       print("\(error)")

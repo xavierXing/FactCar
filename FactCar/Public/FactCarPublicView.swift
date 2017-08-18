@@ -9,6 +9,7 @@
 import UIKit
 import SDWebImage
 import MJRefresh
+import MapKit
 
 class FactCarPublicView: NSObject {
 

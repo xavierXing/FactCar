@@ -13,6 +13,7 @@ class WTSCaltureTableView: WTSRootTableView {
   override func awakeFromNib() {
     self.vcType = MoyaNewsCar.calture
     self.settingRefersh(refreshSuccess: { (result) in
+      let caltureMoudle:WTSNewsMoudleS = WTSNewsMoudleS(JSON: result as! [String : Any])!
       print("\(result)")
     }) { (error) in
       print("\(error)")

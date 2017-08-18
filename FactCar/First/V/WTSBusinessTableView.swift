@@ -13,6 +13,7 @@ class WTSBusinessTableView: WTSRootTableView {
   override func awakeFromNib() {
     self.vcType = MoyaNewsCar.business
     self.settingRefersh(refreshSuccess: { (result) in
+      let businessMoudle:WTSNewsMoudleS = WTSNewsMoudleS(JSON: result as! [String : Any])!
       print("\(result)")
     }) { (error) in
       print("\(error)")
