@@ -38,7 +38,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time_icon" translatesAutoresizingMaskIntoConstraints="NO" id="orA-iX-gmn">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="orA-iX-gmn">
                         <rect key="frame" x="292" y="101" width="16" height="16"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="16" id="qdZ-FI-xO7"/>
@@ -73,6 +73,5 @@
     </objects>
     <resources>
         <image name="focusnews_null_img3" width="99" height="66"/>
-        <image name="time_icon" width="9" height="9"/>
     </resources>
 </document>

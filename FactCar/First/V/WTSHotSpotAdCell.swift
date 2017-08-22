@@ -10,18 +10,22 @@ import UIKit
 
 class WTSHotSpotAdCell: UITableViewCell {
   
-  
   @IBOutlet weak var cellAdImage: UIImageView!
   
-    override func awakeFromNib() {
-        super.awakeFromNib()
-      
+  var adImgeData:WTSHSMDNewsData! {
+    didSet {
+      self.cellAdImage.sd_setImage(with: NSURL(string: self.adImgeData.title_pic1)! as URL, placeholderImage: UIImage(named: ""))
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-      
-    }
+  }
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
     
+  }
+  
+  override func setSelected(_ selected: Bool, animated: Bool) {
+    super.setSelected(selected, animated: animated)
+    
+  }
+  
 }

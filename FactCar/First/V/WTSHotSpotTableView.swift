@@ -92,7 +92,10 @@ extension WTSHotSpotTableView {
         }
         
       } else if cellData.type == "ad_index_underfour" {
-        cell = tableView.dequeueReusableCell(withIdentifier: "HotSpotAd", for: indexPath)
+        
+        let cell:WTSHotSpotAdCell = tableView.dequeueReusableCell(withIdentifier: "HotSpotAd", for: indexPath) as! WTSHotSpotAdCell
+        cell.adImgeData = cellData
+        return cell
       } else if cellData.type == "" {
         
       }
