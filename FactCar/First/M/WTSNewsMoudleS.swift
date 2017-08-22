@@ -12,7 +12,7 @@ import ObjectMapper
 // MARK: - 热点Moudle -
 class WTSHotSpotMoudle: Mappable {
   var status: String!
-  var data: [WTSHSMData]!
+  var data: WTSHSMData!
   var code: Int = 0
   required init?(map: Map) {
     
@@ -114,7 +114,7 @@ class WTSHSMDNewsData: Mappable {
   var publish_time: String!
   var story_date: String!
   var pub: String!
-  var imgs: [WTSNewsMoudle_imgs]!
+  var imgs: [String]!
   var short_summary: String!
   
   required init?(map: Map) {
@@ -146,12 +146,14 @@ class WTSHSMDNewsData: Mappable {
 class WTSHSMDFourBtn: Mappable {
   var name: String!
   var url: String!
+  var title_pic: String!
   required init?(map: Map) {
     
   }
   func mapping(map: Map) {
     name <- map["name"]
     url <- map["url"]
+    title_pic <- map["title_pic"]
   }
 }
 
@@ -395,7 +397,7 @@ class WTSNewsMoudleS: Mappable {
 
 class WTSNewsMoudle_data: Mappable {
   var id: String!
-  var imgs: [WTSNewsMoudle_imgs]!
+  var imgs: [String]!
   var title_pic1: String!
   var author: String!
   var column_id: String!
@@ -438,9 +440,6 @@ class WTSNewsMoudle_data: Mappable {
   
 }
 
-class WTSNewsMoudle_imgs: NSObject {
-  
-}
 
 
 

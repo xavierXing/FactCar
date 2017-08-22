@@ -33,6 +33,14 @@
 		2A8CFBD51F3AAF1E00F20D4A /* WTSRootTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBD41F3AAF1E00F20D4A /* WTSRootTableView.swift */; };
 		2A8CFBD71F3AAF8400F20D4A /* WTSRootTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8CFBD61F3AAF8400F20D4A /* WTSRootTableView.xib */; };
 		2A8CFBDD1F3B263B00F20D4A /* WTSFactCarRefreshGifHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBDC1F3B263B00F20D4A /* WTSFactCarRefreshGifHeader.swift */; };
+		2ABC5D261F4A6A5400739A8B /* WTSHotSpotNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC5D241F4A6A5400739A8B /* WTSHotSpotNormalCell.swift */; };
+		2ABC5D271F4A6A5400739A8B /* WTSHotSpotNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC5D251F4A6A5400739A8B /* WTSHotSpotNormalCell.xib */; };
+		2ABC5D2A1F4A775A00739A8B /* WTSHotSpotThirdImgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC5D281F4A775A00739A8B /* WTSHotSpotThirdImgCell.swift */; };
+		2ABC5D2B1F4A775A00739A8B /* WTSHotSpotThirdImgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC5D291F4A775A00739A8B /* WTSHotSpotThirdImgCell.xib */; };
+		2ABC5D301F4A86BD00739A8B /* WTSFourButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC5D2E1F4A86BD00739A8B /* WTSFourButtonCell.swift */; };
+		2ABC5D311F4A86BD00739A8B /* WTSFourButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC5D2F1F4A86BD00739A8B /* WTSFourButtonCell.xib */; };
+		2ABC5D341F4BD5C100739A8B /* WTSHotSpotAdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC5D321F4BD5C100739A8B /* WTSHotSpotAdCell.swift */; };
+		2ABC5D351F4BD5C100739A8B /* WTSHotSpotAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC5D331F4BD5C100739A8B /* WTSHotSpotAdCell.xib */; };
 		B2B4278C20FB590E6A5F9173 /* Pods_FactCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA756925C813D31B5CDD66E8 /* Pods_FactCar.framework */; };
 		D25332421F341A8200AB12CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25332401F341A8200AB12CB /* Main.storyboard */; };
 		D25332441F341A8200AB12CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25332431F341A8200AB12CB /* Assets.xcassets */; };
@@ -74,6 +82,12 @@
 		2A24BE111F38612F003F0344 /* WTSRootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSRootVC.swift; sourceTree = "<group>"; };
 		2A4303501F34553000C0CFDA /* Mian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mian.swift; sourceTree = "<group>"; };
 		2A4303521F345DDF00C0CFDA /* FactCarNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactCarNavigation.swift; sourceTree = "<group>"; };
+		2A4A8AB01F4C2712003C2FA5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/FactCar-fkqjojepqznccmajryrksfanbqyz/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		2A4A8AB11F4C2712003C2FA5 /* MJRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MJRefresh.framework; path = "../../../Library/Developer/Xcode/DerivedData/FactCar-fkqjojepqznccmajryrksfanbqyz/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework"; sourceTree = "<group>"; };
+		2A4A8AB21F4C2712003C2FA5 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = "../../../Library/Developer/Xcode/DerivedData/FactCar-fkqjojepqznccmajryrksfanbqyz/Build/Products/Debug-iphonesimulator/Moya/Moya.framework"; sourceTree = "<group>"; };
+		2A4A8AB31F4C2712003C2FA5 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../../../Library/Developer/Xcode/DerivedData/FactCar-fkqjojepqznccmajryrksfanbqyz/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework"; sourceTree = "<group>"; };
+		2A4A8AB41F4C2712003C2FA5 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../../Library/Developer/Xcode/DerivedData/FactCar-fkqjojepqznccmajryrksfanbqyz/Build/Products/Debug-iphonesimulator/Result/Result.framework"; sourceTree = "<group>"; };
+		2A4A8AB51F4C2712003C2FA5 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "../../../Library/Developer/Xcode/DerivedData/FactCar-fkqjojepqznccmajryrksfanbqyz/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework"; sourceTree = "<group>"; };
 		2A5BF9931F37F2D600D8A50E /* WTSNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSNewsViewController.swift; sourceTree = "<group>"; };
 		2A62597E1F467484006DB2CA /* WTSNewsMoudleS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSNewsMoudleS.swift; sourceTree = "<group>"; };
 		2A8CFBBC1F3AA7FD00F20D4A /* WTSHotSpotTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSHotSpotTableView.swift; sourceTree = "<group>"; };
@@ -92,6 +106,14 @@
 		2A8CFBD61F3AAF8400F20D4A /* WTSRootTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTSRootTableView.xib; sourceTree = "<group>"; };
 		2A8CFBD81F3B1E1D00F20D4A /* FactCar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FactCar-Bridging-Header.h"; sourceTree = "<group>"; };
 		2A8CFBDC1F3B263B00F20D4A /* WTSFactCarRefreshGifHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSFactCarRefreshGifHeader.swift; sourceTree = "<group>"; };
+		2ABC5D241F4A6A5400739A8B /* WTSHotSpotNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSHotSpotNormalCell.swift; sourceTree = "<group>"; };
+		2ABC5D251F4A6A5400739A8B /* WTSHotSpotNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTSHotSpotNormalCell.xib; sourceTree = "<group>"; };
+		2ABC5D281F4A775A00739A8B /* WTSHotSpotThirdImgCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSHotSpotThirdImgCell.swift; sourceTree = "<group>"; };
+		2ABC5D291F4A775A00739A8B /* WTSHotSpotThirdImgCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTSHotSpotThirdImgCell.xib; sourceTree = "<group>"; };
+		2ABC5D2E1F4A86BD00739A8B /* WTSFourButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSFourButtonCell.swift; sourceTree = "<group>"; };
+		2ABC5D2F1F4A86BD00739A8B /* WTSFourButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTSFourButtonCell.xib; sourceTree = "<group>"; };
+		2ABC5D321F4BD5C100739A8B /* WTSHotSpotAdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSHotSpotAdCell.swift; sourceTree = "<group>"; };
+		2ABC5D331F4BD5C100739A8B /* WTSHotSpotAdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTSHotSpotAdCell.xib; sourceTree = "<group>"; };
 		83FEC9D84CA26BADCD59AAA6 /* Pods-FactCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-FactCar/Pods-FactCar.release.xcconfig"; sourceTree = "<group>"; };
 		98AAB7E9665C59A97DC5DB16 /* Pods-FactCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FactCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FactCar/Pods-FactCar.debug.xcconfig"; sourceTree = "<group>"; };
 		D25332391F341A8200AB12CB /* FactCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FactCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,9 +163,49 @@
 		19781D644CE89DF41B7E65A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A4A8AB01F4C2712003C2FA5 /* Alamofire.framework */,
+				2A4A8AB11F4C2712003C2FA5 /* MJRefresh.framework */,
+				2A4A8AB21F4C2712003C2FA5 /* Moya.framework */,
+				2A4A8AB31F4C2712003C2FA5 /* ObjectMapper.framework */,
+				2A4A8AB41F4C2712003C2FA5 /* Result.framework */,
+				2A4A8AB51F4C2712003C2FA5 /* SDWebImage.framework */,
 				DA756925C813D31B5CDD66E8 /* Pods_FactCar.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2ABC5D2C1F4A7FC800739A8B /* VCell */ = {
+			isa = PBXGroup;
+			children = (
+				2ABC5D241F4A6A5400739A8B /* WTSHotSpotNormalCell.swift */,
+				2ABC5D251F4A6A5400739A8B /* WTSHotSpotNormalCell.xib */,
+				2ABC5D281F4A775A00739A8B /* WTSHotSpotThirdImgCell.swift */,
+				2ABC5D291F4A775A00739A8B /* WTSHotSpotThirdImgCell.xib */,
+				2ABC5D2E1F4A86BD00739A8B /* WTSFourButtonCell.swift */,
+				2ABC5D2F1F4A86BD00739A8B /* WTSFourButtonCell.xib */,
+				2ABC5D321F4BD5C100739A8B /* WTSHotSpotAdCell.swift */,
+				2ABC5D331F4BD5C100739A8B /* WTSHotSpotAdCell.xib */,
+			);
+			name = VCell;
+			sourceTree = "<group>";
+		};
+		2ABC5D2D1F4A7FFB00739A8B /* VTable */ = {
+			isa = PBXGroup;
+			children = (
+				2A8CFBBC1F3AA7FD00F20D4A /* WTSHotSpotTableView.swift */,
+				2A8CFBBE1F3AA90C00F20D4A /* WTSVideoTableView.swift */,
+				2A8CFBC01F3AA93400F20D4A /* WTSLiveTableView.swift */,
+				2A8CFBD21F3AAABC00F20D4A /* WTSBusinessTableView.swift */,
+				2A8CFBC21F3AA95B00F20D4A /* WTSEvaluatingTableView.swift */,
+				2A8CFBC41F3AA97100F20D4A /* WTSShoppingTableView.swift */,
+				2A8CFBC61F3AA98200F20D4A /* WTSNewCarTableView.swift */,
+				2A8CFBC81F3AA99800F20D4A /* WTSUseCarTableView.swift */,
+				2A8CFBCA1F3AA9B400F20D4A /* WTSCaltureTableView.swift */,
+				2A8CFBCC1F3AA9C900F20D4A /* WTSTravelTableView.swift */,
+				2A8CFBCE1F3AA9E500F20D4A /* WTSTechnologyTableView.swift */,
+				2A8CFBD01F3AA9F900F20D4A /* WTSMarketTableView.swift */,
+			);
+			name = VTable;
 			sourceTree = "<group>";
 		};
 		9D920CD6D7FB10B605EBAD53 /* Pods */ = {
@@ -281,22 +343,12 @@
 		D2F095091F343B0D0049BB39 /* V */ = {
 			isa = PBXGroup;
 			children = (
+				2ABC5D2D1F4A7FFB00739A8B /* VTable */,
+				2ABC5D2C1F4A7FC800739A8B /* VCell */,
 				D2F095241F344FDD0049BB39 /* NewsView.xib */,
 				2A24BE011F37F83C003F0344 /* WTSNewsNavgationTitleView.swift */,
 				2A24BE091F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.swift */,
 				2A24BE0A1F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.xib */,
-				2A8CFBBC1F3AA7FD00F20D4A /* WTSHotSpotTableView.swift */,
-				2A8CFBBE1F3AA90C00F20D4A /* WTSVideoTableView.swift */,
-				2A8CFBC01F3AA93400F20D4A /* WTSLiveTableView.swift */,
-				2A8CFBD21F3AAABC00F20D4A /* WTSBusinessTableView.swift */,
-				2A8CFBC21F3AA95B00F20D4A /* WTSEvaluatingTableView.swift */,
-				2A8CFBC41F3AA97100F20D4A /* WTSShoppingTableView.swift */,
-				2A8CFBC61F3AA98200F20D4A /* WTSNewCarTableView.swift */,
-				2A8CFBC81F3AA99800F20D4A /* WTSUseCarTableView.swift */,
-				2A8CFBCA1F3AA9B400F20D4A /* WTSCaltureTableView.swift */,
-				2A8CFBCC1F3AA9C900F20D4A /* WTSTravelTableView.swift */,
-				2A8CFBCE1F3AA9E500F20D4A /* WTSTechnologyTableView.swift */,
-				2A8CFBD01F3AA9F900F20D4A /* WTSMarketTableView.swift */,
 				2A8CFBD41F3AAF1E00F20D4A /* WTSRootTableView.swift */,
 				2A8CFBD61F3AAF8400F20D4A /* WTSRootTableView.xib */,
 			);
@@ -543,19 +595,23 @@
 				D25332641F341D8F00AB12CB /* Info.plist in Resources */,
 				D2F0952F1F34504F0049BB39 /* Activity.storyboard in Resources */,
 				D2F095251F344FDD0049BB39 /* NewsView.xib in Resources */,
+				2ABC5D2B1F4A775A00739A8B /* WTSHotSpotThirdImgCell.xib in Resources */,
 				D25332471F341A8200AB12CB /* LaunchScreen.storyboard in Resources */,
 				D2F095351F3450F70049BB39 /* Activity.xib in Resources */,
 				D2F095451F3452750049BB39 /* ChooseCar.xib in Resources */,
 				D2F095371F3451350049BB39 /* Choiceness.storyboard in Resources */,
+				2ABC5D271F4A6A5400739A8B /* WTSHotSpotNormalCell.xib in Resources */,
 				D2F0951F1F3440380049BB39 /* News.storyboard in Resources */,
 				D2F0953D1F3451940049BB39 /* Choiceness.xib in Resources */,
 				D2F0953F1F3451B30049BB39 /* ChooseCar.storyboard in Resources */,
+				2ABC5D311F4A86BD00739A8B /* WTSFourButtonCell.xib in Resources */,
 				D2F0952D1F34502A0049BB39 /* MyView.xib in Resources */,
 				D25332441F341A8200AB12CB /* Assets.xcassets in Resources */,
 				2A8CFBD71F3AAF8400F20D4A /* WTSRootTableView.xib in Resources */,
 				2A24BE101F385C7C003F0344 /* WTSVideoTableViewController.xib in Resources */,
 				D25332421F341A8200AB12CB /* Main.storyboard in Resources */,
 				2A24BE0C1F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.xib in Resources */,
+				2ABC5D351F4BD5C100739A8B /* WTSHotSpotAdCell.xib in Resources */,
 				D2F095271F344FF90049BB39 /* My.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,7 +672,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A24BE0F1F385C7C003F0344 /* WTSVideoTableViewController.swift in Sources */,
+				2ABC5D261F4A6A5400739A8B /* WTSHotSpotNormalCell.swift in Sources */,
 				2A5BF9941F37F2D600D8A50E /* WTSNewsViewController.swift in Sources */,
+				2ABC5D2A1F4A775A00739A8B /* WTSHotSpotThirdImgCell.swift in Sources */,
 				2A8CFBCD1F3AA9C900F20D4A /* WTSTravelTableView.swift in Sources */,
 				2A24BE021F37F83C003F0344 /* WTSNewsNavgationTitleView.swift in Sources */,
 				2A8CFBCB1F3AA9B400F20D4A /* WTSCaltureTableView.swift in Sources */,
@@ -630,6 +688,7 @@
 				D2F095431F34526A0049BB39 /* ChooseCarNetServer.swift in Sources */,
 				2A8CFBC11F3AA93400F20D4A /* WTSLiveTableView.swift in Sources */,
 				2A4303531F345DDF00C0CFDA /* FactCarNavigation.swift in Sources */,
+				2ABC5D341F4BD5C100739A8B /* WTSHotSpotAdCell.swift in Sources */,
 				D2F095471F3452920049BB39 /* FactCarCategory.swift in Sources */,
 				2A8CFBBF1F3AA90C00F20D4A /* WTSVideoTableView.swift in Sources */,
 				D2F0952B1F34501C0049BB39 /* MyNetServer.swift in Sources */,
@@ -645,6 +704,7 @@
 				2A8CFBDD1F3B263B00F20D4A /* WTSFactCarRefreshGifHeader.swift in Sources */,
 				2A8CFBC31F3AA95B00F20D4A /* WTSEvaluatingTableView.swift in Sources */,
 				2A8CFBD11F3AA9F900F20D4A /* WTSMarketTableView.swift in Sources */,
+				2ABC5D301F4A86BD00739A8B /* WTSFourButtonCell.swift in Sources */,
 				D2F0954B1F3452C80049BB39 /* FactCarPublicView.swift in Sources */,
 				D2F095311F34506C0049BB39 /* ActivityModel.swift in Sources */,
 				2A24BE121F38612F003F0344 /* WTSRootVC.swift in Sources */,
@@ -777,10 +837,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4XQRJRP48E;
-				INFOPLIST_FILE = FactCar/System/Info.plist;
+				INFOPLIST_FILE = /Users/LeoTai/Documents/GitHub/FactCar/FactCar/System/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = XH.FactCar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.InternetInfoAgency.KeynewsCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FactCar/System/FactCar-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -796,10 +856,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4XQRJRP48E;
-				INFOPLIST_FILE = FactCar/System/Info.plist;
+				INFOPLIST_FILE = /Users/LeoTai/Documents/GitHub/FactCar/FactCar/System/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = XH.FactCar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.InternetInfoAgency.KeynewsCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FactCar/System/FactCar-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

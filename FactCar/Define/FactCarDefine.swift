@@ -51,7 +51,10 @@ func swiftScaleHeight_iPhone6(num: CGFloat) -> (CGFloat) {
   return result
 }
 
-
+// MARK: - 获取VersionCode -
+func swiftGetCFBundleVersion() -> (NSString) {
+  return (((Bundle.main.infoDictionary)! as NSDictionary) .object(forKey: "CFBundleVersion")) as! NSString
+}
 
 
 

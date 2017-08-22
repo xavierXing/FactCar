@@ -7,39 +7,133 @@
 //
 
 import UIKit
+import ObjectMapper
 
 class WTSHotSpotTableView: WTSRootTableView {
+  /// 首页要闻
+  var netWorkData: NSArray?
+  /// 首页4个button内容
+  var fourBtnData: NSArray?
+  /// 映射模型
+  var hotSpotMoudle: WTSHotSpotMoudle?
   
   override func awakeFromNib() {
+    self.separatorStyle = .none
     self.getNetWork()
+    self.registerXib()
     super.delegate = self
     super.dataSource = self
   }
   
 }
 
+// MARK: - NetWork -
 extension WTSHotSpotTableView {
-  fileprivate func getNetWork() -> Void {
+  fileprivate func getNetWork() {
     self.vcType = MoyaNewsCar.hotSpot
-    self.settingRefersh(refreshSuccess: { (result) in
-      let hotSpotMoudle: WTSHotSpotMoudle = WTSHotSpotMoudle(JSON: result as! [String : Any])!
-      
-    }) { (error) in
+    self.settingRefersh(refreshSuccess: { result in
+      self.hotSpotMoudle = WTSHotSpotMoudle(JSON: result as! [String: Any])!
+      self.netWorkData = self.hotSpotMoudle?.data.hotNewsData as NSArray?
+      self.fourBtnData = self.hotSpotMoudle?.data.four_button as NSArray?
+      self.reloadData()
+    }) { error in
       print("\(error)")
     }
   }
 }
-//// MARK: - UITableViewDelegate -
+
+// MARK: - Register Xib -
+extension WTSRootTableView {
+  fileprivate func registerXib() {
+    self.register(UINib(nibName: "WTSHotSpotNormalCell", bundle: nil), forCellReuseIdentifier: "HotSpotNormal")
+    self.register(UINib(nibName: "WTSHotSpotThirdImgCell", bundle: nil), forCellReuseIdentifier: "HotSpotThirdImage")
+    self.register(UINib(nibName: "WTSFourButtonCell", bundle: nil), forCellReuseIdentifier: "HotSpotFourButton")
+    self.register(UINib(nibName: "WTSHotSpotAdCell", bundle: nil), forCellReuseIdentifier: "HotSpotAd")
+  }
+}
+
+// MARK: - UITableViewDelegate && UITableViewDataSource -
 extension WTSHotSpotTableView {
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 1
+    
+    if (self.netWorkData?.count) ?? 0 > 0 {
+      switch section {
+      case 0:
+        return 1
+      case 1:
+        return (self.netWorkData?.count)!
+      default:
+        return 1
+      }
+    } else {
+      return 1
+    }
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "111")!
-    cell.backgroundColor = UIColor.green
+    
+    var cell: UITableViewCell = UITableViewCell()
+    if (self.netWorkData?.count) ?? 0 == 0 {
+      return cell
+    }
+    let cellData: WTSHSMDNewsData = self.netWorkData![indexPath.row] as! WTSHSMDNewsData
+    if indexPath.section == 0 {
+      let cell:WTSFourButtonCell = tableView.dequeueReusableCell(withIdentifier: "HotSpotFourButton", for: indexPath) as! WTSFourButtonCell
+      cell.fourBtnData = self.fourBtnData as! [WTSHSMDFourBtn]
+      return cell
+      
+    } else {
+      if cellData.type == "story" {
+        if cellData.imgs.count == 3 {
+          cell = tableView.dequeueReusableCell(withIdentifier: "HotSpotThirdImage", for: indexPath)
+        } else {
+          cell = tableView.dequeueReusableCell(withIdentifier: "HotSpotNormal", for: indexPath)
+        }
+        
+      } else if cellData.type == "ad_index_underfour" {
+        cell = tableView.dequeueReusableCell(withIdentifier: "HotSpotAd", for: indexPath)
+      } else if cellData.type == "" {
+        
+      }
+      
+    }
+    
     return cell
+  }
+  
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    if self.netWorkData?.count ?? 0 > 0 {
+      
+      switch indexPath.section {
+      case 0:
+        return swiftScaleHeight_iPhone6(num: 92)
+      case 1:
+        let cellData: WTSHSMDNewsData = self.netWorkData![indexPath.row] as! WTSHSMDNewsData
+        
+        if cellData.type == "ad_index_underfour" {
+          return swiftScaleHeight_iPhone6(num: 68.5)
+        } else if cellData.type == "story" {
+          if cellData.imgs.count == 3 {
+            return swiftScaleHeight_iPhone6(num: 152)
+          }
+          return swiftScaleHeight_iPhone6(num: 100)
+        }
+        return 100
+      default:
+        return 100
+      }
+      
+    }
+    return 100
+  }
+  
+  func numberOfSections(in tableView: UITableView) -> Int {
+    return 2
+  }
+  
+  func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    return 10
   }
   
 }

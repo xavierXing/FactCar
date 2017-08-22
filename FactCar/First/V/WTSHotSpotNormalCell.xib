@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotSpotNormal" rowHeight="128" id="KGk-i7-Jjw" customClass="WTSHotSpotNormalCell" customModule="FactCar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="359" height="127.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="focusnews_null_img3" translatesAutoresizingMaskIntoConstraints="NO" id="Lsm-Cl-cJ3">
+                        <rect key="frame" x="10" y="10" width="119" height="107"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OI-WQ-h9g">
+                        <rect key="frame" x="139" y="10" width="210" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iam-Qf-Vac">
+                        <rect key="frame" x="139" y="101" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OI6-5l-9NJ">
+                        <rect key="frame" x="316" y="101" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time_icon" translatesAutoresizingMaskIntoConstraints="NO" id="orA-iX-gmn">
+                        <rect key="frame" x="292" y="101" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="qdZ-FI-xO7"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Iam-Qf-Vac" firstAttribute="leading" secondItem="3OI-WQ-h9g" secondAttribute="leading" id="1vw-oL-jeo"/>
+                    <constraint firstItem="orA-iX-gmn" firstAttribute="bottom" secondItem="OI6-5l-9NJ" secondAttribute="bottom" id="Aab-a5-tZ8"/>
+                    <constraint firstItem="Iam-Qf-Vac" firstAttribute="bottom" secondItem="Lsm-Cl-cJ3" secondAttribute="bottom" id="Cwq-TA-5lb"/>
+                    <constraint firstAttribute="bottom" secondItem="Lsm-Cl-cJ3" secondAttribute="bottom" constant="10" id="HzI-SY-x6P"/>
+                    <constraint firstItem="Lsm-Cl-cJ3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="PkR-Do-Pc8"/>
+                    <constraint firstItem="Lsm-Cl-cJ3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="SyZ-Wm-jJt"/>
+                    <constraint firstAttribute="trailing" secondItem="Lsm-Cl-cJ3" secondAttribute="trailing" constant="230" id="ZS3-jx-B8F"/>
+                    <constraint firstItem="orA-iX-gmn" firstAttribute="height" secondItem="OI6-5l-9NJ" secondAttribute="height" id="cYP-o0-23w"/>
+                    <constraint firstItem="3OI-WQ-h9g" firstAttribute="leading" secondItem="Lsm-Cl-cJ3" secondAttribute="trailing" constant="10" id="dbH-eP-OKr"/>
+                    <constraint firstItem="OI6-5l-9NJ" firstAttribute="trailing" secondItem="3OI-WQ-h9g" secondAttribute="trailing" id="hiq-16-G8R"/>
+                    <constraint firstAttribute="trailing" secondItem="3OI-WQ-h9g" secondAttribute="trailing" constant="10" id="iQH-3h-h1B"/>
+                    <constraint firstItem="OI6-5l-9NJ" firstAttribute="leading" secondItem="orA-iX-gmn" secondAttribute="trailing" constant="8" id="mpU-pd-2e9"/>
+                    <constraint firstItem="3OI-WQ-h9g" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="nzO-hB-O7m"/>
+                    <constraint firstItem="OI6-5l-9NJ" firstAttribute="bottom" secondItem="Iam-Qf-Vac" secondAttribute="bottom" id="wOP-24-JIz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellAuthorLabel" destination="Iam-Qf-Vac" id="sct-0P-T9B"/>
+                <outlet property="cellHeaderImage" destination="Lsm-Cl-cJ3" id="MY3-42-vg2"/>
+                <outlet property="cellTimeLabel" destination="OI6-5l-9NJ" id="rfS-dj-cnj"/>
+                <outlet property="cellTitleLabel" destination="3OI-WQ-h9g" id="Xtf-2f-fRN"/>
+            </connections>
+            <point key="canvasLocation" x="5.5" y="94"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="focusnews_null_img3" width="99" height="66"/>
+        <image name="time_icon" width="9" height="9"/>
+    </resources>
+</document>

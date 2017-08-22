@@ -163,18 +163,19 @@ class NewsNetServer: NSObject {
 
 }
 
-// MARK: - Private Method -
+//MARK: - Private Method -
 extension NewsNetServer {
   
 }
 
 
-//#MARK: - 自定义转换 -
+//MARK: - 自定义转换 -
 extension Moya.Response {
   func mapNSDictionary() throws -> NSDictionary {
     let any = try self.mapJSON()
     guard let dictionary = any as? NSDictionary else {
       throw MoyaError.jsonMapping(self)
+      
     }
     return dictionary
   }
@@ -189,10 +190,16 @@ extension Moya.Response {
   
 }
 
-//#MARK: - 发射器 -
-let MoyaNewsCarProvider = MoyaProvider<MoyaNewsCar>(plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)])
+//MARK: - 发射器 -
+let MoyaNewsCarProvider = MoyaProvider<MoyaNewsCar>(endpointClosure: endpointClosure ,plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)])
 
-// #MARK: - 打印LOG -
+//MARK: - 设置请求头信息 -
+let endpointClosure = { (target: MoyaNewsCar) -> Endpoint<MoyaNewsCar> in
+  let defaultEndpoint = MoyaProvider.defaultEndpointMapping(for: target)
+  return defaultEndpoint.adding(newHTTPHeaderFields: ["User-Agent": "VersionCode=\(swiftGetCFBundleVersion())"])
+}
+
+//MARK: - 打印LOG -
 private func JSONResponseDataFormatter(_ data: Data) -> Data {
   do {
     let dataAsJSON = try JSONSerialization.jsonObject(with: data)

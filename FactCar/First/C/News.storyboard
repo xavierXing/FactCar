@@ -51,7 +51,7 @@
                                                     <constraint firstAttribute="width" constant="376" id="hjQ-AI-lxQ"/>
                                                 </constraints>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="111" id="odg-09-Ckb">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="111" id="odg-09-Ckb" customClass="WTSHotSpotNormalCell" customModule="FactCar" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="376" height="44"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="odg-09-Ckb" id="kvJ-ZA-bA4">
@@ -59,6 +59,34 @@
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                         <color key="backgroundColor" red="0.00036413921043276787" green="0.57023400068283081" blue="0.99794226884841919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </tableViewCell>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4hu-U6-XY4" customClass="WTSHotSpotThirdImgCell" customModule="FactCar" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="72" width="376" height="44"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4hu-U6-XY4" id="OKe-f1-Rde">
+                                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </tableViewCellContentView>
+                                                        <color key="backgroundColor" red="1" green="0.4712863967" blue="0.389596738" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </tableViewCell>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Okt-rA-OzI" customClass="WTSFourButtonCell" customModule="FactCar" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="116" width="376" height="44"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Okt-rA-OzI" id="ucJ-IF-6Xc">
+                                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </tableViewCellContentView>
+                                                        <color key="backgroundColor" red="0.37714903878743278" green="0.97680455446243286" blue="0.62994151366274354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </tableViewCell>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JdH-UP-dnS" customClass="WTSHotSpotAdCell" customModule="FactCar" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="160" width="376" height="44"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JdH-UP-dnS" id="ttl-XE-A01">
+                                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </tableViewCellContentView>
+                                                        <color key="backgroundColor" red="0.92807358503341675" green="0.10748045891523361" blue="0.043712407350540161" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </tableViewCell>
                                                 </prototypes>
                                             </tableView>
