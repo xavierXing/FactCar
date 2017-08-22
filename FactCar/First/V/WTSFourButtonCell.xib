@@ -110,7 +110,7 @@
                 <outlet property="cellThirdLabel" destination="utd-5d-f8M" id="PDA-T4-whJ"/>
                 <outlet property="cellThirdLeading" destination="ayp-4C-TxI" id="gPG-Vj-WF8"/>
             </connections>
-            <point key="canvasLocation" x="87" y="81"/>
+            <point key="canvasLocation" x="86.5" y="81"/>
         </tableViewCell>
     </objects>
 </document>

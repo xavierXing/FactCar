@@ -44,11 +44,10 @@ class WTSFourButtonCell: UITableViewCell {
       
       self.cellFirstLabel.text = (self.fourBtnData[0] as WTSHSMDFourBtn).name
       
-      
-      self.cellSecondButton.sd_setBackgroundImage(with: NSURL(string: (self.fourBtnData[1] as WTSHSMDFourBtn).title_pic)! as URL, for: .normal, placeholderImage: UIImage(named: "wts_loading_img1"))
-      
+      let gif:FLAnimatedImageView = FLAnimatedImageView(frame: self.cellSecondButton.bounds)
+      gif.sd_setImage(with: NSURL(string: (self.fourBtnData[1] as WTSHSMDFourBtn).title_pic)! as URL, placeholderImage: UIImage(named: "wts_loading_img1"))
+      self.cellSecondButton.addSubview(gif)
       self.cellSecondLabel.text = (self.fourBtnData[1] as WTSHSMDFourBtn).name
-      
       
       self.cellThirdButton.sd_setBackgroundImage(with: NSURL(string: (self.fourBtnData[2] as WTSHSMDFourBtn).title_pic)! as URL, for: .normal, placeholderImage: UIImage(named: "wts_loading_img1"))
       

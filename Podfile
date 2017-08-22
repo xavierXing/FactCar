@@ -5,4 +5,5 @@ target 'FactCar' do
   pod 'SDWebImage', '~> 4.0.0'
   pod 'MJRefresh', '~> 3.1.12'
   pod 'ObjectMapper', '~> 2.2.7'
+  pod 'SDWebImage/GIF'
 end
