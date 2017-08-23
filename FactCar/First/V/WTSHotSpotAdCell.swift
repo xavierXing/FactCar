@@ -14,7 +14,7 @@ class WTSHotSpotAdCell: UITableViewCell {
   
   var adImgeData:WTSHSMDNewsData! {
     didSet {
-      self.cellAdImage.sd_setImage(with: NSURL(string: self.adImgeData.title_pic1)! as URL, placeholderImage: UIImage(named: ""))
+      self.cellAdImage.sd_setImage(with: NSURL(string: self.adImgeData.title_pic1)! as URL, placeholderImage: UIImage(named: "focusnews_null_img3"))
     }
   }
   

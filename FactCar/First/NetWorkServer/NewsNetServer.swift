@@ -13,7 +13,7 @@ import Alamofire
 var baseLink: String = "http://api.news18a.com/"
 
 enum MoyaNewsCar {
-  case hotSpot,video,live,business,evaluating,shopping,newCar,useCar,calture,travel,technology,market
+  case hotSpot(index: NSNumber),video,live,business,evaluating,shopping,newCar,useCar,calture,travel,technology,market
 }
 
 extension MoyaNewsCar: TargetType {
@@ -36,11 +36,12 @@ extension MoyaNewsCar: TargetType {
   /// 设置链接中是否携带参数
   var parameters: [String: Any]? {
     switch self {
-    case .hotSpot:
+    case .hotSpot(let index):
       return [
         "m": "ina_app",
         "c": "index",
-        "a": "index_new"
+        "a": "index_new",
+        "page": index
       ]
     case .video:
       return [
@@ -144,7 +145,7 @@ extension MoyaNewsCar: TargetType {
 class NewsNetServer: NSObject {
   
   /// 请求类型枚举
-  var netWorkDataType: MoyaNewsCar! = .hotSpot
+  var netWorkDataType: MoyaNewsCar! = .hotSpot(index: 0)
   
   /// 获取网络数据
   public func moyaGetData(type: MoyaNewsCar, success: @escaping (_ result : NSDictionary) -> (),failed: @escaping (_ error : String) -> ()) -> Void {
@@ -160,7 +161,18 @@ class NewsNetServer: NSObject {
       }
     }
   }
-
+  
+  /// 修改page参数
+  public func moyaChangeEnumIndex(vcType:MoyaNewsCar) -> MoyaNewsCar {
+    let index = (vcType.parameters?["page"] as! Int) + 1
+    switch vcType {
+    case .hotSpot(_):
+      return MoyaNewsCar.hotSpot(index: index as NSNumber)
+    default:
+      return MoyaNewsCar.hotSpot(index: index as NSNumber)
+    }
+  }
+  
 }
 
 //MARK: - Private Method -

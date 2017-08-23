@@ -59,8 +59,16 @@ extension WTSRootTableView {
     
     }
     
-    let refreshFooter:MJRefreshAutoNormalFooter = MJRefreshAutoNormalFooter { 
-      print("上拉加载")
+    let refreshFooter:MJRefreshAutoNormalFooter = MJRefreshAutoNormalFooter {
+      
+      self.vcType = self.moyaServer.moyaChangeEnumIndex(vcType: self.vcType!)
+      self.moyaServer.moyaGetData(type: self.vcType!, success: { (result) in
+        refreshSuccess(result)
+        self.mj_footer.endRefreshing()
+      }) { (error) in
+        refreshFailed(error)
+        self.mj_footer.endRefreshing()
+      }
     }
     self.mj_header = refreshHeader
     self.mj_footer = refreshFooter

@@ -14,7 +14,7 @@
             <rect key="frame" x="0.0" y="0.0" width="461" height="250"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="461" height="250"/>
+                <rect key="frame" x="0.0" y="0.0" width="461" height="249.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="focusnews_null_img3" translatesAutoresizingMaskIntoConstraints="NO" id="F3O-CK-Na0">
@@ -33,41 +33,31 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIH-WS-9Ru">
                         <rect key="frame" x="10" y="10" width="40" height="20"/>
                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" red="0.19997376203536987" green="0.20001503825187683" blue="0.19997116923332214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kK3-nI-Egc">
                         <rect key="frame" x="10" y="224" width="33" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" red="0.59601163864135742" green="0.59611696004867554" blue="0.59600502252578735" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4Q-uB-ge3">
-                        <rect key="frame" x="371" y="224" width="33" height="15"/>
+                        <rect key="frame" x="371" y="223.5" width="33" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" red="0.59601163864135742" green="0.59611696004867554" blue="0.59600502252578735" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time_icon" translatesAutoresizingMaskIntoConstraints="NO" id="lIr-hq-bbv">
-                        <rect key="frame" x="346" y="224" width="15" height="15"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="15" id="HHI-ak-uPH"/>
-                            <constraint firstAttribute="width" constant="15" id="taI-bD-vvT"/>
-                        </constraints>
-                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Gfn-XQ-Mpq" firstAttribute="width" secondItem="F3O-CK-Na0" secondAttribute="width" id="1ZT-oc-vv2"/>
                     <constraint firstItem="Gfn-XQ-Mpq" firstAttribute="leading" secondItem="F3O-CK-Na0" secondAttribute="trailing" constant="5" id="5dF-Ha-4n3"/>
                     <constraint firstItem="5Yb-PX-0Hx" firstAttribute="width" secondItem="Gfn-XQ-Mpq" secondAttribute="width" id="5zh-6u-iXH"/>
-                    <constraint firstItem="n4Q-uB-ge3" firstAttribute="leading" secondItem="lIr-hq-bbv" secondAttribute="trailing" constant="10" id="9Hb-Iz-OBj"/>
                     <constraint firstItem="5Yb-PX-0Hx" firstAttribute="centerY" secondItem="Gfn-XQ-Mpq" secondAttribute="centerY" id="CW7-m0-hXa"/>
                     <constraint firstItem="Gfn-XQ-Mpq" firstAttribute="centerY" secondItem="F3O-CK-Na0" secondAttribute="centerY" id="ECy-fd-Nk5"/>
                     <constraint firstAttribute="bottom" secondItem="kK3-nI-Egc" secondAttribute="bottom" constant="10" id="K1L-16-ZoP"/>
                     <constraint firstItem="F3O-CK-Na0" firstAttribute="leading" secondItem="hIH-WS-9Ru" secondAttribute="leading" id="KgR-FT-5ug"/>
                     <constraint firstItem="n4Q-uB-ge3" firstAttribute="trailing" secondItem="5Yb-PX-0Hx" secondAttribute="trailing" id="LWQ-qy-UUJ"/>
-                    <constraint firstItem="lIr-hq-bbv" firstAttribute="bottom" secondItem="n4Q-uB-ge3" secondAttribute="bottom" id="MIO-gr-iJb"/>
-                    <constraint firstItem="lIr-hq-bbv" firstAttribute="centerY" secondItem="n4Q-uB-ge3" secondAttribute="centerY" id="NV2-nf-ebs"/>
                     <constraint firstItem="5Yb-PX-0Hx" firstAttribute="height" secondItem="Gfn-XQ-Mpq" secondAttribute="height" id="UkU-xO-vBY"/>
                     <constraint firstItem="hIH-WS-9Ru" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="XlJ-nr-KYZ"/>
                     <constraint firstItem="hIH-WS-9Ru" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="bVV-2I-5v8"/>
@@ -79,9 +69,12 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="cellAuthorLabel" destination="kK3-nI-Egc" id="Oar-eI-KeM"/>
                 <outlet property="cellHeaderFirstImage" destination="F3O-CK-Na0" id="RGU-rd-hoX"/>
                 <outlet property="cellHeaderSecondImage" destination="Gfn-XQ-Mpq" id="HOc-o2-83m"/>
                 <outlet property="cellHeaderThirdImage" destination="5Yb-PX-0Hx" id="Qey-iW-vcu"/>
+                <outlet property="cellTimeLabel" destination="n4Q-uB-ge3" id="uRv-sL-xvt"/>
+                <outlet property="cellTitleLabel" destination="hIH-WS-9Ru" id="SWY-kC-gLP"/>
                 <outlet property="headerHeight" destination="jUY-K3-dEZ" id="RjB-Cd-qVp"/>
                 <outlet property="headerWidth" destination="mja-RZ-TIK" id="r3V-Cn-gfx"/>
             </connections>
@@ -90,6 +83,5 @@
     </objects>
     <resources>
         <image name="focusnews_null_img3" width="99" height="66"/>
-        <image name="time_icon" width="9" height="9"/>
     </resources>
 </document>

@@ -11,12 +11,13 @@ import ObjectMapper
 
 class WTSHotSpotTableView: WTSRootTableView {
   /// 首页要闻
-  var netWorkData: NSArray?
+  var netWorkData: NSMutableArray! = NSMutableArray()
   /// 首页4个button内容
   var fourBtnData: NSArray?
   /// 映射模型
   var hotSpotMoudle: WTSHotSpotMoudle?
-  
+  /// 上拉index
+  var index:NSNumber! = 1
   override func awakeFromNib() {
     self.separatorStyle = .none
     self.getNetWork()
@@ -30,10 +31,11 @@ class WTSHotSpotTableView: WTSRootTableView {
 // MARK: - NetWork -
 extension WTSHotSpotTableView {
   fileprivate func getNetWork() {
-    self.vcType = MoyaNewsCar.hotSpot
+    self.vcType = MoyaNewsCar.hotSpot(index: index)
     self.settingRefersh(refreshSuccess: { result in
       self.hotSpotMoudle = WTSHotSpotMoudle(JSON: result as! [String: Any])!
-      self.netWorkData = self.hotSpotMoudle?.data.hotNewsData as NSArray?
+      let array:NSArray = (self.hotSpotMoudle?.data.hotNewsData as NSArray?)!
+      self.netWorkData?.addObjects(from: array as! [Any])
       self.fourBtnData = self.hotSpotMoudle?.data.four_button as NSArray?
       self.reloadData()
     }) { error in
@@ -73,7 +75,7 @@ extension WTSHotSpotTableView {
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-    var cell: UITableViewCell = UITableViewCell()
+    let cell: UITableViewCell = UITableViewCell()
     if (self.netWorkData?.count) ?? 0 == 0 {
       return cell
     }
@@ -86,9 +88,23 @@ extension WTSHotSpotTableView {
     } else {
       if cellData.type == "story" {
         if cellData.imgs.count == 3 {
-          cell = tableView.dequeueReusableCell(withIdentifier: "HotSpotThirdImage", for: indexPath)
+          
+          let cell:WTSHotSpotThirdImgCell = tableView.dequeueReusableCell(withIdentifier: "HotSpotThirdImage", for: indexPath) as! WTSHotSpotThirdImgCell
+          cell.thirdImgData = cellData.imgs! as NSArray
+          cell.cellTitleLabel.text = cellData.title
+          cell.cellAuthorLabel.text = cellData.author
+          cell.cellTimeLabel.text = cellData.pub
+          return cell
+          
         } else {
-          cell = tableView.dequeueReusableCell(withIdentifier: "HotSpotNormal", for: indexPath)
+          
+          let cell:WTSHotSpotNormalCell = tableView.dequeueReusableCell(withIdentifier: "HotSpotNormal", for: indexPath) as! WTSHotSpotNormalCell
+          cell.cellHeaderImage.sd_setImage(with: URL.init(string: cellData.title_pic1) , placeholderImage: UIImage(named: "focusnews_null_img3"))
+          cell.cellTitleLabel.text = cellData.title
+          cell.cellAuthorLabel.text = cellData.author
+          cell.cellTimeLabel.text = cellData.pub
+          
+          return cell
         }
         
       } else if cellData.type == "ad_index_underfour" {
