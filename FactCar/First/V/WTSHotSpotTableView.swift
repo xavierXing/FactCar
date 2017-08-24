@@ -14,6 +14,8 @@ class WTSHotSpotTableView: WTSRootTableView {
   var netWorkData: NSMutableArray! = NSMutableArray()
   /// 首页4个button内容
   var fourBtnData: NSArray?
+  /// 轮播图资源
+  var carouselData: NSArray?
   /// 映射模型
   var hotSpotMoudle: WTSHotSpotMoudle?
   /// 上拉index
@@ -37,6 +39,10 @@ extension WTSHotSpotTableView {
       let array:NSArray = (self.hotSpotMoudle?.data.hotNewsData as NSArray?)!
       self.netWorkData?.addObjects(from: array as! [Any])
       self.fourBtnData = self.hotSpotMoudle?.data.four_button as NSArray?
+      self.carouselData = self.hotSpotMoudle?.data.focus as NSArray?
+      if (self.carouselData?.count)! > 0 {
+        self.settingHeaderCarouselView()
+      }
       self.reloadData()
     }) { error in
       print("\(error)")
@@ -155,4 +161,26 @@ extension WTSHotSpotTableView {
     return 10
   }
   
+}
+// MARK: - 设置轮播图 -
+extension WTSHotSpotTableView {
+  
+  fileprivate func settingHeaderCarouselView() -> () {
+    
+    let carousel:NSMutableArray! = NSMutableArray()
+    for i in 0..<self.carouselData!.count {
+      let carouselImgaeUrl = (self.carouselData![i] as! WTSHSMDFocus).img
+      carousel?.add(carouselImgaeUrl ?? "no link")
+    }
+    
+    let carouselView = SDCycleScrollView(frame: CGRect(x: 0, y: 0, width: XHScreenW, height: XHScreenW / 2), imageURLStringsGroup: carousel as! [Any])
+    carouselView?.pageControlAliment = SDCycleScrollViewPageContolAlimentRight
+    carouselView?.currentPageDotColor = UIColor.white
+    carouselView?.placeholderImage = UIImage(named: "")
+    carouselView?.clickItemOperationBlock = { index in
+      print("\(index)")
+    }
+    self.tableHeaderView = carouselView
+  }
+
 }

@@ -6,4 +6,5 @@ target 'FactCar' do
   pod 'MJRefresh', '~> 3.1.12'
   pod 'ObjectMapper', '~> 2.2.7'
   pod 'SDWebImage/GIF'
+  pod 'SDCycleScrollView', '~> 1.73'
 end

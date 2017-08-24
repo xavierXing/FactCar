@@ -5,3 +5,4 @@
 #import "MJRefresh.h"
 #import "FLAnimatedImageView.h"
 #import "FLAnimatedImage.h"
+#import "SDCycleScrollView.h"

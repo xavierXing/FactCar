@@ -9,6 +9,8 @@ PODS:
     - Result (~> 3.0)
   - ObjectMapper (2.2.7)
   - Result (3.2.3)
+  - SDCycleScrollView (1.73):
+    - SDWebImage (~> 4.0.0)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
@@ -20,6 +22,7 @@ DEPENDENCIES:
   - MJRefresh (~> 3.1.12)
   - Moya (~> 8.0.5)
   - ObjectMapper (~> 2.2.7)
+  - SDCycleScrollView (~> 1.73)
   - SDWebImage (~> 4.0.0)
   - SDWebImage/GIF
 
@@ -30,8 +33,9 @@ SPEC CHECKSUMS:
   Moya: c37eec09a098ba9991b5a963b291fc5704bdb9ef
   ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
   Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
+  SDCycleScrollView: d0fd5fe40a80918371fd8939214eb3be81033d83
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 75b7771298428774f3f1876470a075c512b6c162
+PODFILE CHECKSUM: d98676b2f3c39bae931912f8ebbf0a1cf3040275
 
 COCOAPODS: 1.2.1
