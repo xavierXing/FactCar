@@ -10,6 +10,8 @@ import UIKit
 import SDWebImage
 import MJRefresh
 import MapKit
+import Hero
+import Lottie
 
 class FactCarPublicView: NSObject {
 

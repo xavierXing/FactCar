@@ -19,6 +19,11 @@
 		2A4A8ABD1F4C30BB003C2FA5 /* WTSFactCarGifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4A8ABC1F4C30BB003C2FA5 /* WTSFactCarGifView.swift */; };
 		2A5BF9941F37F2D600D8A50E /* WTSNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5BF9931F37F2D600D8A50E /* WTSNewsViewController.swift */; };
 		2A62597F1F467484006DB2CA /* WTSNewsMoudleS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A62597E1F467484006DB2CA /* WTSNewsMoudleS.swift */; };
+		2A8C916A1F4FEDA900A6FDE2 /* vcTransition1.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A8C91681F4FEDA900A6FDE2 /* vcTransition1.json */; };
+		2A8C916B1F4FEDA900A6FDE2 /* vcTransition2.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A8C91691F4FEDA900A6FDE2 /* vcTransition2.json */; };
+		2A8C916D1F50096800A6FDE2 /* WTSSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8C916C1F50096800A6FDE2 /* WTSSearchViewController.swift */; };
+		2A8C91721F50140100A6FDE2 /* WTSSearchHeaderViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8C91701F50140100A6FDE2 /* WTSSearchHeaderViewTableViewCell.swift */; };
+		2A8C91731F50140100A6FDE2 /* WTSSearchHeaderViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8C91711F50140100A6FDE2 /* WTSSearchHeaderViewTableViewCell.xib */; };
 		2A8CFBBD1F3AA7FD00F20D4A /* WTSHotSpotTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBBC1F3AA7FD00F20D4A /* WTSHotSpotTableView.swift */; };
 		2A8CFBBF1F3AA90C00F20D4A /* WTSVideoTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBBE1F3AA90C00F20D4A /* WTSVideoTableView.swift */; };
 		2A8CFBC11F3AA93400F20D4A /* WTSLiveTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBC01F3AA93400F20D4A /* WTSLiveTableView.swift */; };
@@ -92,6 +97,11 @@
 		2A4A8ABC1F4C30BB003C2FA5 /* WTSFactCarGifView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSFactCarGifView.swift; sourceTree = "<group>"; };
 		2A5BF9931F37F2D600D8A50E /* WTSNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSNewsViewController.swift; sourceTree = "<group>"; };
 		2A62597E1F467484006DB2CA /* WTSNewsMoudleS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSNewsMoudleS.swift; sourceTree = "<group>"; };
+		2A8C91681F4FEDA900A6FDE2 /* vcTransition1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition1.json; sourceTree = "<group>"; };
+		2A8C91691F4FEDA900A6FDE2 /* vcTransition2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition2.json; sourceTree = "<group>"; };
+		2A8C916C1F50096800A6FDE2 /* WTSSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSSearchViewController.swift; sourceTree = "<group>"; };
+		2A8C91701F50140100A6FDE2 /* WTSSearchHeaderViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSSearchHeaderViewTableViewCell.swift; sourceTree = "<group>"; };
+		2A8C91711F50140100A6FDE2 /* WTSSearchHeaderViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTSSearchHeaderViewTableViewCell.xib; sourceTree = "<group>"; };
 		2A8CFBBC1F3AA7FD00F20D4A /* WTSHotSpotTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSHotSpotTableView.swift; sourceTree = "<group>"; };
 		2A8CFBBE1F3AA90C00F20D4A /* WTSVideoTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSVideoTableView.swift; sourceTree = "<group>"; };
 		2A8CFBC01F3AA93400F20D4A /* WTSLiveTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSLiveTableView.swift; sourceTree = "<group>"; };
@@ -176,6 +186,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2A8C91671F4FEAF400A6FDE2 /* LottieAnimationJson */ = {
+			isa = PBXGroup;
+			children = (
+				2A8C91681F4FEDA900A6FDE2 /* vcTransition1.json */,
+				2A8C91691F4FEDA900A6FDE2 /* vcTransition2.json */,
+			);
+			path = LottieAnimationJson;
+			sourceTree = "<group>";
+		};
 		2ABC5D2C1F4A7FC800739A8B /* VCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +206,8 @@
 				2ABC5D2F1F4A86BD00739A8B /* WTSFourButtonCell.xib */,
 				2ABC5D321F4BD5C100739A8B /* WTSHotSpotAdCell.swift */,
 				2ABC5D331F4BD5C100739A8B /* WTSHotSpotAdCell.xib */,
+				2A8C91701F50140100A6FDE2 /* WTSSearchHeaderViewTableViewCell.swift */,
+				2A8C91711F50140100A6FDE2 /* WTSSearchHeaderViewTableViewCell.xib */,
 			);
 			name = VCell;
 			sourceTree = "<group>";
@@ -240,6 +261,7 @@
 		D253323B1F341A8200AB12CB /* FactCar */ = {
 			isa = PBXGroup;
 			children = (
+				2A8C91671F4FEAF400A6FDE2 /* LottieAnimationJson */,
 				D2F095051F343B0D0049BB39 /* First */,
 				D2F0950A1F343B0D0049BB39 /* Five */,
 				D2F0950F1F343B0D0049BB39 /* Four */,
@@ -322,6 +344,7 @@
 				2A24BE051F38046C003F0344 /* WTSHotSpotTableViewController.swift */,
 				2A24BE0D1F385C7C003F0344 /* WTSVideoTableViewController.swift */,
 				2A24BE0E1F385C7C003F0344 /* WTSVideoTableViewController.xib */,
+				2A8C916C1F50096800A6FDE2 /* WTSSearchViewController.swift */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -599,9 +622,11 @@
 				D2F0952F1F34504F0049BB39 /* Activity.storyboard in Resources */,
 				D2F095251F344FDD0049BB39 /* NewsView.xib in Resources */,
 				2ABC5D2B1F4A775A00739A8B /* WTSHotSpotThirdImgCell.xib in Resources */,
+				2A8C916A1F4FEDA900A6FDE2 /* vcTransition1.json in Resources */,
 				D25332471F341A8200AB12CB /* LaunchScreen.storyboard in Resources */,
 				D2F095351F3450F70049BB39 /* Activity.xib in Resources */,
 				D2F095451F3452750049BB39 /* ChooseCar.xib in Resources */,
+				2A8C91731F50140100A6FDE2 /* WTSSearchHeaderViewTableViewCell.xib in Resources */,
 				D2F095371F3451350049BB39 /* Choiceness.storyboard in Resources */,
 				2ABC5D271F4A6A5400739A8B /* WTSHotSpotNormalCell.xib in Resources */,
 				D2F0951F1F3440380049BB39 /* News.storyboard in Resources */,
@@ -609,6 +634,7 @@
 				D2F0953F1F3451B30049BB39 /* ChooseCar.storyboard in Resources */,
 				2ABC5D311F4A86BD00739A8B /* WTSFourButtonCell.xib in Resources */,
 				D2F0952D1F34502A0049BB39 /* MyView.xib in Resources */,
+				2A8C916B1F4FEDA900A6FDE2 /* vcTransition2.json in Resources */,
 				D25332441F341A8200AB12CB /* Assets.xcassets in Resources */,
 				2A8CFBD71F3AAF8400F20D4A /* WTSRootTableView.xib in Resources */,
 				2A24BE101F385C7C003F0344 /* WTSVideoTableViewController.xib in Resources */,
@@ -688,7 +714,9 @@
 				D25332631F341D8F00AB12CB /* AppDelegate.swift in Sources */,
 				2A8CFBD51F3AAF1E00F20D4A /* WTSRootTableView.swift in Sources */,
 				2A4303511F34553000C0CFDA /* Mian.swift in Sources */,
+				2A8C916D1F50096800A6FDE2 /* WTSSearchViewController.swift in Sources */,
 				D2F095431F34526A0049BB39 /* ChooseCarNetServer.swift in Sources */,
+				2A8C91721F50140100A6FDE2 /* WTSSearchHeaderViewTableViewCell.swift in Sources */,
 				2A4A8ABD1F4C30BB003C2FA5 /* WTSFactCarGifView.swift in Sources */,
 				2A8CFBC11F3AA93400F20D4A /* WTSLiveTableView.swift in Sources */,
 				2A4303531F345DDF00C0CFDA /* FactCarNavigation.swift in Sources */,

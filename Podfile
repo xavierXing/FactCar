@@ -7,4 +7,6 @@ target 'FactCar' do
   pod 'ObjectMapper', '~> 2.2.7'
   pod 'SDWebImage/GIF'
   pod 'SDCycleScrollView', '~> 1.73'
+  pod 'Hero', '~> 1.0.0-alpha.4'
+  pod 'lottie-ios', '~> 2.0.6'
 end
