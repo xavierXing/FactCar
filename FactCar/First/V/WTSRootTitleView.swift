@@ -61,12 +61,11 @@ extension WTSRootTitleView {
     
     var x: Int?
     switch indexPath.row {
-    case 5: x = 0; break
-    case 6: x = (480 - Int(self.swiftWidth())); break
-    default: x = 0; break
+    case 5: x = 0;   self.setContentOffset(CGPoint(x: x!, y: 0), animated: true); break
+    case 6: x = (480 - Int(self.swiftWidth())); self.setContentOffset(CGPoint(x: x!, y: 0), animated: true); break
+    default:  break
     }
-
-    self.setContentOffset(CGPoint(x: x!, y: 0), animated: true)
+    
   }
   
 }

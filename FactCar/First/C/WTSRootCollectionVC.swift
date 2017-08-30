@@ -7,17 +7,17 @@
 //
 
 import UIKit
+import Lottie
 
 private let reuseIdentifier = "Cell"
 
-class WTSRootCollectionVC: UICollectionViewController {
+class WTSRootCollectionVC: UICollectionViewController, UIViewControllerTransitioningDelegate {
   /// content
   let reuseIdentifierArray = ["HotSpotCell", "VideoCell", "LiveCell", "BusinessCell", "EvaluatingCell", "ShoppingCell", "NewCarCell", "UseCarCell", "CaltureCell", "TravelCell", "TechnologyCell", "MarketCell"]
-  var rootTitle:WTSRootTitleView?
-  
+  var rootTitle: WTSRootTitleView?
+
   @IBOutlet var rootContent: UICollectionView!
-  
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
     self.settingNavgationBar()
@@ -58,7 +58,7 @@ extension WTSRootCollectionVC {
     searchBtn.sizeToFit()
     searchBtn.addTarget(for: .touchUpInside) { _ in
       let searchVC = self.storyboard?.instantiateViewController(withIdentifier: "searchController") as! WTSSearchViewController
-      //      searchVC.transitioningDelegate = self
+      searchVC.transitioningDelegate = self
       searchVC.modalPresentationStyle = .fullScreen
       self.present(searchVC, animated: true) {
 
@@ -71,19 +71,35 @@ extension WTSRootCollectionVC {
       self.autoIndexContent(index: index)
     }
   }
-  
-  func autoIndexContent(index:Int) -> () {
+
+  func autoIndexContent(index: Int) {
     self.rootContent.setContentOffset(CGPoint(x: CGFloat(index) * XHScreenW, y: 0), animated: true)
-    
+
   }
-  
+
 }
 // MARK: - UIScrollViewDelegate -
 extension WTSRootCollectionVC {
-  
+
   override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
     rootTitle?.autoIndex(index: Int(scrollView.contentOffset.x / XHScreenW))
   }
-  
+
 }
 
+// MARK: - Transitioning Animation -
+extension WTSRootCollectionVC {
+
+  func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    let animationController: LOTAnimationTransitionController = LOTAnimationTransitionController(animationNamed: "vcTransition1", fromLayerNamed: "outLayer", toLayerNamed: "inLayer", applyAnimationTransform: false)
+
+    return animationController
+  }
+
+  func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    let animationController: LOTAnimationTransitionController = LOTAnimationTransitionController(animationNamed: "vcTransition2", fromLayerNamed: "outLayer", toLayerNamed: "inLayer", applyAnimationTransform: false)
+
+    return animationController
+  }
+
+}
