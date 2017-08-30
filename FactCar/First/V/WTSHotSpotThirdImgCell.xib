@@ -17,6 +17,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="461" height="249.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G1j-We-Vep">
+                        <rect key="frame" x="0.0" y="249" width="461" height="0.5"/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="R1j-zo-ZbL"/>
+                        </constraints>
+                    </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="focusnews_null_img3" translatesAutoresizingMaskIntoConstraints="NO" id="F3O-CK-Na0">
                         <rect key="frame" x="10" y="60" width="128" height="128"/>
                         <constraints>
@@ -55,6 +62,7 @@
                     <constraint firstItem="5Yb-PX-0Hx" firstAttribute="width" secondItem="Gfn-XQ-Mpq" secondAttribute="width" id="5zh-6u-iXH"/>
                     <constraint firstItem="5Yb-PX-0Hx" firstAttribute="centerY" secondItem="Gfn-XQ-Mpq" secondAttribute="centerY" id="CW7-m0-hXa"/>
                     <constraint firstItem="Gfn-XQ-Mpq" firstAttribute="centerY" secondItem="F3O-CK-Na0" secondAttribute="centerY" id="ECy-fd-Nk5"/>
+                    <constraint firstItem="G1j-We-Vep" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GgP-1O-K4n"/>
                     <constraint firstAttribute="bottom" secondItem="kK3-nI-Egc" secondAttribute="bottom" constant="10" id="K1L-16-ZoP"/>
                     <constraint firstItem="F3O-CK-Na0" firstAttribute="leading" secondItem="hIH-WS-9Ru" secondAttribute="leading" id="KgR-FT-5ug"/>
                     <constraint firstItem="n4Q-uB-ge3" firstAttribute="trailing" secondItem="5Yb-PX-0Hx" secondAttribute="trailing" id="LWQ-qy-UUJ"/>
@@ -62,10 +70,12 @@
                     <constraint firstItem="hIH-WS-9Ru" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="XlJ-nr-KYZ"/>
                     <constraint firstItem="hIH-WS-9Ru" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="bVV-2I-5v8"/>
                     <constraint firstItem="n4Q-uB-ge3" firstAttribute="centerY" secondItem="kK3-nI-Egc" secondAttribute="centerY" id="ena-tl-QtR"/>
+                    <constraint firstAttribute="bottom" secondItem="G1j-We-Vep" secondAttribute="bottom" id="fEY-eP-E0A"/>
                     <constraint firstItem="5Yb-PX-0Hx" firstAttribute="leading" secondItem="Gfn-XQ-Mpq" secondAttribute="trailing" constant="5" id="jyZ-jI-cRK"/>
                     <constraint firstItem="kK3-nI-Egc" firstAttribute="leading" secondItem="F3O-CK-Na0" secondAttribute="leading" id="mmV-pH-xew"/>
                     <constraint firstItem="F3O-CK-Na0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rNk-pp-9Oo"/>
                     <constraint firstItem="Gfn-XQ-Mpq" firstAttribute="height" secondItem="F3O-CK-Na0" secondAttribute="height" id="yht-6o-7Cb"/>
+                    <constraint firstAttribute="trailing" secondItem="G1j-We-Vep" secondAttribute="trailing" id="zYb-bT-pqy"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

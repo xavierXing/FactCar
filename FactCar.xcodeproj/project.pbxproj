@@ -7,13 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A24BE021F37F83C003F0344 /* WTSNewsNavgationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BE011F37F83C003F0344 /* WTSNewsNavgationTitleView.swift */; };
-		2A24BE061F38046C003F0344 /* WTSHotSpotTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BE051F38046C003F0344 /* WTSHotSpotTableViewController.swift */; };
-		2A24BE0B1F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BE091F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.swift */; };
-		2A24BE0C1F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A24BE0A1F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.xib */; };
-		2A24BE0F1F385C7C003F0344 /* WTSVideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BE0D1F385C7C003F0344 /* WTSVideoTableViewController.swift */; };
-		2A24BE101F385C7C003F0344 /* WTSVideoTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A24BE0E1F385C7C003F0344 /* WTSVideoTableViewController.xib */; };
-		2A24BE121F38612F003F0344 /* WTSRootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A24BE111F38612F003F0344 /* WTSRootVC.swift */; };
 		2A4303511F34553000C0CFDA /* Mian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4303501F34553000C0CFDA /* Mian.swift */; };
 		2A4303531F345DDF00C0CFDA /* FactCarNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4303521F345DDF00C0CFDA /* FactCarNavigation.swift */; };
 		2A4A8ABD1F4C30BB003C2FA5 /* WTSFactCarGifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4A8ABC1F4C30BB003C2FA5 /* WTSFactCarGifView.swift */; };
@@ -71,7 +64,6 @@
 		D2F0951F1F3440380049BB39 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F0951E1F3440380049BB39 /* News.storyboard */; };
 		D2F095211F344FAD0049BB39 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F095201F344FAD0049BB39 /* NewsModel.swift */; };
 		D2F095231F344FCA0049BB39 /* NewsNetServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F095221F344FCA0049BB39 /* NewsNetServer.swift */; };
-		D2F095251F344FDD0049BB39 /* NewsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2F095241F344FDD0049BB39 /* NewsView.xib */; };
 		D2F095271F344FF90049BB39 /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F095261F344FF90049BB39 /* My.storyboard */; };
 		D2F095291F3450070049BB39 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F095281F3450070049BB39 /* MyModel.swift */; };
 		D2F0952B1F34501C0049BB39 /* MyNetServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0952A1F34501C0049BB39 /* MyNetServer.swift */; };
@@ -94,13 +86,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A24BE011F37F83C003F0344 /* WTSNewsNavgationTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSNewsNavgationTitleView.swift; sourceTree = "<group>"; };
-		2A24BE051F38046C003F0344 /* WTSHotSpotTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSHotSpotTableViewController.swift; sourceTree = "<group>"; };
-		2A24BE091F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSNewsNavgationTitleViewCell.swift; sourceTree = "<group>"; };
-		2A24BE0A1F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTSNewsNavgationTitleViewCell.xib; sourceTree = "<group>"; };
-		2A24BE0D1F385C7C003F0344 /* WTSVideoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSVideoTableViewController.swift; sourceTree = "<group>"; };
-		2A24BE0E1F385C7C003F0344 /* WTSVideoTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTSVideoTableViewController.xib; sourceTree = "<group>"; };
-		2A24BE111F38612F003F0344 /* WTSRootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSRootVC.swift; sourceTree = "<group>"; };
 		2A4303501F34553000C0CFDA /* Mian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mian.swift; sourceTree = "<group>"; };
 		2A4303521F345DDF00C0CFDA /* FactCarNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactCarNavigation.swift; sourceTree = "<group>"; };
 		2A4A8AB01F4C2712003C2FA5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/FactCar-fkqjojepqznccmajryrksfanbqyz/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
@@ -167,7 +152,6 @@
 		D2F0951E1F3440380049BB39 /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		D2F095201F344FAD0049BB39 /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		D2F095221F344FCA0049BB39 /* NewsNetServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsNetServer.swift; sourceTree = "<group>"; };
-		D2F095241F344FDD0049BB39 /* NewsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsView.xib; sourceTree = "<group>"; };
 		D2F095261F344FF90049BB39 /* My.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = My.storyboard; sourceTree = "<group>"; };
 		D2F095281F3450070049BB39 /* MyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
 		D2F0952A1F34501C0049BB39 /* MyNetServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNetServer.swift; sourceTree = "<group>"; };
@@ -414,11 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				D2F0951E1F3440380049BB39 /* News.storyboard */,
-				2A24BE111F38612F003F0344 /* WTSRootVC.swift */,
 				2A5BF9931F37F2D600D8A50E /* WTSNewsViewController.swift */,
-				2A24BE051F38046C003F0344 /* WTSHotSpotTableViewController.swift */,
-				2A24BE0D1F385C7C003F0344 /* WTSVideoTableViewController.swift */,
-				2A24BE0E1F385C7C003F0344 /* WTSVideoTableViewController.xib */,
 				2A8C916C1F50096800A6FDE2 /* WTSSearchViewController.swift */,
 				2AECDA221F53A7D300B8C8B2 /* WTSRootCollectionVC.swift */,
 			);
@@ -449,10 +429,6 @@
 				2AECDA461F541CE200B8C8B2 /* CollectionLayout */,
 				2ABC5D2D1F4A7FFB00739A8B /* VTable */,
 				2ABC5D2C1F4A7FC800739A8B /* VCell */,
-				D2F095241F344FDD0049BB39 /* NewsView.xib */,
-				2A24BE011F37F83C003F0344 /* WTSNewsNavgationTitleView.swift */,
-				2A24BE091F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.swift */,
-				2A24BE0A1F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.xib */,
 				2A8CFBD41F3AAF1E00F20D4A /* WTSRootTableView.swift */,
 				2A8CFBD61F3AAF8400F20D4A /* WTSRootTableView.xib */,
 			);
@@ -698,7 +674,6 @@
 			files = (
 				D25332641F341D8F00AB12CB /* Info.plist in Resources */,
 				D2F0952F1F34504F0049BB39 /* Activity.storyboard in Resources */,
-				D2F095251F344FDD0049BB39 /* NewsView.xib in Resources */,
 				2ABC5D2B1F4A775A00739A8B /* WTSHotSpotThirdImgCell.xib in Resources */,
 				2A8C916A1F4FEDA900A6FDE2 /* vcTransition1.json in Resources */,
 				D25332471F341A8200AB12CB /* LaunchScreen.storyboard in Resources */,
@@ -715,9 +690,7 @@
 				2A8C916B1F4FEDA900A6FDE2 /* vcTransition2.json in Resources */,
 				D25332441F341A8200AB12CB /* Assets.xcassets in Resources */,
 				2A8CFBD71F3AAF8400F20D4A /* WTSRootTableView.xib in Resources */,
-				2A24BE101F385C7C003F0344 /* WTSVideoTableViewController.xib in Resources */,
 				D25332421F341A8200AB12CB /* Main.storyboard in Resources */,
-				2A24BE0C1F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.xib in Resources */,
 				2ABC5D351F4BD5C100739A8B /* WTSHotSpotAdCell.xib in Resources */,
 				D2F095271F344FF90049BB39 /* My.storyboard in Resources */,
 			);
@@ -778,7 +751,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A24BE0F1F385C7C003F0344 /* WTSVideoTableViewController.swift in Sources */,
 				2ABC5D261F4A6A5400739A8B /* WTSHotSpotNormalCell.swift in Sources */,
 				2AECDA381F53BBA600B8C8B2 /* CaltureCell.swift in Sources */,
 				2A5BF9941F37F2D600D8A50E /* WTSNewsViewController.swift in Sources */,
@@ -786,12 +758,10 @@
 				2A8CFBCD1F3AA9C900F20D4A /* WTSTravelTableView.swift in Sources */,
 				2AECDA3E1F53BBE400B8C8B2 /* MarketCell.swift in Sources */,
 				2AECDA361F53BB9400B8C8B2 /* UseCarCell.swift in Sources */,
-				2A24BE021F37F83C003F0344 /* WTSNewsNavgationTitleView.swift in Sources */,
 				2A8CFBCB1F3AA9B400F20D4A /* WTSCaltureTableView.swift in Sources */,
 				D2F095211F344FAD0049BB39 /* NewsModel.swift in Sources */,
 				D2F095231F344FCA0049BB39 /* NewsNetServer.swift in Sources */,
 				D2F095291F3450070049BB39 /* MyModel.swift in Sources */,
-				2A24BE0B1F3816FD003F0344 /* WTSNewsNavgationTitleViewCell.swift in Sources */,
 				2AECDA261F53BAF500B8C8B2 /* HotSpotCell.swift in Sources */,
 				D25332631F341D8F00AB12CB /* AppDelegate.swift in Sources */,
 				2A8CFBD51F3AAF1E00F20D4A /* WTSRootTableView.swift in Sources */,
@@ -818,7 +788,6 @@
 				2AECDA3C1F53BBD700B8C8B2 /* TechnologyCell.swift in Sources */,
 				2AECDA301F53BB6500B8C8B2 /* EvaluatingCell.swift in Sources */,
 				D2F0953B1F3451680049BB39 /* ChoicenessNetServer.swift in Sources */,
-				2A24BE061F38046C003F0344 /* WTSHotSpotTableViewController.swift in Sources */,
 				2A8CFBCF1F3AA9E500F20D4A /* WTSTechnologyTableView.swift in Sources */,
 				2AECDA231F53A7D300B8C8B2 /* WTSRootCollectionVC.swift in Sources */,
 				2A62597F1F467484006DB2CA /* WTSNewsMoudleS.swift in Sources */,
@@ -832,7 +801,6 @@
 				2ABC5D301F4A86BD00739A8B /* WTSFourButtonCell.swift in Sources */,
 				D2F0954B1F3452C80049BB39 /* FactCarPublicView.swift in Sources */,
 				D2F095311F34506C0049BB39 /* ActivityModel.swift in Sources */,
-				2A24BE121F38612F003F0344 /* WTSRootVC.swift in Sources */,
 				D2F095491F3452A80049BB39 /* FactCarDefine.swift in Sources */,
 				2A8CFBC51F3AA97100F20D4A /* WTSShoppingTableView.swift in Sources */,
 				D2F095391F34514B0049BB39 /* ChoicenessModel.swift in Sources */,
