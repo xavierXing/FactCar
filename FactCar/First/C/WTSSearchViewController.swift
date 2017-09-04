@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WTSSearchViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class WTSSearchViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UICollectionViewDataSource,UICollectionViewDelegate {
 
   @IBOutlet weak var searchTextField: UITextField!
 
@@ -19,12 +19,24 @@ class WTSSearchViewController: UIViewController,UITableViewDelegate,UITableViewD
 
     }
   }
-
+  ///下拉刷新页数
+  var pageIndex:Int! = 1
+  
+  var searchMoudle:SearchMoudle?
+  var storyArray:[Story]?
+  var searchAD:Search_ad?
+  var tagHotArr:[TagHotArr]?
+  var storyMutableArray:NSMutableArray? = NSMutableArray()
+  
+  var hotSpotCollectionView:UICollectionView?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.getNetWork()
+    self.settingRefreshFooter()
     self.registerNib()
+    self.searchContentTableView.rowHeight = UITableViewAutomaticDimension
     
-
   }
 
   override func didReceiveMemoryWarning() {
@@ -32,35 +44,56 @@ class WTSSearchViewController: UIViewController,UITableViewDelegate,UITableViewD
 
   }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
 extension WTSSearchViewController {
   fileprivate func registerNib() {
       self.searchContentTableView.register(UINib(nibName: "WTSSearchHeaderViewTableViewCell", bundle: nil), forCellReuseIdentifier: "searchHeaderView")
+    
   }
 }
 
+// MARK: - UITableViewDataSource && UITableViewDelegate -
 extension WTSSearchViewController {
   func numberOfSections(in tableView: UITableView) -> Int {
     return 2
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 2
+    var numberRows:Int! = 0
+    switch section {
+    case 0:
+      numberRows = 1
+      break
+    case 1:
+      numberRows = self.storyMutableArray?.count
+      break
+    default:
+      break
+    }
+    return numberRows
   }
   
   func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "searchHeaderView")
+    let cell:WTSSearchHeaderViewTableViewCell = tableView.dequeueReusableCell(withIdentifier: "searchHeaderView") as! WTSSearchHeaderViewTableViewCell
+    var sessionImg:UIImage?
+    var sessionText:String?
+    switch section {
+    case 0:
+      sessionImg = UIImage(named: "hotLabel")
+      sessionText = "热门标签"
+      break
+    case 1:
+      sessionImg = UIImage(named: "hotArticle")
+      sessionText = "热门文章"
+      break
+    default:
+      break
+    }
+    
+    cell.sessionImg.image = sessionImg
+    cell.sessionLabel.text = sessionText
     return cell
   }
   
@@ -73,12 +106,78 @@ extension WTSSearchViewController {
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = UITableViewCell.init(style: .default, reuseIdentifier: "just")
-    cell.backgroundColor = UIColor.red
-    return cell
+    switch indexPath.section {
+    case 0:
+      let cell = tableView.dequeueReusableCell(withIdentifier: "searchHotSpotLabels", for: indexPath)
+      return cell
+    case 1:
+      let cell:SearchContentCell = tableView.dequeueReusableCell(withIdentifier: "searchContentCell", for: indexPath) as! SearchContentCell
+      cell.story = (self.storyMutableArray![indexPath.row] as! Story)
+      return cell
+    default:
+      break
+    }
+    
+    return UITableViewCell()
   }
 
   
 }
+// MARK: - UICollectionViewDataSource && UICollectionViewDelegate -
+extension WTSSearchViewController {
+  
+  func numberOfSections(in collectionView: UICollectionView) -> Int {
+    return 1
+    
+  }
+  
+  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    return 8
+  }
+  
+  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let cell:SearchHotSpotLabelsCell = collectionView.dequeueReusableCell(withReuseIdentifier: "searchHotSpotItem", for: indexPath) as! SearchHotSpotLabelsCell
+    cell.hotSpotTag.text = (self.tagHotArr?[indexPath.item])?.title
+    cell.hotSpotTag.textColor = (self.tagHotArr?[indexPath.item])?.color == "blue" ? (UIColor.colorWithHexString(hex: "#73a9ee")) : (UIColor.colorWithHexString(hex: "#f7af26"))
+    cell.layer.borderColor = cell.hotSpotTag.textColor.cgColor
+    cell.hotSpotTag.backgroundColor = (self.tagHotArr?[indexPath.item])?.color == "blue" ? (UIColor.colorWithHexString(hex: "#ecf3fd")) : (UIColor.colorWithHexString(hex: "#fcf5e8"))
+    self.hotSpotCollectionView = collectionView
+    return cell
+    
+  }
+}
 
+extension WTSSearchViewController {
+
+  fileprivate func settingRefreshFooter() -> () {
+    let refreshFooter:MJRefreshAutoNormalFooter = MJRefreshAutoNormalFooter {
+      self.getNetWork()
+    }
+    self.searchContentTableView.mj_footer = refreshFooter
+  }
+  
+  fileprivate func getNetWork() -> () {
+    let netWorkManager:SearchNetServer = SearchNetServer()
+    let moyaType:MoyaSearch = MoyaSearch.searchContent(page: pageIndex)
+    netWorkManager.moyaGetSearchData(type: moyaType, success: { (result) in
+      self.searchMoudle = SearchMoudle(JSON: result as! [String:Any])!
+      if self.searchMoudle?.code == 200 {
+        self.searchAD = self.searchMoudle?.data.search_ad
+        self.storyArray = self.searchMoudle?.data.story
+        self.tagHotArr = self.searchMoudle?.data.tagHotArr
+        
+        let transit:NSArray = self.storyArray! as NSArray
+        self.storyMutableArray?.addObjects(from: transit as! [Any])
+        self.searchContentTableView.reloadData()
+        self.hotSpotCollectionView?.reloadData()
+        
+        self.pageIndex! += 1
+      }
+      self.searchContentTableView.mj_footer.endRefreshing()
+    }) { (error) in
+      self.searchContentTableView.mj_footer.endRefreshing()
+      print("\(error)")
+    }
+  }
+}
 

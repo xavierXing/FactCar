@@ -26,6 +26,7 @@ class WTSHotSpotTableView: WTSRootTableView {
     self.registerXib()
     super.delegate = self
     super.dataSource = self
+
   }
   
 }

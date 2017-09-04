@@ -11,6 +11,7 @@ import Moya
 import Alamofire
 
 var baseLink: String = "http://api.news18a.com/"
+var basePath: String = "init.php"
 
 enum MoyaNewsCar {
   case hotSpot(index: NSNumber),video,live,business,evaluating,shopping,newCar,useCar,calture,travel,technology,market
@@ -25,7 +26,7 @@ extension MoyaNewsCar: TargetType {
   
   /// 设置拼接上的 URL
   var path: String {
-      return "init.php"
+      return basePath
   }
   
   /// 设置请求方式: .get .post
@@ -212,7 +213,7 @@ let endpointClosure = { (target: MoyaNewsCar) -> Endpoint<MoyaNewsCar> in
 }
 
 //MARK: - 打印LOG -
-private func JSONResponseDataFormatter(_ data: Data) -> Data {
+func JSONResponseDataFormatter(_ data: Data) -> Data {
   do {
     let dataAsJSON = try JSONSerialization.jsonObject(with: data)
     let prettyData = try JSONSerialization.data(withJSONObject: dataAsJSON, options: .prettyPrinted)

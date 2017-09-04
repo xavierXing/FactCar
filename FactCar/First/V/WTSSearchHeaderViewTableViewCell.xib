@@ -16,8 +16,33 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="376" height="79.5"/>
                 <autoresizingMask key="autoresizingMask"/>
-                <color key="backgroundColor" red="1" green="0.076686142390000003" blue="0.18153898030000001" alpha="1" colorSpace="calibratedRGB"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TuK-PL-z9Z">
+                        <rect key="frame" x="15" y="32" width="12.5" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12.5" id="2dv-qu-HVg"/>
+                            <constraint firstAttribute="height" constant="15" id="BcY-XM-bc9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpL-ws-NVH">
+                        <rect key="frame" x="32.5" y="32" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="TuK-PL-z9Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="6J7-Vf-NWA"/>
+                    <constraint firstItem="qpL-ws-NVH" firstAttribute="leading" secondItem="TuK-PL-z9Z" secondAttribute="trailing" constant="5" id="DC8-uJ-1zY"/>
+                    <constraint firstItem="qpL-ws-NVH" firstAttribute="centerY" secondItem="TuK-PL-z9Z" secondAttribute="centerY" id="Gjg-Ic-cFK"/>
+                    <constraint firstItem="TuK-PL-z9Z" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HGL-Lh-Yns"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="sessionImg" destination="TuK-PL-z9Z" id="oeC-CN-6Wn"/>
+                <outlet property="sessionLabel" destination="qpL-ws-NVH" id="8Kz-zK-ZPk"/>
+            </connections>
             <point key="canvasLocation" x="-133" y="51"/>
         </tableViewCell>
     </objects>

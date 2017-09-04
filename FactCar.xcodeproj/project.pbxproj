@@ -32,6 +32,9 @@
 		2A8CFBD51F3AAF1E00F20D4A /* WTSRootTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBD41F3AAF1E00F20D4A /* WTSRootTableView.swift */; };
 		2A8CFBD71F3AAF8400F20D4A /* WTSRootTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8CFBD61F3AAF8400F20D4A /* WTSRootTableView.xib */; };
 		2A8CFBDD1F3B263B00F20D4A /* WTSFactCarRefreshGifHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8CFBDC1F3B263B00F20D4A /* WTSFactCarRefreshGifHeader.swift */; };
+		2A92C30F1F568BF300F3FCA3 /* SearchHotSpotLabelsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A92C30E1F568BF300F3FCA3 /* SearchHotSpotLabelsCollectionView.swift */; };
+		2A92C3121F568E3A00F3FCA3 /* SearchHotSpotLabelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A92C3101F568E3A00F3FCA3 /* SearchHotSpotLabelsCell.swift */; };
+		2A92C3151F56AC6700F3FCA3 /* SearchNetServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A92C3141F56AC6700F3FCA3 /* SearchNetServer.swift */; };
 		2ABC5D261F4A6A5400739A8B /* WTSHotSpotNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC5D241F4A6A5400739A8B /* WTSHotSpotNormalCell.swift */; };
 		2ABC5D271F4A6A5400739A8B /* WTSHotSpotNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC5D251F4A6A5400739A8B /* WTSHotSpotNormalCell.xib */; };
 		2ABC5D2A1F4A775A00739A8B /* WTSHotSpotThirdImgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC5D281F4A775A00739A8B /* WTSHotSpotThirdImgCell.swift */; };
@@ -40,6 +43,8 @@
 		2ABC5D311F4A86BD00739A8B /* WTSFourButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC5D2F1F4A86BD00739A8B /* WTSFourButtonCell.xib */; };
 		2ABC5D341F4BD5C100739A8B /* WTSHotSpotAdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC5D321F4BD5C100739A8B /* WTSHotSpotAdCell.swift */; };
 		2ABC5D351F4BD5C100739A8B /* WTSHotSpotAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC5D331F4BD5C100739A8B /* WTSHotSpotAdCell.xib */; };
+		2AD23FD61F5CF1D300B79131 /* SearchMoudle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD23FD51F5CF1D300B79131 /* SearchMoudle.swift */; };
+		2AD23FD81F5D2A2B00B79131 /* SearchContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD23FD71F5D2A2B00B79131 /* SearchContentCell.swift */; };
 		2AECDA231F53A7D300B8C8B2 /* WTSRootCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AECDA221F53A7D300B8C8B2 /* WTSRootCollectionVC.swift */; };
 		2AECDA261F53BAF500B8C8B2 /* HotSpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AECDA251F53BAF500B8C8B2 /* HotSpotCell.swift */; };
 		2AECDA281F53BB0D00B8C8B2 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AECDA271F53BB0D00B8C8B2 /* VideoCell.swift */; };
@@ -62,7 +67,6 @@
 		D25332631F341D8F00AB12CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25332601F341D8F00AB12CB /* AppDelegate.swift */; };
 		D25332641F341D8F00AB12CB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D25332611F341D8F00AB12CB /* Info.plist */; };
 		D2F0951F1F3440380049BB39 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F0951E1F3440380049BB39 /* News.storyboard */; };
-		D2F095211F344FAD0049BB39 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F095201F344FAD0049BB39 /* NewsModel.swift */; };
 		D2F095231F344FCA0049BB39 /* NewsNetServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F095221F344FCA0049BB39 /* NewsNetServer.swift */; };
 		D2F095271F344FF90049BB39 /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F095261F344FF90049BB39 /* My.storyboard */; };
 		D2F095291F3450070049BB39 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F095281F3450070049BB39 /* MyModel.swift */; };
@@ -118,6 +122,9 @@
 		2A8CFBD61F3AAF8400F20D4A /* WTSRootTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTSRootTableView.xib; sourceTree = "<group>"; };
 		2A8CFBD81F3B1E1D00F20D4A /* FactCar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FactCar-Bridging-Header.h"; sourceTree = "<group>"; };
 		2A8CFBDC1F3B263B00F20D4A /* WTSFactCarRefreshGifHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSFactCarRefreshGifHeader.swift; sourceTree = "<group>"; };
+		2A92C30E1F568BF300F3FCA3 /* SearchHotSpotLabelsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHotSpotLabelsCollectionView.swift; sourceTree = "<group>"; };
+		2A92C3101F568E3A00F3FCA3 /* SearchHotSpotLabelsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHotSpotLabelsCell.swift; sourceTree = "<group>"; };
+		2A92C3141F56AC6700F3FCA3 /* SearchNetServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchNetServer.swift; sourceTree = "<group>"; };
 		2ABC5D241F4A6A5400739A8B /* WTSHotSpotNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSHotSpotNormalCell.swift; sourceTree = "<group>"; };
 		2ABC5D251F4A6A5400739A8B /* WTSHotSpotNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTSHotSpotNormalCell.xib; sourceTree = "<group>"; };
 		2ABC5D281F4A775A00739A8B /* WTSHotSpotThirdImgCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSHotSpotThirdImgCell.swift; sourceTree = "<group>"; };
@@ -126,6 +133,8 @@
 		2ABC5D2F1F4A86BD00739A8B /* WTSFourButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTSFourButtonCell.xib; sourceTree = "<group>"; };
 		2ABC5D321F4BD5C100739A8B /* WTSHotSpotAdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSHotSpotAdCell.swift; sourceTree = "<group>"; };
 		2ABC5D331F4BD5C100739A8B /* WTSHotSpotAdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTSHotSpotAdCell.xib; sourceTree = "<group>"; };
+		2AD23FD51F5CF1D300B79131 /* SearchMoudle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMoudle.swift; sourceTree = "<group>"; };
+		2AD23FD71F5D2A2B00B79131 /* SearchContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchContentCell.swift; sourceTree = "<group>"; };
 		2AECDA221F53A7D300B8C8B2 /* WTSRootCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSRootCollectionVC.swift; sourceTree = "<group>"; };
 		2AECDA251F53BAF500B8C8B2 /* HotSpotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotSpotCell.swift; sourceTree = "<group>"; };
 		2AECDA271F53BB0D00B8C8B2 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
@@ -150,7 +159,6 @@
 		D25332601F341D8F00AB12CB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D25332611F341D8F00AB12CB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F0951E1F3440380049BB39 /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
-		D2F095201F344FAD0049BB39 /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		D2F095221F344FCA0049BB39 /* NewsNetServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsNetServer.swift; sourceTree = "<group>"; };
 		D2F095261F344FF90049BB39 /* My.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = My.storyboard; sourceTree = "<group>"; };
 		D2F095281F3450070049BB39 /* MyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
@@ -250,6 +258,7 @@
 				2ABC5D331F4BD5C100739A8B /* WTSHotSpotAdCell.xib */,
 				2A8C91701F50140100A6FDE2 /* WTSSearchHeaderViewTableViewCell.swift */,
 				2A8C91711F50140100A6FDE2 /* WTSSearchHeaderViewTableViewCell.xib */,
+				2AD23FD71F5D2A2B00B79131 /* SearchContentCell.swift */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -269,6 +278,7 @@
 				2AECDA391F53BBB500B8C8B2 /* TravelCell.swift */,
 				2AECDA3B1F53BBD700B8C8B2 /* TechnologyCell.swift */,
 				2AECDA3D1F53BBE400B8C8B2 /* MarketCell.swift */,
+				2A92C3101F568E3A00F3FCA3 /* SearchHotSpotLabelsCell.swift */,
 			);
 			name = CollectionCell;
 			sourceTree = "<group>";
@@ -408,8 +418,8 @@
 		D2F095071F343B0D0049BB39 /* M */ = {
 			isa = PBXGroup;
 			children = (
-				D2F095201F344FAD0049BB39 /* NewsModel.swift */,
 				2A62597E1F467484006DB2CA /* WTSNewsMoudleS.swift */,
+				2AD23FD51F5CF1D300B79131 /* SearchMoudle.swift */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -418,6 +428,7 @@
 			isa = PBXGroup;
 			children = (
 				D2F095221F344FCA0049BB39 /* NewsNetServer.swift */,
+				2A92C3141F56AC6700F3FCA3 /* SearchNetServer.swift */,
 			);
 			path = NetWorkServer;
 			sourceTree = "<group>";
@@ -431,6 +442,7 @@
 				2ABC5D2C1F4A7FC800739A8B /* VCell */,
 				2A8CFBD41F3AAF1E00F20D4A /* WTSRootTableView.swift */,
 				2A8CFBD61F3AAF8400F20D4A /* WTSRootTableView.xib */,
+				2A92C30E1F568BF300F3FCA3 /* SearchHotSpotLabelsCollectionView.swift */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -636,7 +648,7 @@
 		D25332311F341A8200AB12CB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = WTS;
+				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "邢浩";
@@ -759,7 +771,6 @@
 				2AECDA3E1F53BBE400B8C8B2 /* MarketCell.swift in Sources */,
 				2AECDA361F53BB9400B8C8B2 /* UseCarCell.swift in Sources */,
 				2A8CFBCB1F3AA9B400F20D4A /* WTSCaltureTableView.swift in Sources */,
-				D2F095211F344FAD0049BB39 /* NewsModel.swift in Sources */,
 				D2F095231F344FCA0049BB39 /* NewsNetServer.swift in Sources */,
 				D2F095291F3450070049BB39 /* MyModel.swift in Sources */,
 				2AECDA261F53BAF500B8C8B2 /* HotSpotCell.swift in Sources */,
@@ -769,12 +780,16 @@
 				2A8C916D1F50096800A6FDE2 /* WTSSearchViewController.swift in Sources */,
 				D2F095431F34526A0049BB39 /* ChooseCarNetServer.swift in Sources */,
 				2A8C91721F50140100A6FDE2 /* WTSSearchHeaderViewTableViewCell.swift in Sources */,
+				2A92C3121F568E3A00F3FCA3 /* SearchHotSpotLabelsCell.swift in Sources */,
 				2A4A8ABD1F4C30BB003C2FA5 /* WTSFactCarGifView.swift in Sources */,
 				2AECDA341F53BB8200B8C8B2 /* NewCarCell.swift in Sources */,
 				2A8CFBC11F3AA93400F20D4A /* WTSLiveTableView.swift in Sources */,
+				2A92C3151F56AC6700F3FCA3 /* SearchNetServer.swift in Sources */,
 				2A4303531F345DDF00C0CFDA /* FactCarNavigation.swift in Sources */,
+				2AD23FD61F5CF1D300B79131 /* SearchMoudle.swift in Sources */,
 				2ABC5D341F4BD5C100739A8B /* WTSHotSpotAdCell.swift in Sources */,
 				2AECDA321F53BB7500B8C8B2 /* ShoppingCell.swift in Sources */,
+				2A92C30F1F568BF300F3FCA3 /* SearchHotSpotLabelsCollectionView.swift in Sources */,
 				D2F095471F3452920049BB39 /* FactCarCategory.swift in Sources */,
 				2AECDA481F5425C400B8C8B2 /* WTSRootTitleView.swift in Sources */,
 				2A8CFBBF1F3AA90C00F20D4A /* WTSVideoTableView.swift in Sources */,
@@ -783,6 +798,7 @@
 				2A8CFBBD1F3AA7FD00F20D4A /* WTSHotSpotTableView.swift in Sources */,
 				2A8CFBC71F3AA98200F20D4A /* WTSNewCarTableView.swift in Sources */,
 				2AECDA2C1F53BB3000B8C8B2 /* BusinessCell.swift in Sources */,
+				2AD23FD81F5D2A2B00B79131 /* SearchContentCell.swift in Sources */,
 				D2F095331F3450A20049BB39 /* ActivityNetServer.swift in Sources */,
 				2A8CFBD31F3AAABC00F20D4A /* WTSBusinessTableView.swift in Sources */,
 				2AECDA3C1F53BBD700B8C8B2 /* TechnologyCell.swift in Sources */,
