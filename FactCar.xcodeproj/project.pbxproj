@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A3728E71F5E395900F95B77 /* SearchContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3728E61F5E395900F95B77 /* SearchContentVC.swift */; };
 		2A4303511F34553000C0CFDA /* Mian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4303501F34553000C0CFDA /* Mian.swift */; };
 		2A4303531F345DDF00C0CFDA /* FactCarNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4303521F345DDF00C0CFDA /* FactCarNavigation.swift */; };
 		2A4A8ABD1F4C30BB003C2FA5 /* WTSFactCarGifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4A8ABC1F4C30BB003C2FA5 /* WTSFactCarGifView.swift */; };
@@ -90,6 +91,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A3728E61F5E395900F95B77 /* SearchContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchContentVC.swift; sourceTree = "<group>"; };
 		2A4303501F34553000C0CFDA /* Mian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mian.swift; sourceTree = "<group>"; };
 		2A4303521F345DDF00C0CFDA /* FactCarNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactCarNavigation.swift; sourceTree = "<group>"; };
 		2A4A8AB01F4C2712003C2FA5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/FactCar-fkqjojepqznccmajryrksfanbqyz/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
@@ -411,6 +413,7 @@
 				2A5BF9931F37F2D600D8A50E /* WTSNewsViewController.swift */,
 				2A8C916C1F50096800A6FDE2 /* WTSSearchViewController.swift */,
 				2AECDA221F53A7D300B8C8B2 /* WTSRootCollectionVC.swift */,
+				2A3728E61F5E395900F95B77 /* SearchContentVC.swift */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -804,6 +807,7 @@
 				2AECDA3C1F53BBD700B8C8B2 /* TechnologyCell.swift in Sources */,
 				2AECDA301F53BB6500B8C8B2 /* EvaluatingCell.swift in Sources */,
 				D2F0953B1F3451680049BB39 /* ChoicenessNetServer.swift in Sources */,
+				2A3728E71F5E395900F95B77 /* SearchContentVC.swift in Sources */,
 				2A8CFBCF1F3AA9E500F20D4A /* WTSTechnologyTableView.swift in Sources */,
 				2AECDA231F53A7D300B8C8B2 /* WTSRootCollectionVC.swift in Sources */,
 				2A62597F1F467484006DB2CA /* WTSNewsMoudleS.swift in Sources */,

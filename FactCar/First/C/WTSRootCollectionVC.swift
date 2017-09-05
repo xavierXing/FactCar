@@ -92,7 +92,7 @@ extension WTSRootCollectionVC {
 
   func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
     let animationController: LOTAnimationTransitionController = LOTAnimationTransitionController(animationNamed: "vcTransition1", fromLayerNamed: "outLayer", toLayerNamed: "inLayer", applyAnimationTransform: false)
-
+    
     return animationController
   }
 

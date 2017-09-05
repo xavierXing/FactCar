@@ -43,7 +43,17 @@ class WTSSearchViewController: UIViewController,UITableViewDelegate,UITableViewD
     super.didReceiveMemoryWarning()
 
   }
-
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let vc = segue.destination as? SearchContentVC, let sender = sender as? SearchHotSpotLabelsCell {
+      sender.heroID = "selected" + String(sender.tag)
+      vc.view.heroModifiers = [.source(heroID: "selected")]
+      vc.searchTextField.text = sender.hotSpotTag.text
+      vc.searchTextField.heroID = "selected" + String(sender.tag)
+      vc.searchTextField.heroModifiers = [.durationMatchLongest]
+      
+    }
+  }
 
 }
 
@@ -142,6 +152,7 @@ extension WTSSearchViewController {
     cell.layer.borderColor = cell.hotSpotTag.textColor.cgColor
     cell.hotSpotTag.backgroundColor = (self.tagHotArr?[indexPath.item])?.color == "blue" ? (UIColor.colorWithHexString(hex: "#ecf3fd")) : (UIColor.colorWithHexString(hex: "#fcf5e8"))
     self.hotSpotCollectionView = collectionView
+    cell.tag = (indexPath.item + 1000)
     return cell
     
   }
