@@ -429,10 +429,10 @@
                                     <outlet property="delegate" destination="xnt-sh-K0a" id="NeZ-Ah-WeC"/>
                                 </connections>
                             </collectionView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1001" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1IA-Rb-hOc">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1001" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1IA-Rb-hOc">
                                 <rect key="frame" x="0.0" y="94" width="375" height="573"/>
                                 <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <collectionViewLayout key="collectionViewLayout" id="KPU-YV-jE7" customClass="SearchContentLayout" customModule="FactCar" customModuleProvider="target"/>
+                                <collectionViewLayout key="collectionViewLayout" id="LaQ-vK-iDx" customClass="SearchContentLayout" customModule="FactCar" customModuleProvider="target"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="contentItemStory" id="MEe-Hs-Aga">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="573"/>
@@ -440,8 +440,48 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="573"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FMI-0L-sVU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Prw-dK-wSV">
+                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全部" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxo-gW-9jb">
+                                                            <rect key="frame" x="12" y="10.5" width="29" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrows" translatesAutoresizingMaskIntoConstraints="NO" id="6SO-63-ShW">
+                                                            <rect key="frame" x="352" y="17" width="11" height="5.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="10.5" id="6AX-PB-beX"/>
+                                                                <constraint firstAttribute="height" constant="5.5" id="btB-h9-Hk5"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="6SO-63-ShW" firstAttribute="centerY" secondItem="Prw-dK-wSV" secondAttribute="centerY" id="2Gg-9f-FrG"/>
+                                                        <constraint firstItem="Prw-dK-wSV" firstAttribute="top" secondItem="FMI-0L-sVU" secondAttribute="top" id="BRl-Nh-RoR"/>
+                                                        <constraint firstItem="Prw-dK-wSV" firstAttribute="leading" secondItem="FMI-0L-sVU" secondAttribute="leading" id="SI8-Ig-aV0"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Prw-dK-wSV" secondAttribute="trailing" id="VzD-0d-NTu"/>
+                                                        <constraint firstItem="Fxo-gW-9jb" firstAttribute="centerY" secondItem="Prw-dK-wSV" secondAttribute="centerY" id="YOu-t0-siS"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Prw-dK-wSV" secondAttribute="bottom" id="l6a-90-qQl"/>
+                                                        <constraint firstAttribute="trailing" secondItem="6SO-63-ShW" secondAttribute="trailing" constant="12" id="ukF-H9-GaY"/>
+                                                        <constraint firstAttribute="height" constant="38" id="xAy-WJ-jFd"/>
+                                                        <constraint firstItem="Fxo-gW-9jb" firstAttribute="leading" secondItem="FMI-0L-sVU" secondAttribute="leading" constant="12" id="xqa-g4-ZQ5"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
                                         </view>
                                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="FMI-0L-sVU" secondAttribute="trailing" id="IGU-wA-izn"/>
+                                            <constraint firstItem="FMI-0L-sVU" firstAttribute="leading" secondItem="MEe-Hs-Aga" secondAttribute="leading" id="fex-wB-suc"/>
+                                            <constraint firstItem="FMI-0L-sVU" firstAttribute="top" secondItem="MEe-Hs-Aga" secondAttribute="top" id="kKf-Rt-Zgf"/>
+                                        </constraints>
                                         <size key="customSize" width="375" height="573"/>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="contentItemCarMoudle" id="8Lp-WF-poz">
@@ -1012,6 +1052,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrows" width="10" height="5"/>
         <image name="focusnews_null_img3" width="99" height="66"/>
         <image name="news_normal_icon" width="20" height="22"/>
         <image name="news_selected_icon" width="24" height="22"/>
