@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A3728E71F5E395900F95B77 /* SearchContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3728E61F5E395900F95B77 /* SearchContentVC.swift */; };
+		2A3728EF1F5FE09200F95B77 /* SearchContentLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3728EE1F5FE09200F95B77 /* SearchContentLayout.swift */; };
 		2A4303511F34553000C0CFDA /* Mian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4303501F34553000C0CFDA /* Mian.swift */; };
 		2A4303531F345DDF00C0CFDA /* FactCarNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4303521F345DDF00C0CFDA /* FactCarNavigation.swift */; };
 		2A4A8ABD1F4C30BB003C2FA5 /* WTSFactCarGifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4A8ABC1F4C30BB003C2FA5 /* WTSFactCarGifView.swift */; };
@@ -92,6 +93,7 @@
 
 /* Begin PBXFileReference section */
 		2A3728E61F5E395900F95B77 /* SearchContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchContentVC.swift; sourceTree = "<group>"; };
+		2A3728EE1F5FE09200F95B77 /* SearchContentLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchContentLayout.swift; sourceTree = "<group>"; };
 		2A4303501F34553000C0CFDA /* Mian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mian.swift; sourceTree = "<group>"; };
 		2A4303521F345DDF00C0CFDA /* FactCarNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactCarNavigation.swift; sourceTree = "<group>"; };
 		2A4A8AB01F4C2712003C2FA5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/FactCar-fkqjojepqznccmajryrksfanbqyz/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				2AECDA441F53EA8D00B8C8B2 /* RootCollectionLayout.swift */,
+				2A3728EE1F5FE09200F95B77 /* SearchContentLayout.swift */,
 			);
 			name = CollectionLayout;
 			path = ..;
@@ -813,6 +816,7 @@
 				2A62597F1F467484006DB2CA /* WTSNewsMoudleS.swift in Sources */,
 				2AECDA281F53BB0D00B8C8B2 /* VideoCell.swift in Sources */,
 				D2F095411F3452520049BB39 /* ChooseCarModel.swift in Sources */,
+				2A3728EF1F5FE09200F95B77 /* SearchContentLayout.swift in Sources */,
 				2A8CFBDD1F3B263B00F20D4A /* WTSFactCarRefreshGifHeader.swift in Sources */,
 				2A8CFBC31F3AA95B00F20D4A /* WTSEvaluatingTableView.swift in Sources */,
 				2AECDA451F53EA8D00B8C8B2 /* RootCollectionLayout.swift in Sources */,

@@ -23,7 +23,7 @@ class WTSHotSpotNormalCell: UITableViewCell {
   override func awakeFromNib() {
     super.awakeFromNib()
     self.backgroundColor = UIColor.white
-      
+    
   }
 
   override func setSelected(_ selected: Bool, animated: Bool) {

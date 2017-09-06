@@ -38,6 +38,11 @@
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="selectionStyle">
+                    <integer key="value" value="0"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="cellAdImage" destination="3xD-ON-pjG" id="dat-AI-z1x"/>
             </connections>

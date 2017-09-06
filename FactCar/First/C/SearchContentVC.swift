@@ -62,8 +62,8 @@ extension SearchContentVC {
       let chooseTitleLabel:UILabel = cell.viewWithTag(2) as! UILabel
       let chooseTitleView = cell.viewWithTag(1)!
       chooseTitleLabel.text = chooseCollectSource[indexPath.row]
-      chooseTitleLabel.textColor = indexPath.row == index ? UIColor.colorWithHexString(hex: "#646464") : UIColor.colorWithHexString(hex: "#f64e50")
-      chooseTitleView.backgroundColor = chooseTitleLabel.textColor
+      chooseTitleLabel.textColor = indexPath.row == index ? UIColor.colorWithHexString(hex: "#FF142E") : UIColor.colorWithHexString(hex: "#333333")
+      chooseTitleView.backgroundColor = indexPath.row == index ? UIColor.colorWithHexString(hex: "#FF142E") : UIColor.colorWithHexString(hex: "#999999")
       return cell
     case 1001:
       /// 文章 | 车型 | 视频 (内容)
@@ -99,6 +99,7 @@ extension SearchContentVC {
     switch collectionView.tag {
     case 1000:
       index = indexPath.row
+      self.settingContentCollectionViewOffset(index: index!)
       collectionView.reloadData()
       break
     case 1001:
@@ -113,5 +114,19 @@ extension SearchContentVC {
   
   
 }
-
-
+// MARK: - UIScrollViewDelegate -
+extension SearchContentVC {
+  func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    
+    let chooseIndex = scrollView.contentOffset.x / XHScreenW
+    index = Int(chooseIndex)
+    self.chooseCollectionView.reloadData()
+    
+  }
+}
+// MARK: - Private Method -
+extension SearchContentVC {
+   fileprivate func settingContentCollectionViewOffset(index: Int) -> Void {
+    self.contentCollectionView.setContentOffset(CGPoint(x: CGFloat(index) * XHScreenW, y: 0), animated: true)
+  }
+}

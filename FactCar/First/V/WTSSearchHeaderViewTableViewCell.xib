@@ -39,6 +39,11 @@
                     <constraint firstItem="TuK-PL-z9Z" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HGL-Lh-Yns"/>
                 </constraints>
             </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="selectionStyle">
+                    <integer key="value" value="0"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="sessionImg" destination="TuK-PL-z9Z" id="oeC-CN-6Wn"/>
                 <outlet property="sessionLabel" destination="qpL-ws-NVH" id="8Kz-zK-ZPk"/>

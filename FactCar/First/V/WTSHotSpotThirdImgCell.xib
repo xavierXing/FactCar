@@ -78,6 +78,11 @@
                     <constraint firstAttribute="trailing" secondItem="G1j-We-Vep" secondAttribute="trailing" id="zYb-bT-pqy"/>
                 </constraints>
             </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="selectionStyle">
+                    <integer key="value" value="0"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="cellAuthorLabel" destination="kK3-nI-Egc" id="Oar-eI-KeM"/>
                 <outlet property="cellHeaderFirstImage" destination="F3O-CK-Na0" id="RGU-rd-hoX"/>
