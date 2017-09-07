@@ -45,6 +45,7 @@
 		2ABC5D311F4A86BD00739A8B /* WTSFourButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC5D2F1F4A86BD00739A8B /* WTSFourButtonCell.xib */; };
 		2ABC5D341F4BD5C100739A8B /* WTSHotSpotAdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC5D321F4BD5C100739A8B /* WTSHotSpotAdCell.swift */; };
 		2ABC5D351F4BD5C100739A8B /* WTSHotSpotAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC5D331F4BD5C100739A8B /* WTSHotSpotAdCell.xib */; };
+		2ACFE1181F60D841003E5071 /* SearchStoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACFE1171F60D841003E5071 /* SearchStoryCell.swift */; };
 		2AD23FD61F5CF1D300B79131 /* SearchMoudle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD23FD51F5CF1D300B79131 /* SearchMoudle.swift */; };
 		2AD23FD81F5D2A2B00B79131 /* SearchContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD23FD71F5D2A2B00B79131 /* SearchContentCell.swift */; };
 		2AECDA231F53A7D300B8C8B2 /* WTSRootCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AECDA221F53A7D300B8C8B2 /* WTSRootCollectionVC.swift */; };
@@ -137,6 +138,7 @@
 		2ABC5D2F1F4A86BD00739A8B /* WTSFourButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTSFourButtonCell.xib; sourceTree = "<group>"; };
 		2ABC5D321F4BD5C100739A8B /* WTSHotSpotAdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSHotSpotAdCell.swift; sourceTree = "<group>"; };
 		2ABC5D331F4BD5C100739A8B /* WTSHotSpotAdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTSHotSpotAdCell.xib; sourceTree = "<group>"; };
+		2ACFE1171F60D841003E5071 /* SearchStoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchStoryCell.swift; sourceTree = "<group>"; };
 		2AD23FD51F5CF1D300B79131 /* SearchMoudle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMoudle.swift; sourceTree = "<group>"; };
 		2AD23FD71F5D2A2B00B79131 /* SearchContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchContentCell.swift; sourceTree = "<group>"; };
 		2AECDA221F53A7D300B8C8B2 /* WTSRootCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSRootCollectionVC.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				2A8C91701F50140100A6FDE2 /* WTSSearchHeaderViewTableViewCell.swift */,
 				2A8C91711F50140100A6FDE2 /* WTSSearchHeaderViewTableViewCell.xib */,
 				2AD23FD71F5D2A2B00B79131 /* SearchContentCell.swift */,
+				2ACFE1171F60D841003E5071 /* SearchStoryCell.swift */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -785,6 +788,7 @@
 				2A4303511F34553000C0CFDA /* Mian.swift in Sources */,
 				2A8C916D1F50096800A6FDE2 /* WTSSearchViewController.swift in Sources */,
 				D2F095431F34526A0049BB39 /* ChooseCarNetServer.swift in Sources */,
+				2ACFE1181F60D841003E5071 /* SearchStoryCell.swift in Sources */,
 				2A8C91721F50140100A6FDE2 /* WTSSearchHeaderViewTableViewCell.swift in Sources */,
 				2A92C3121F568E3A00F3FCA3 /* SearchHotSpotLabelsCell.swift in Sources */,
 				2A4A8ABD1F4C30BB003C2FA5 /* WTSFactCarGifView.swift in Sources */,

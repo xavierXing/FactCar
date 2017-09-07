@@ -51,6 +51,7 @@ class WTSSearchViewController: UIViewController,UITableViewDelegate,UITableViewD
       vc.searchTextField.text = sender.hotSpotTag.text
       vc.searchTextField.heroID = "selected" + String(sender.tag)
       vc.searchTextField.heroModifiers = [.durationMatchLongest]
+      vc.keyWord = sender.hotSpotTag.text
       
     }
   }
@@ -158,6 +159,7 @@ extension WTSSearchViewController {
   }
 }
 
+
 extension WTSSearchViewController {
 
   fileprivate func settingRefreshFooter() -> () {
@@ -168,7 +170,7 @@ extension WTSSearchViewController {
   }
   
   fileprivate func getNetWork() -> () {
-    let netWorkManager:SearchNetServer = SearchNetServer()
+//    let netWorkManager:SearchNetServer = SearchNetServer()
     let moyaType:MoyaSearch = MoyaSearch.searchContent(page: pageIndex)
     netWorkManager.moyaGetSearchData(type: moyaType, success: { (result) in
       self.searchMoudle = SearchMoudle(JSON: result as! [String:Any])!

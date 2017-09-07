@@ -11,7 +11,7 @@ import Moya
 import Alamofire
 
 enum MoyaSearch {
-  case searchContent(page:Int)
+  case searchContent(page:Int),searchStory(page:Int,keyWord:String,storyType:String)
 }
 
 extension MoyaSearch: TargetType {
@@ -36,6 +36,16 @@ extension MoyaSearch: TargetType {
         "c": "index",
         "a": "search",
         "storyPage": page
+      ]
+    case .searchStory(let page, let keyWord, let storyType):
+      return [
+        "m": "ina_app",
+        "c": "index",
+        "a": "search",
+        "storyPage": page,
+        "keyword": keyWord,
+        "type": "story",
+        "story_type": storyType
       ]
     }
   }
@@ -82,6 +92,7 @@ let endpointSearchClosure = { (target: MoyaSearch) -> Endpoint<MoyaSearch> in
   return defaultEndpoint.adding(newHTTPHeaderFields: ["User-Agent": "VersionCode=\(swiftGetCFBundleVersion())"])
 }
 
+let netWorkManager:SearchNetServer = SearchNetServer()
 
 
 

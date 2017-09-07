@@ -9,6 +9,7 @@
 import UIKit
 import ObjectMapper
 
+// MARK: - 搜索界面 -
 class SearchMoudle: Mappable {
   var status: String!
   var data: SearchData!
@@ -114,3 +115,102 @@ class TagHotArr: Mappable {
   }
 }
 
+// MARK: - 搜索 : 文章 -
+class SearchStory: Mappable {
+  var status: String!
+  var data: SearchStoryData!
+  var code: Int = 0
+  
+  required init?(map: Map) {
+    
+  }
+  
+  func mapping(map: Map) {
+    status <- map["status"]
+    data <- map["data"]
+    code <- map["code"]
+  }
+}
+
+class SearchStoryData: Mappable {
+  var story: [SearchStoryParameter]!
+  var search_ad: searchStoryAD!
+  
+  required init?(map: Map) {
+    
+  }
+  
+  func mapping(map: Map) {
+    story <- map["story"]
+    search_ad <- map["search_ad"]
+  }
+}
+
+class SearchStoryParameter: Mappable {
+  var source: String!
+  var main_column: Int = 0
+  var title: String!
+  var url: String!
+  var keyword: String!
+  var mobiletitle: String!
+  var top: String!
+  var is_ad: String!
+  var shorttitle: String!
+  var story_id: Int = 0
+  var story_date: String!
+  var column_id: Int = 0
+  var short_summary: String!
+  var is_private_int: Int = 0
+  var source_id: String!
+  var title_pic1: String!
+  var title_pic2: String!
+  var editor: String!
+  var ad_type: Int = 0
+  var author: String!
+  var is_private: String!
+  
+  required init?(map: Map) {
+    
+  }
+  
+  func mapping(map: Map) {
+    source <- map["source"]
+    main_column <- map["main_column"]
+    title <- map["title"]
+    url <- map["url"]
+    keyword <- map["keyword"]
+    mobiletitle <- map["mobiletitle"]
+    top <- map["top"]
+    is_ad <- map["is_ad"]
+    shorttitle <- map["shorttitle"]
+    story_id <- map["story_id"]
+    story_date <- map["story_date"]
+    column_id <- map["column_id"]
+    short_summary <- map["short_summary"]
+    is_private_int <- map["is_private_int"]
+    source_id <- map["source_id"]
+    title_pic1 <- map["title_pic1"]
+    title_pic2 <- map["title_pic2"]
+    shorttitle <- map["shorttitle"]
+    editor <- map["editor"]
+    ad_type <- map["ad_type"]
+    author <- map["author"]
+    is_private <- map["is_private"]
+  }
+}
+
+class searchStoryAD: Mappable {
+  var url: String!
+  var img: String!
+  var alt: String!
+  
+  required init?(map: Map) {
+    
+  }
+  
+  func mapping(map: Map) {
+    url <- map["url"]
+    img <- map["img"]
+    alt <- map["alt"]
+  }
+}
