@@ -214,3 +214,177 @@ class searchStoryAD: Mappable {
     alt <- map["alt"]
   }
 }
+
+// MARK: - 搜索: 车型 -
+class SearchCarModuleModel: Mappable {
+  var status: String!
+  var data: CarModuleData!
+  var code: Int = 0
+  
+  required init?(map: Map) {
+    
+  }
+  
+  func mapping(map: Map) {
+    status <- map["status"]
+    data <- map["data"]
+    code <- map["code"]
+  }
+  
+}
+
+class CarModuleData: Mappable {
+  var bseries: [Bseries]!
+  var search_ad: carMoudleAD!
+  
+  required init?(map: Map) {
+    
+  }
+  
+  func mapping(map: Map) {
+    bseries <- map["bseries"]
+    search_ad <- map["search_ad"]
+  }
+  
+}
+
+class Bseries: Mappable {
+  var maxprice: String!
+  var url: String!
+  var salestate: String!
+  var minprice: String!
+  var bseries_id: String!
+  var showname: String!
+  var cspic: String!
+  
+  required init?(map: Map) {
+    
+  }
+  
+  func mapping(map: Map) {
+    maxprice <- map["maxprice"]
+    url <- map["url"]
+    salestate <- map["salestate"]
+    minprice <- map["minprice"]
+    bseries_id <- map["bseries_id"]
+    showname <- map["showname"]
+    cspic <- map["cspic"]
+  }
+  
+}
+
+class carMoudleAD :Mappable {
+  var url: String!
+  var img: String!
+  var alt: String!
+  
+  required init?(map: Map) {
+    
+  }
+  
+  func mapping(map: Map) {
+    url <- map["url"]
+    img <- map["img"]
+    alt <- map["alt"]
+  }
+}
+
+// MARK: - 搜索: 视频 -
+class Share :Mappable {
+  var title: String!
+  var pic: String!
+  var intro: String!
+  var url: String!
+  
+  required init?(map: Map) {
+    
+  }
+  
+  func mapping(map: Map) {
+    title <- map["title"]
+    pic <- map["pic"]
+    intro <- map["intro"]
+    url <- map["url"]
+  }
+  
+}
+
+class Video :Mappable {
+  var vedio_type: String!
+  var title_pic1: String!
+  var id: Int = 0
+  var time: String!
+  var title: String!
+  var base_count: String!
+  var publish_time: String!
+  var share: Share!
+  var column_id: Int = 0
+  var url: String!
+  
+  required init?(map: Map) {
+    
+  }
+  
+  func mapping(map: Map) {
+    vedio_type <- map["vedio_type"]
+    title_pic1 <- map["title_pic1"]
+    id <- map["id"]
+    time <- map["time"]
+    title <- map["title"]
+    base_count <- map["base_count"]
+    publish_time <- map["publish_time"]
+    share <- map["share"]
+    column_id <- map["column_id"]
+    url <- map["url"]
+  }
+  
+}
+
+class SearchVideoAD :Mappable {
+  var url: String!
+  var img: String!
+  var alt: String!
+  
+  required init?(map: Map) {
+    
+  }
+  
+  func mapping(map: Map) {
+    url <- map["url"]
+    img <- map["img"]
+    alt <- map["alt"]
+  }
+  
+}
+
+class SearchVideoData :Mappable {
+  var vedio: [Video]!
+  var search_ad: SearchVideoAD!
+  
+  required init?(map: Map) {
+    
+  }
+  
+  func mapping(map: Map) {
+    vedio <- map["vedio"]
+    search_ad <- map["search_ad"]
+  }
+  
+}
+
+class SearchVideo :Mappable {
+  var status: String!
+  var data: SearchVideoData!
+  var code: Int = 0
+  
+  required init?(map: Map) {
+    
+  }
+  
+  func mapping(map: Map) {
+    status <- map["status"]
+    data <- map["data"]
+    code <- map["code"]
+  }
+}
+

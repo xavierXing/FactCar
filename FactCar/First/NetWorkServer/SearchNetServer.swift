@@ -11,7 +11,7 @@ import Moya
 import Alamofire
 
 enum MoyaSearch {
-  case searchContent(page:Int),searchStory(page:Int,keyWord:String,storyType:String)
+  case searchContent(page:Int),searchStory(page:Int,keyWord:String,storyType:String),searchCarMoudle(page:Int,keyWord:String),searchVideo(page:Int,keyWord:String)
 }
 
 extension MoyaSearch: TargetType {
@@ -46,6 +46,24 @@ extension MoyaSearch: TargetType {
         "keyword": keyWord,
         "type": "story",
         "story_type": storyType
+      ]
+    case .searchCarMoudle(let page,let keyWord):
+      return [
+        "m": "ina_app",
+        "c": "index",
+        "a": "search",
+        "storyPage": page,
+        "keyword": keyWord,
+        "type": "bseries",
+      ]
+    case .searchVideo(let page,let keyWord):
+      return [
+        "m": "ina_app",
+        "c": "index",
+        "a": "search",
+        "storyPage": page,
+        "keyword": keyWord,
+        "type": "vedio",
       ]
     }
   }

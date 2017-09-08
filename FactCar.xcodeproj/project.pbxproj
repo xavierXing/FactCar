@@ -46,6 +46,8 @@
 		2ABC5D341F4BD5C100739A8B /* WTSHotSpotAdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC5D321F4BD5C100739A8B /* WTSHotSpotAdCell.swift */; };
 		2ABC5D351F4BD5C100739A8B /* WTSHotSpotAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABC5D331F4BD5C100739A8B /* WTSHotSpotAdCell.xib */; };
 		2ACFE1181F60D841003E5071 /* SearchStoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACFE1171F60D841003E5071 /* SearchStoryCell.swift */; };
+		2ACFE11C1F62661F003E5071 /* SearchCarMoudleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACFE11B1F62661F003E5071 /* SearchCarMoudleCell.swift */; };
+		2ACFE11E1F628DAE003E5071 /* SearchVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACFE11D1F628DAE003E5071 /* SearchVideoCell.swift */; };
 		2AD23FD61F5CF1D300B79131 /* SearchMoudle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD23FD51F5CF1D300B79131 /* SearchMoudle.swift */; };
 		2AD23FD81F5D2A2B00B79131 /* SearchContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD23FD71F5D2A2B00B79131 /* SearchContentCell.swift */; };
 		2AECDA231F53A7D300B8C8B2 /* WTSRootCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AECDA221F53A7D300B8C8B2 /* WTSRootCollectionVC.swift */; };
@@ -139,6 +141,8 @@
 		2ABC5D321F4BD5C100739A8B /* WTSHotSpotAdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSHotSpotAdCell.swift; sourceTree = "<group>"; };
 		2ABC5D331F4BD5C100739A8B /* WTSHotSpotAdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTSHotSpotAdCell.xib; sourceTree = "<group>"; };
 		2ACFE1171F60D841003E5071 /* SearchStoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchStoryCell.swift; sourceTree = "<group>"; };
+		2ACFE11B1F62661F003E5071 /* SearchCarMoudleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCarMoudleCell.swift; sourceTree = "<group>"; };
+		2ACFE11D1F628DAE003E5071 /* SearchVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVideoCell.swift; sourceTree = "<group>"; };
 		2AD23FD51F5CF1D300B79131 /* SearchMoudle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMoudle.swift; sourceTree = "<group>"; };
 		2AD23FD71F5D2A2B00B79131 /* SearchContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchContentCell.swift; sourceTree = "<group>"; };
 		2AECDA221F53A7D300B8C8B2 /* WTSRootCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSRootCollectionVC.swift; sourceTree = "<group>"; };
@@ -266,6 +270,8 @@
 				2A8C91711F50140100A6FDE2 /* WTSSearchHeaderViewTableViewCell.xib */,
 				2AD23FD71F5D2A2B00B79131 /* SearchContentCell.swift */,
 				2ACFE1171F60D841003E5071 /* SearchStoryCell.swift */,
+				2ACFE11B1F62661F003E5071 /* SearchCarMoudleCell.swift */,
+				2ACFE11D1F628DAE003E5071 /* SearchVideoCell.swift */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -796,6 +802,7 @@
 				2A8CFBC11F3AA93400F20D4A /* WTSLiveTableView.swift in Sources */,
 				2A92C3151F56AC6700F3FCA3 /* SearchNetServer.swift in Sources */,
 				2A4303531F345DDF00C0CFDA /* FactCarNavigation.swift in Sources */,
+				2ACFE11C1F62661F003E5071 /* SearchCarMoudleCell.swift in Sources */,
 				2AD23FD61F5CF1D300B79131 /* SearchMoudle.swift in Sources */,
 				2ABC5D341F4BD5C100739A8B /* WTSHotSpotAdCell.swift in Sources */,
 				2AECDA321F53BB7500B8C8B2 /* ShoppingCell.swift in Sources */,
@@ -819,6 +826,7 @@
 				2AECDA231F53A7D300B8C8B2 /* WTSRootCollectionVC.swift in Sources */,
 				2A62597F1F467484006DB2CA /* WTSNewsMoudleS.swift in Sources */,
 				2AECDA281F53BB0D00B8C8B2 /* VideoCell.swift in Sources */,
+				2ACFE11E1F628DAE003E5071 /* SearchVideoCell.swift in Sources */,
 				D2F095411F3452520049BB39 /* ChooseCarModel.swift in Sources */,
 				2A3728EF1F5FE09200F95B77 /* SearchContentLayout.swift in Sources */,
 				2A8CFBDD1F3B263B00F20D4A /* WTSFactCarRefreshGifHeader.swift in Sources */,
