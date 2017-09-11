@@ -9,7 +9,7 @@
 import UIKit
 
 class WTSBusinessTableView: WTSRootTableView {
-
+  /*
   override func awakeFromNib() {
     self.vcType = MoyaNewsCar.business
     self.settingRefersh(refreshSuccess: { (result) in
@@ -19,5 +19,5 @@ class WTSBusinessTableView: WTSRootTableView {
       print("\(error)")
     }
   }
-
+ */
 }

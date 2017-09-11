@@ -9,7 +9,7 @@
 import UIKit
 
 class WTSTravelTableView: WTSRootTableView {
-
+  /*
   override func awakeFromNib() {
     self.vcType = MoyaNewsCar.travel
     self.settingRefersh(refreshSuccess: { (result) in
@@ -19,5 +19,5 @@ class WTSTravelTableView: WTSRootTableView {
       print("\(error)")
     }
   }
-
+  */
 }

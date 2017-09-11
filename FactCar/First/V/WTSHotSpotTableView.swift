@@ -35,19 +35,26 @@ class WTSHotSpotTableView: WTSRootTableView {
 extension WTSHotSpotTableView {
   fileprivate func getNetWork() {
     self.vcType = MoyaNewsCar.hotSpot(index: index)
-    self.settingRefersh(refreshSuccess: { result in
+    self.settingRefersh(refreshSuccess: { result,refreshType in
       self.hotSpotMoudle = WTSHotSpotMoudle(JSON: result as! [String: Any])!
-      let array:NSArray = (self.hotSpotMoudle?.data.hotNewsData as NSArray?)!
-      self.netWorkData?.addObjects(from: array as! [Any])
-      self.fourBtnData = self.hotSpotMoudle?.data.four_button as NSArray?
-      self.carouselData = self.hotSpotMoudle?.data.focus as NSArray?
-      if (self.carouselData?.count)! > 0 {
-        self.settingHeaderCarouselView()
+      if self.hotSpotMoudle?.code == 200 {
+        if refreshType == .pullDown {
+          self.netWorkData.removeAllObjects()
+        }
+        let array:NSArray = (self.hotSpotMoudle?.data.hotNewsData as NSArray?)!
+        self.netWorkData?.addObjects(from: array as! [Any])
+        self.fourBtnData = self.hotSpotMoudle?.data.four_button as NSArray?
+        self.carouselData = self.hotSpotMoudle?.data.focus as NSArray?
+        if (self.carouselData?.count)! > 0 {
+          self.settingHeaderCarouselView()
+        }
+        self.reloadData()
       }
-      self.reloadData()
+      
     }) { error in
       print("\(error)")
     }
+    
   }
 }
 
@@ -177,7 +184,7 @@ extension WTSHotSpotTableView {
     let carouselView = SDCycleScrollView(frame: CGRect(x: 0, y: 0, width: XHScreenW, height: XHScreenW / 2), imageURLStringsGroup: carousel as! [Any])
     carouselView?.pageControlAliment = SDCycleScrollViewPageContolAlimentRight
     carouselView?.currentPageDotColor = UIColor.white
-    carouselView?.placeholderImage = UIImage(named: "")
+    carouselView?.placeholderImage = UIImage(named: "focusnews_null_img3")
     carouselView?.clickItemOperationBlock = { index in
       print("\(index)")
     }

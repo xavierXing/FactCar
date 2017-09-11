@@ -9,7 +9,7 @@
 import UIKit
 
 class WTSCaltureTableView: WTSRootTableView {
-
+  /*
   override func awakeFromNib() {
     self.vcType = MoyaNewsCar.calture
     self.settingRefersh(refreshSuccess: { (result) in
@@ -19,5 +19,5 @@ class WTSCaltureTableView: WTSRootTableView {
       print("\(error)")
     }
   }
-
+  */
 }

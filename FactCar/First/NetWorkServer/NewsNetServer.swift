@@ -14,7 +14,7 @@ var baseLink: String = "http://api.news18a.com/"
 var basePath: String = "init.php"
 
 enum MoyaNewsCar {
-  case hotSpot(index: NSNumber),video,live,business,evaluating,shopping,newCar,useCar,calture,travel,technology,market
+  case hotSpot(index: NSNumber),video(index: NSNumber),live(index: NSNumber),business(index: NSNumber),evaluating(index: NSNumber),shopping(index: NSNumber),newCar,useCar(index: NSNumber),calture(index: NSNumber),travel(index: NSNumber),technology(index: NSNumber),market(index: NSNumber)
 }
 
 extension MoyaNewsCar: TargetType {
@@ -44,38 +44,43 @@ extension MoyaNewsCar: TargetType {
         "a": "index_new",
         "page": index
       ]
-    case .video:
+    case .video(let index):
       return [
         "m": "ina_app",
         "c": "vedio",
-        "a": "focus"
+        "a": "focus",
+        "page": index
       ]
     case .live:
       return [
         "m": "ina_app",
         "c": "vedio",
-        "a": "new_live"
+        "a": "new_live",
+        "page": index
       ]
     case .business: 
       return [
         "m": "ina_app",
         "c": "index",
         "a": "storylist",
-        "storyType": "industry"
+        "storyType": "industry",
+        "page": index
       ]
     case .evaluating:
       return [
         "m": "ina_app",
         "c": "index",
         "a": "storylist",
-        "storyType": "evaluation"
+        "storyType": "evaluation",
+        "page": index
       ]
     case .shopping:
       return [
         "m": "ina_app",
         "c": "index",
         "a": "storylist",
-        "storyType": "guide"
+        "storyType": "guide",
+        "page": index
       ]
     case .newCar:
       return [
@@ -89,35 +94,40 @@ extension MoyaNewsCar: TargetType {
         "m": "ina_app",
         "c": "index",
         "a": "storylist",
-        "storyType": "useCar"
+        "storyType": "useCar",
+        "page": index
       ]
     case .calture:
       return [
         "m": "ina_app",
         "c": "index",
         "a": "storylist",
-        "storyType": "culture"
+        "storyType": "culture",
+        "page": index
       ]
     case .travel:
       return [
         "m": "ina_app",
         "c": "index",
         "a": "storylist",
-        "storyType": "travel"
+        "storyType": "travel",
+        "page": index
       ]
     case .technology:
       return [
         "m": "ina_app",
         "c": "index",
         "a": "storylist",
-        "storyType": "technology"
+        "storyType": "technology",
+        "page": index
       ]
     case .market:
       return [
         "m": "ina_app",
         "c": "index",
         "a": "storylist",
-        "storyType": "market"
+        "storyType": "market",
+        "page": index
       ]
     }
     
@@ -163,12 +173,62 @@ class NewsNetServer: NSObject {
     }
   }
   
-  /// 修改page参数
+  /// 修改page参数:自增
   public func moyaChangeEnumIndex(vcType:MoyaNewsCar) -> MoyaNewsCar {
     let index = (vcType.parameters?["page"] as! Int) + 1
     switch vcType {
     case .hotSpot(_):
       return MoyaNewsCar.hotSpot(index: index as NSNumber)
+    case .video(_):
+      return MoyaNewsCar.video(index: index as NSNumber)
+    case .live(_):
+      return MoyaNewsCar.live(index: index as NSNumber)
+    case .business(_):
+      return MoyaNewsCar.business(index: index as NSNumber)
+    case .evaluating(_):
+      return MoyaNewsCar.evaluating(index: index as NSNumber)
+    case .shopping(_):
+      return MoyaNewsCar.shopping(index: index as NSNumber)
+    case .useCar(_):
+      return MoyaNewsCar.useCar(index: index as NSNumber)
+    case .calture(_):
+      return MoyaNewsCar.calture(index: index as NSNumber)
+    case .travel(_):
+      return MoyaNewsCar.travel(index: index as NSNumber)
+    case .technology(_):
+      return MoyaNewsCar.technology(index: index as NSNumber)
+    case .market(_):
+      return MoyaNewsCar.market(index: index as NSNumber)
+    default:
+      return MoyaNewsCar.hotSpot(index: index as NSNumber)
+    }
+  }
+  /// 修改page参数:原始
+  public func moyaOriginalIndex(vcType:MoyaNewsCar) -> MoyaNewsCar {
+    let index = 1
+    switch vcType {
+    case .hotSpot(_):
+      return MoyaNewsCar.hotSpot(index: index as NSNumber)
+    case .video(_):
+      return MoyaNewsCar.video(index: index as NSNumber)
+    case .live(_):
+      return MoyaNewsCar.live(index: index as NSNumber)
+    case .business(_):
+      return MoyaNewsCar.business(index: index as NSNumber)
+    case .evaluating(_):
+      return MoyaNewsCar.evaluating(index: index as NSNumber)
+    case .shopping(_):
+      return MoyaNewsCar.shopping(index: index as NSNumber)
+    case .useCar(_):
+      return MoyaNewsCar.useCar(index: index as NSNumber)
+    case .calture(_):
+      return MoyaNewsCar.calture(index: index as NSNumber)
+    case .travel(_):
+      return MoyaNewsCar.travel(index: index as NSNumber)
+    case .technology(_):
+      return MoyaNewsCar.technology(index: index as NSNumber)
+    case .market(_):
+      return MoyaNewsCar.market(index: index as NSNumber)
     default:
       return MoyaNewsCar.hotSpot(index: index as NSNumber)
     }

@@ -16,6 +16,10 @@ enum VCType {
   case hotSpot,video,live,business,evaluating,shopping,newCar,useCar,calture,travel,technology,market
 }
 
+enum RefreshType {
+  case pullDown,pullUp
+}
+
 class WTSRootTableView: UITableView,UITableViewDataSource,UITableViewDelegate {
   
   var rootDelegate: WTSRootVCTableViewDelegate?
@@ -45,12 +49,12 @@ class WTSRootTableView: UITableView,UITableViewDataSource,UITableViewDelegate {
 // MARK: - Public Method -
 extension WTSRootTableView {
   
-  public func settingRefersh(refreshSuccess: @escaping  (_ result : NSDictionary) -> (), refreshFailed: @escaping (_ error: String) -> ()) -> Void {
-
+  public func settingRefersh(refreshSuccess: @escaping  (_ result : NSDictionary,_ refreshType: RefreshType) -> (), refreshFailed: @escaping (_ error: String) -> ()) -> Void {
+    
     let refreshHeader:WTSFactCarRefreshGifHeader = WTSFactCarRefreshGifHeader {
-      
+      self.vcType = self.moyaServer.moyaOriginalIndex(vcType: self.vcType!)
       self.moyaServer.moyaGetData(type: self.vcType!, success: { (result) in
-        refreshSuccess(result)
+        refreshSuccess(result, .pullDown)
         self.mj_header.endRefreshing()
       }) { (error) in
         refreshFailed(error)
@@ -60,10 +64,9 @@ extension WTSRootTableView {
     }
     
     let refreshFooter:MJRefreshAutoNormalFooter = MJRefreshAutoNormalFooter {
-      
       self.vcType = self.moyaServer.moyaChangeEnumIndex(vcType: self.vcType!)
       self.moyaServer.moyaGetData(type: self.vcType!, success: { (result) in
-        refreshSuccess(result)
+        refreshSuccess(result, .pullUp)
         self.mj_footer.endRefreshing()
       }) { (error) in
         refreshFailed(error)
