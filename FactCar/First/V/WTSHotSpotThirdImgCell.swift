@@ -31,12 +31,20 @@ class WTSHotSpotThirdImgCell: UITableViewCell {
   var thirdImgData: NSArray! {
     didSet {
       
-      self.cellHeaderFirstImage.sd_setImage(with: NSURL(string: self.thirdImgData[0] as! String) as URL?, placeholderImage: UIImage(named: ""))
+      self.cellHeaderFirstImage.sd_setImage(with: NSURL(string: self.thirdImgData[0] as! String) as URL?, placeholderImage: UIImage(named: "focusnews_null_img3"))
       
-      self.cellHeaderSecondImage.sd_setImage(with: NSURL(string: self.thirdImgData[1] as! String) as URL?, placeholderImage: UIImage(named: ""))
+      self.cellHeaderSecondImage.sd_setImage(with: NSURL(string: self.thirdImgData[1] as! String) as URL?, placeholderImage: UIImage(named: "focusnews_null_img3"))
       
-      self.cellHeaderThirdImage.sd_setImage(with: NSURL(string: self.thirdImgData[2] as! String) as URL?, placeholderImage: UIImage(named: ""))
+      self.cellHeaderThirdImage.sd_setImage(with: NSURL(string: self.thirdImgData[2] as! String) as URL?, placeholderImage: UIImage(named: "focusnews_null_img3"))
       
+    }
+  }
+  
+  var hotSpotData:WTSNewsMoudle_data? {
+    didSet {
+      self.cellTitleLabel.text = self.hotSpotData?.title
+      self.cellAuthorLabel.text = self.hotSpotData?.author
+      self.cellTimeLabel.text = self.hotSpotData?.pub
     }
   }
   

@@ -51,14 +51,14 @@ extension MoyaNewsCar: TargetType {
         "a": "focus",
         "page": index
       ]
-    case .live:
+    case .live(let index):
       return [
         "m": "ina_app",
         "c": "vedio",
         "a": "new_live",
         "page": index
       ]
-    case .business: 
+    case .business(let index):
       return [
         "m": "ina_app",
         "c": "index",
@@ -66,7 +66,7 @@ extension MoyaNewsCar: TargetType {
         "storyType": "industry",
         "page": index
       ]
-    case .evaluating:
+    case .evaluating(let index):
       return [
         "m": "ina_app",
         "c": "index",
@@ -74,7 +74,7 @@ extension MoyaNewsCar: TargetType {
         "storyType": "evaluation",
         "page": index
       ]
-    case .shopping:
+    case .shopping(let index):
       return [
         "m": "ina_app",
         "c": "index",
@@ -89,7 +89,7 @@ extension MoyaNewsCar: TargetType {
         "a": "storylist",
         "storyType": "newCar"
       ]
-    case .useCar:
+    case .useCar(let index):
       return [
         "m": "ina_app",
         "c": "index",
@@ -97,7 +97,7 @@ extension MoyaNewsCar: TargetType {
         "storyType": "useCar",
         "page": index
       ]
-    case .calture:
+    case .calture(let index):
       return [
         "m": "ina_app",
         "c": "index",
@@ -105,7 +105,7 @@ extension MoyaNewsCar: TargetType {
         "storyType": "culture",
         "page": index
       ]
-    case .travel:
+    case .travel(let index):
       return [
         "m": "ina_app",
         "c": "index",
@@ -113,7 +113,7 @@ extension MoyaNewsCar: TargetType {
         "storyType": "travel",
         "page": index
       ]
-    case .technology:
+    case .technology(let index):
       return [
         "m": "ina_app",
         "c": "index",
@@ -121,7 +121,7 @@ extension MoyaNewsCar: TargetType {
         "storyType": "technology",
         "page": index
       ]
-    case .market:
+    case .market(let index):
       return [
         "m": "ina_app",
         "c": "index",

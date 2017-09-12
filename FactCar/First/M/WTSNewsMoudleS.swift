@@ -313,7 +313,7 @@ class WTSVMDVLShare: Mappable {
 class WTSLiveMoudle: Mappable {
   var status: String!
   var code: Int = 0
-  var data: Data!
+  var data: WTSLData!
   var message: String!
   required init?(map: Map) {
     

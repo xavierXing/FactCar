@@ -50,6 +50,7 @@
 		2ACFE11E1F628DAE003E5071 /* SearchVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACFE11D1F628DAE003E5071 /* SearchVideoCell.swift */; };
 		2ACFE1201F66286E003E5071 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACFE11F1F66286E003E5071 /* VideoCollectionViewCell.swift */; };
 		2ACFE1221F6628CE003E5071 /* VideoPlayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACFE1211F6628CE003E5071 /* VideoPlayCell.swift */; };
+		2ACFE1241F668C8A003E5071 /* LiveShowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACFE1231F668C8A003E5071 /* LiveShowCell.swift */; };
 		2AD23FD61F5CF1D300B79131 /* SearchMoudle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD23FD51F5CF1D300B79131 /* SearchMoudle.swift */; };
 		2AD23FD81F5D2A2B00B79131 /* SearchContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD23FD71F5D2A2B00B79131 /* SearchContentCell.swift */; };
 		2AECDA231F53A7D300B8C8B2 /* WTSRootCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AECDA221F53A7D300B8C8B2 /* WTSRootCollectionVC.swift */; };
@@ -147,6 +148,7 @@
 		2ACFE11D1F628DAE003E5071 /* SearchVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVideoCell.swift; sourceTree = "<group>"; };
 		2ACFE11F1F66286E003E5071 /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
 		2ACFE1211F6628CE003E5071 /* VideoPlayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayCell.swift; sourceTree = "<group>"; };
+		2ACFE1231F668C8A003E5071 /* LiveShowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveShowCell.swift; sourceTree = "<group>"; };
 		2AD23FD51F5CF1D300B79131 /* SearchMoudle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMoudle.swift; sourceTree = "<group>"; };
 		2AD23FD71F5D2A2B00B79131 /* SearchContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchContentCell.swift; sourceTree = "<group>"; };
 		2AECDA221F53A7D300B8C8B2 /* WTSRootCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSRootCollectionVC.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 				2ACFE11B1F62661F003E5071 /* SearchCarMoudleCell.swift */,
 				2ACFE11D1F628DAE003E5071 /* SearchVideoCell.swift */,
 				2ACFE1211F6628CE003E5071 /* VideoPlayCell.swift */,
+				2ACFE1231F668C8A003E5071 /* LiveShowCell.swift */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -818,6 +821,7 @@
 				D2F095471F3452920049BB39 /* FactCarCategory.swift in Sources */,
 				2AECDA481F5425C400B8C8B2 /* WTSRootTitleView.swift in Sources */,
 				2A8CFBBF1F3AA90C00F20D4A /* WTSVideoTableView.swift in Sources */,
+				2ACFE1241F668C8A003E5071 /* LiveShowCell.swift in Sources */,
 				D2F0952B1F34501C0049BB39 /* MyNetServer.swift in Sources */,
 				2AECDA2A1F53BB1A00B8C8B2 /* LiveCell.swift in Sources */,
 				2A8CFBBD1F3AA7FD00F20D4A /* WTSHotSpotTableView.swift in Sources */,
