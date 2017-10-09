@@ -18,7 +18,9 @@ class WTSRootCollectionVC: UICollectionViewController, UIViewControllerTransitio
 
   @IBOutlet var rootContent: UICollectionView!
 
-  override func viewDidLoad() {
+    @IBOutlet weak var titleContent: UIView!
+    
+    override func viewDidLoad() {
     super.viewDidLoad()
     self.settingNavgationBar()
 
@@ -70,7 +72,9 @@ extension WTSRootCollectionVC {
     rootTitle?.clickIndexBlock = { index in
       self.autoIndexContent(index: index)
     }
+    
   }
+    
 
   func autoIndexContent(index: Int) {
     self.rootContent.setContentOffset(CGPoint(x: CGFloat(index) * XHScreenW, y: 0), animated: true)

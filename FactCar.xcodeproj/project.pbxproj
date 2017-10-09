@@ -74,6 +74,7 @@
 		D25332471F341A8200AB12CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25332451F341A8200AB12CB /* LaunchScreen.storyboard */; };
 		D25332631F341D8F00AB12CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25332601F341D8F00AB12CB /* AppDelegate.swift */; };
 		D25332641F341D8F00AB12CB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D25332611F341D8F00AB12CB /* Info.plist */; };
+		D25537261F8B0D3400F86532 /* NavigationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25537251F8B0D3400F86532 /* NavigationTitleView.swift */; };
 		D2F0951F1F3440380049BB39 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F0951E1F3440380049BB39 /* News.storyboard */; };
 		D2F095231F344FCA0049BB39 /* NewsNetServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F095221F344FCA0049BB39 /* NewsNetServer.swift */; };
 		D2F095271F344FF90049BB39 /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F095261F344FF90049BB39 /* My.storyboard */; };
@@ -174,6 +175,7 @@
 		D25332461F341A8200AB12CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D25332601F341D8F00AB12CB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D25332611F341D8F00AB12CB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D25537251F8B0D3400F86532 /* NavigationTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleView.swift; sourceTree = "<group>"; };
 		D2F0951E1F3440380049BB39 /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		D2F095221F344FCA0049BB39 /* NewsNetServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsNetServer.swift; sourceTree = "<group>"; };
 		D2F095261F344FF90049BB39 /* My.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = My.storyboard; sourceTree = "<group>"; };
@@ -467,6 +469,7 @@
 				2A8CFBD41F3AAF1E00F20D4A /* WTSRootTableView.swift */,
 				2A8CFBD61F3AAF8400F20D4A /* WTSRootTableView.xib */,
 				2A92C30E1F568BF300F3FCA3 /* SearchHotSpotLabelsCollectionView.swift */,
+				D25537251F8B0D3400F86532 /* NavigationTitleView.swift */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -805,6 +808,7 @@
 				D2F095431F34526A0049BB39 /* ChooseCarNetServer.swift in Sources */,
 				2ACFE1181F60D841003E5071 /* SearchStoryCell.swift in Sources */,
 				2ACFE1221F6628CE003E5071 /* VideoPlayCell.swift in Sources */,
+				D25537261F8B0D3400F86532 /* NavigationTitleView.swift in Sources */,
 				2A8C91721F50140100A6FDE2 /* WTSSearchHeaderViewTableViewCell.swift in Sources */,
 				2A92C3121F568E3A00F3FCA3 /* SearchHotSpotLabelsCell.swift in Sources */,
 				2A4A8ABD1F4C30BB003C2FA5 /* WTSFactCarGifView.swift in Sources */,
@@ -978,7 +982,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4XQRJRP48E;
-				INFOPLIST_FILE = /Users/LeoTai/Documents/GitHub/FactCar/FactCar/System/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FactCar/System/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.InternetInfoAgency.KeynewsCar;
@@ -997,7 +1001,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4XQRJRP48E;
-				INFOPLIST_FILE = /Users/LeoTai/Documents/GitHub/FactCar/FactCar/System/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FactCar/System/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.InternetInfoAgency.KeynewsCar;

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LSo-fU-QD9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LSo-fU-QD9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +17,7 @@
                     <tabBarItem key="tabBarItem" title="要闻" image="news_normal_icon" selectedImage="news_selected_icon" id="Hoa-cg-eXu"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ki9-Fi-vwD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -25,7 +26,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfo-ep-zfx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-956" y="107"/>
+            <point key="canvasLocation" x="-849" y="57"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="gK5-Z9-EpE">
@@ -1596,7 +1597,7 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="0Zo-4l-TUQ">
                         <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" id="FaW-6Y-YYd">
+                        <view key="titleView" contentMode="scaleToFill" id="FaW-6Y-YYd" customClass="NavigationTitleView" customModule="FactCar" customModuleProvider="target">
                             <rect key="frame" x="37.5" y="7" width="300" height="30"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
@@ -1887,9 +1888,9 @@
                             </subviews>
                             <constraints>
                                 <constraint firstItem="opt-fS-s6t" firstAttribute="centerY" secondItem="FaW-6Y-YYd" secondAttribute="centerY" id="4hQ-gd-iqK"/>
-                                <constraint firstAttribute="bottom" secondItem="opt-fS-s6t" secondAttribute="bottom" id="G6S-ja-Nxj"/>
-                                <constraint firstItem="opt-fS-s6t" firstAttribute="leading" secondItem="FaW-6Y-YYd" secondAttribute="leading" id="YZM-t4-0qI"/>
-                                <constraint firstAttribute="trailing" secondItem="opt-fS-s6t" secondAttribute="trailing" id="xYF-bG-COV"/>
+                                <constraint firstItem="opt-fS-s6t" firstAttribute="leading" secondItem="FaW-6Y-YYd" secondAttribute="leading" id="QRW-Tz-MY5"/>
+                                <constraint firstAttribute="bottom" secondItem="opt-fS-s6t" secondAttribute="bottom" id="bbx-6u-hrG"/>
+                                <constraint firstAttribute="trailing" secondItem="opt-fS-s6t" secondAttribute="trailing" id="lkd-op-J9J"/>
                                 <constraint firstItem="opt-fS-s6t" firstAttribute="top" secondItem="FaW-6Y-YYd" secondAttribute="top" id="xjf-mi-Kb2"/>
                             </constraints>
                         </view>
@@ -1902,11 +1903,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="rootContent" destination="vTQ-Hr-qOB" id="E8N-Uh-F3a"/>
+                        <outlet property="titleContent" destination="FaW-6Y-YYd" id="Din-fw-pH1"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0zB-RG-nT2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-194.40000000000001" y="106.59670164917542"/>
+            <point key="canvasLocation" x="89" y="58"/>
         </scene>
     </scenes>
     <resources>
